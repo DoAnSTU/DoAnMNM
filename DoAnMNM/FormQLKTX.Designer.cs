@@ -30,6 +30,7 @@ namespace DoAnMNM
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLKTX));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -48,28 +49,36 @@ namespace DoAnMNM
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLKTX));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.indicator = new System.Windows.Forms.PictureBox();
             this.panelSubHDP = new System.Windows.Forms.Panel();
+            this.indicatorSubPanelHDP = new System.Windows.Forms.PictureBox();
             this.btnDSHDP = new System.Windows.Forms.Button();
             this.btnThemHDP = new System.Windows.Forms.Button();
+            this.btnHDP = new System.Windows.Forms.Button();
             this.panelSubHDD = new System.Windows.Forms.Panel();
+            this.indicatorSubPanelHDD = new System.Windows.Forms.PictureBox();
             this.btnDSHDD = new System.Windows.Forms.Button();
             this.btnThemHDD = new System.Windows.Forms.Button();
             this.btnHDD = new System.Windows.Forms.Button();
             this.panelSubPhong = new System.Windows.Forms.Panel();
+            this.indicatorSubPanelPhong = new System.Windows.Forms.PictureBox();
             this.btnDSPhong = new System.Windows.Forms.Button();
             this.btnThemPhong = new System.Windows.Forms.Button();
+            this.btnPhong = new System.Windows.Forms.Button();
             this.btnDSSV = new System.Windows.Forms.Button();
             this.panelSubDonDangKy = new System.Windows.Forms.Panel();
+            this.indicatorSubPanelDDK = new System.Windows.Forms.PictureBox();
             this.btnDSDDK = new System.Windows.Forms.Button();
             this.btnDDK = new System.Windows.Forms.Button();
+            this.btnDonDangKy = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSua_QL = new System.Windows.Forms.Button();
             this.btnDangXuat_QL = new System.Windows.Forms.Button();
             this.lbQuanLy = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.tabControlKTX = new System.Windows.Forms.TabControl();
             this.tpThongKe = new System.Windows.Forms.TabPage();
@@ -89,12 +98,15 @@ namespace DoAnMNM
             this.cboQuy_ThongKe = new System.Windows.Forms.ComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lbSoGiuong_ThongKe = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lbSoSV_ThongKe = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbSoPhong_ThongKe = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tpDangKyMoi = new System.Windows.Forms.TabPage();
@@ -121,6 +133,7 @@ namespace DoAnMNM
             this.label2 = new System.Windows.Forms.Label();
             this.txtMSSV_DKM = new System.Windows.Forms.TextBox();
             this.btnTaiAnh = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tpDSSV = new System.Windows.Forms.TabPage();
             this.dataDSSV = new System.Windows.Forms.DataGridView();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -367,25 +380,18 @@ namespace DoAnMNM
             this.txtMaQL_SuaQL = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.indicator = new System.Windows.Forms.PictureBox();
-            this.indicatorSubPanelHDP = new System.Windows.Forms.PictureBox();
-            this.btnHDP = new System.Windows.Forms.Button();
-            this.indicatorSubPanelHDD = new System.Windows.Forms.PictureBox();
-            this.indicatorSubPanelPhong = new System.Windows.Forms.PictureBox();
-            this.btnPhong = new System.Windows.Forms.Button();
-            this.indicatorSubPanelDDK = new System.Windows.Forms.PictureBox();
-            this.btnDonDangKy = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
             this.panelSubHDP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).BeginInit();
             this.panelSubHDD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).BeginInit();
             this.panelSubPhong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).BeginInit();
             this.panelSubDonDangKy.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.tabControlKTX.SuspendLayout();
             this.tpThongKe.SuspendLayout();
@@ -394,9 +400,13 @@ namespace DoAnMNM
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTienPhong_ThongKe)).BeginInit();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tpDangKyMoi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tpDSSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDSSV)).BeginInit();
             this.panel3.SuspendLayout();
@@ -424,16 +434,6 @@ namespace DoAnMNM
             this.tpQLDonGia.SuspendLayout();
             this.tpSuaPhong.SuspendLayout();
             this.tpSuaQL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -480,6 +480,15 @@ namespace DoAnMNM
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // indicator
+            // 
+            this.indicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicator.Location = new System.Drawing.Point(0, 456);
+            this.indicator.Name = "indicator";
+            this.indicator.Size = new System.Drawing.Size(8, 52);
+            this.indicator.TabIndex = 0;
+            this.indicator.TabStop = false;
+            // 
             // panelSubHDP
             // 
             this.panelSubHDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(56)))), ((int)(((byte)(85)))));
@@ -491,6 +500,15 @@ namespace DoAnMNM
             this.panelSubHDP.Name = "panelSubHDP";
             this.panelSubHDP.Size = new System.Drawing.Size(180, 106);
             this.panelSubHDP.TabIndex = 15;
+            // 
+            // indicatorSubPanelHDP
+            // 
+            this.indicatorSubPanelHDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelHDP.Location = new System.Drawing.Point(0, 0);
+            this.indicatorSubPanelHDP.Name = "indicatorSubPanelHDP";
+            this.indicatorSubPanelHDP.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelHDP.TabIndex = 1;
+            this.indicatorSubPanelHDP.TabStop = false;
             // 
             // btnDSHDP
             // 
@@ -532,6 +550,27 @@ namespace DoAnMNM
             this.btnThemHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemHDP.UseVisualStyleBackColor = false;
             // 
+            // btnHDP
+            // 
+            this.btnHDP.BackColor = System.Drawing.Color.Transparent;
+            this.btnHDP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHDP.FlatAppearance.BorderSize = 0;
+            this.btnHDP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnHDP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnHDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHDP.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.btnHDP.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnHDP.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            this.btnHDP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHDP.Location = new System.Drawing.Point(0, 754);
+            this.btnHDP.Name = "btnHDP";
+            this.btnHDP.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnHDP.Size = new System.Drawing.Size(180, 52);
+            this.btnHDP.TabIndex = 14;
+            this.btnHDP.Text = "Hóa đơn phòng";
+            this.btnHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHDP.UseVisualStyleBackColor = false;
+            // 
             // panelSubHDD
             // 
             this.panelSubHDD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(56)))), ((int)(((byte)(85)))));
@@ -543,6 +582,15 @@ namespace DoAnMNM
             this.panelSubHDD.Name = "panelSubHDD";
             this.panelSubHDD.Size = new System.Drawing.Size(180, 106);
             this.panelSubHDD.TabIndex = 13;
+            // 
+            // indicatorSubPanelHDD
+            // 
+            this.indicatorSubPanelHDD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelHDD.Location = new System.Drawing.Point(0, 0);
+            this.indicatorSubPanelHDD.Name = "indicatorSubPanelHDD";
+            this.indicatorSubPanelHDD.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelHDD.TabIndex = 1;
+            this.indicatorSubPanelHDD.TabStop = false;
             // 
             // btnDSHDD
             // 
@@ -616,6 +664,15 @@ namespace DoAnMNM
             this.panelSubPhong.Size = new System.Drawing.Size(180, 106);
             this.panelSubPhong.TabIndex = 11;
             // 
+            // indicatorSubPanelPhong
+            // 
+            this.indicatorSubPanelPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelPhong.Location = new System.Drawing.Point(0, 0);
+            this.indicatorSubPanelPhong.Name = "indicatorSubPanelPhong";
+            this.indicatorSubPanelPhong.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelPhong.TabIndex = 1;
+            this.indicatorSubPanelPhong.TabStop = false;
+            // 
             // btnDSPhong
             // 
             this.btnDSPhong.BackColor = System.Drawing.Color.Transparent;
@@ -656,6 +713,27 @@ namespace DoAnMNM
             this.btnThemPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemPhong.UseVisualStyleBackColor = false;
             // 
+            // btnPhong
+            // 
+            this.btnPhong.BackColor = System.Drawing.Color.Transparent;
+            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPhong.FlatAppearance.BorderSize = 0;
+            this.btnPhong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPhong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhong.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.btnPhong.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPhong.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPhong.Location = new System.Drawing.Point(0, 438);
+            this.btnPhong.Name = "btnPhong";
+            this.btnPhong.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnPhong.Size = new System.Drawing.Size(180, 52);
+            this.btnPhong.TabIndex = 8;
+            this.btnPhong.Text = "Phòng";
+            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhong.UseVisualStyleBackColor = false;
+            // 
             // btnDSSV
             // 
             this.btnDSSV.BackColor = System.Drawing.Color.Transparent;
@@ -687,6 +765,15 @@ namespace DoAnMNM
             this.panelSubDonDangKy.Name = "panelSubDonDangKy";
             this.panelSubDonDangKy.Size = new System.Drawing.Size(180, 110);
             this.panelSubDonDangKy.TabIndex = 6;
+            // 
+            // indicatorSubPanelDDK
+            // 
+            this.indicatorSubPanelDDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelDDK.Location = new System.Drawing.Point(0, 3);
+            this.indicatorSubPanelDDK.Name = "indicatorSubPanelDDK";
+            this.indicatorSubPanelDDK.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelDDK.TabIndex = 11;
+            this.indicatorSubPanelDDK.TabStop = false;
             // 
             // btnDSDDK
             // 
@@ -727,6 +814,27 @@ namespace DoAnMNM
             this.btnDDK.Text = "Đăng ký mới";
             this.btnDDK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDDK.UseVisualStyleBackColor = false;
+            // 
+            // btnDonDangKy
+            // 
+            this.btnDonDangKy.BackColor = System.Drawing.Color.Transparent;
+            this.btnDonDangKy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDonDangKy.FlatAppearance.BorderSize = 0;
+            this.btnDonDangKy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDonDangKy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnDonDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDonDangKy.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.btnDonDangKy.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDonDangKy.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            this.btnDonDangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDonDangKy.Location = new System.Drawing.Point(0, 224);
+            this.btnDonDangKy.Name = "btnDonDangKy";
+            this.btnDonDangKy.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnDonDangKy.Size = new System.Drawing.Size(180, 52);
+            this.btnDonDangKy.TabIndex = 2;
+            this.btnDonDangKy.Text = "Đơn đăng ký";
+            this.btnDonDangKy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonDangKy.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -810,6 +918,16 @@ namespace DoAnMNM
             this.lbQuanLy.Text = "Quan Ly";
             this.lbQuanLy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbQuanLy.UseWaitCursor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(40, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // fileSystemWatcher1
             // 
@@ -1067,6 +1185,15 @@ namespace DoAnMNM
             this.panel11.Size = new System.Drawing.Size(188, 70);
             this.panel11.TabIndex = 2;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
             // lbSoGiuong_ThongKe
             // 
             this.lbSoGiuong_ThongKe.AutoSize = true;
@@ -1100,6 +1227,15 @@ namespace DoAnMNM
             this.panel10.Size = new System.Drawing.Size(188, 70);
             this.panel10.TabIndex = 1;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
             // lbSoSV_ThongKe
             // 
             this.lbSoSV_ThongKe.AutoSize = true;
@@ -1132,6 +1268,15 @@ namespace DoAnMNM
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(188, 70);
             this.panel9.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // lbSoPhong_ThongKe
             // 
@@ -1449,12 +1594,22 @@ namespace DoAnMNM
             this.btnTaiAnh.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.btnTaiAnh.ForeColor = System.Drawing.Color.White;
             this.btnTaiAnh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiAnh.Location = new System.Drawing.Point(265, 51);
+            this.btnTaiAnh.Location = new System.Drawing.Point(248, 60);
             this.btnTaiAnh.Name = "btnTaiAnh";
             this.btnTaiAnh.Size = new System.Drawing.Size(125, 37);
             this.btnTaiAnh.TabIndex = 5;
             this.btnTaiAnh.Text = "Tải ảnh lên";
             this.btnTaiAnh.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(107, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(136, 83);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // tpDSSV
             // 
@@ -4073,6 +4228,7 @@ namespace DoAnMNM
             this.btnSuaDGP_QLDonGia.TabIndex = 90;
             this.btnSuaDGP_QLDonGia.Text = "Sửa";
             this.btnSuaDGP_QLDonGia.UseVisualStyleBackColor = false;
+            this.btnSuaDGP_QLDonGia.Click += new System.EventHandler(this.btnSuaDGP_QLDonGia_Click);
             // 
             // btnSuaDGD_QLDonGia
             // 
@@ -4540,161 +4696,6 @@ namespace DoAnMNM
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(7, 10);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(52, 50);
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(7, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 10);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(52, 50);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(107, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(136, 83);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // indicator
-            // 
-            this.indicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicator.Location = new System.Drawing.Point(0, 456);
-            this.indicator.Name = "indicator";
-            this.indicator.Size = new System.Drawing.Size(8, 52);
-            this.indicator.TabIndex = 0;
-            this.indicator.TabStop = false;
-            // 
-            // indicatorSubPanelHDP
-            // 
-            this.indicatorSubPanelHDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelHDP.Location = new System.Drawing.Point(0, 0);
-            this.indicatorSubPanelHDP.Name = "indicatorSubPanelHDP";
-            this.indicatorSubPanelHDP.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelHDP.TabIndex = 1;
-            this.indicatorSubPanelHDP.TabStop = false;
-            // 
-            // btnHDP
-            // 
-            this.btnHDP.BackColor = System.Drawing.Color.Transparent;
-            this.btnHDP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHDP.FlatAppearance.BorderSize = 0;
-            this.btnHDP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnHDP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnHDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHDP.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.btnHDP.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnHDP.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
-            this.btnHDP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHDP.Location = new System.Drawing.Point(0, 754);
-            this.btnHDP.Name = "btnHDP";
-            this.btnHDP.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHDP.Size = new System.Drawing.Size(180, 52);
-            this.btnHDP.TabIndex = 14;
-            this.btnHDP.Text = "Hóa đơn phòng";
-            this.btnHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHDP.UseVisualStyleBackColor = false;
-            // 
-            // indicatorSubPanelHDD
-            // 
-            this.indicatorSubPanelHDD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelHDD.Location = new System.Drawing.Point(0, 0);
-            this.indicatorSubPanelHDD.Name = "indicatorSubPanelHDD";
-            this.indicatorSubPanelHDD.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelHDD.TabIndex = 1;
-            this.indicatorSubPanelHDD.TabStop = false;
-            // 
-            // indicatorSubPanelPhong
-            // 
-            this.indicatorSubPanelPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelPhong.Location = new System.Drawing.Point(0, 0);
-            this.indicatorSubPanelPhong.Name = "indicatorSubPanelPhong";
-            this.indicatorSubPanelPhong.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelPhong.TabIndex = 1;
-            this.indicatorSubPanelPhong.TabStop = false;
-            // 
-            // btnPhong
-            // 
-            this.btnPhong.BackColor = System.Drawing.Color.Transparent;
-            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPhong.FlatAppearance.BorderSize = 0;
-            this.btnPhong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPhong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhong.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.btnPhong.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPhong.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
-            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPhong.Location = new System.Drawing.Point(0, 438);
-            this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnPhong.Size = new System.Drawing.Size(180, 52);
-            this.btnPhong.TabIndex = 8;
-            this.btnPhong.Text = "Phòng";
-            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhong.UseVisualStyleBackColor = false;
-            // 
-            // indicatorSubPanelDDK
-            // 
-            this.indicatorSubPanelDDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelDDK.Location = new System.Drawing.Point(0, 3);
-            this.indicatorSubPanelDDK.Name = "indicatorSubPanelDDK";
-            this.indicatorSubPanelDDK.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelDDK.TabIndex = 11;
-            this.indicatorSubPanelDDK.TabStop = false;
-            // 
-            // btnDonDangKy
-            // 
-            this.btnDonDangKy.BackColor = System.Drawing.Color.Transparent;
-            this.btnDonDangKy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDonDangKy.FlatAppearance.BorderSize = 0;
-            this.btnDonDangKy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnDonDangKy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnDonDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonDangKy.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.btnDonDangKy.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnDonDangKy.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
-            this.btnDonDangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDonDangKy.Location = new System.Drawing.Point(0, 224);
-            this.btnDonDangKy.Name = "btnDonDangKy";
-            this.btnDonDangKy.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnDonDangKy.Size = new System.Drawing.Size(180, 52);
-            this.btnDonDangKy.TabIndex = 2;
-            this.btnDonDangKy.Text = "Đơn đăng ký";
-            this.btnDonDangKy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonDangKy.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(40, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormQLKTX
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4705,11 +4706,17 @@ namespace DoAnMNM
             this.Name = "FormQLKTX";
             this.Text = "FormQLKTX";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
             this.panelSubHDP.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).EndInit();
             this.panelSubHDD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).EndInit();
             this.panelSubPhong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).EndInit();
             this.panelSubDonDangKy.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.tabControlKTX.ResumeLayout(false);
             this.tpThongKe.ResumeLayout(false);
@@ -4721,12 +4728,16 @@ namespace DoAnMNM
             ((System.ComponentModel.ISupportInitialize)(this.chartTienPhong_ThongKe)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tpDangKyMoi.ResumeLayout(false);
             this.tpDangKyMoi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tpDSSV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataDSSV)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -4771,16 +4782,6 @@ namespace DoAnMNM
             this.tpSuaPhong.PerformLayout();
             this.tpSuaQL.ResumeLayout(false);
             this.tpSuaQL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

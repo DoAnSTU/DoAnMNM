@@ -123,5 +123,18 @@ namespace DoAnMNM
             }
             MessageBox.Show("Bạn đã cập nhật đơn giá điện thành công!");
         }
+
+        private void btnSuaDGP_QLDonGia_Click(object sender, EventArgs e)
+        {
+            string donGiaPhong = txtDGP_QLDonGia.Text;
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+
+            using (StreamWriter sw = new StreamWriter(FileName))
+            {
+                sw.Write(donGiaPhong);
+            }
+            MessageBox.Show("Bạn đã cập nhật đơn giá phòng thành công!");
+        }
     }
 }
