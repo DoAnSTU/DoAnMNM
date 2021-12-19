@@ -43,10 +43,9 @@ namespace DoAnMNM
             this.txtTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
             this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaiKhoan.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtTaiKhoan.Location = new System.Drawing.Point(300, 127);
-            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(150, 66);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(480, 50);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(242, 29);
             this.txtTaiKhoan.TabIndex = 0;
             // 
             // txtMauKhau
@@ -54,11 +53,10 @@ namespace DoAnMNM
             this.txtMauKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
             this.txtMauKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMauKhau.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtMauKhau.Location = new System.Drawing.Point(300, 227);
-            this.txtMauKhau.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMauKhau.Location = new System.Drawing.Point(150, 118);
             this.txtMauKhau.Name = "txtMauKhau";
             this.txtMauKhau.PasswordChar = '*';
-            this.txtMauKhau.Size = new System.Drawing.Size(480, 50);
+            this.txtMauKhau.Size = new System.Drawing.Size(242, 29);
             this.txtMauKhau.TabIndex = 1;
             // 
             // llbQuenMatKhau
@@ -66,10 +64,9 @@ namespace DoAnMNM
             this.llbQuenMatKhau.AutoSize = true;
             this.llbQuenMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llbQuenMatKhau.LinkColor = System.Drawing.Color.Gainsboro;
-            this.llbQuenMatKhau.Location = new System.Drawing.Point(548, 308);
-            this.llbQuenMatKhau.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.llbQuenMatKhau.Location = new System.Drawing.Point(274, 160);
             this.llbQuenMatKhau.Name = "llbQuenMatKhau";
-            this.llbQuenMatKhau.Size = new System.Drawing.Size(242, 45);
+            this.llbQuenMatKhau.Size = new System.Drawing.Size(118, 21);
             this.llbQuenMatKhau.TabIndex = 4;
             this.llbQuenMatKhau.TabStop = true;
             this.llbQuenMatKhau.Text = "Quên Mật Khẩu";
@@ -79,22 +76,21 @@ namespace DoAnMNM
             // 
             this.btnDangNhap.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(180, 377);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnDangNhap.Location = new System.Drawing.Point(90, 196);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(210, 92);
+            this.btnDangNhap.Size = new System.Drawing.Size(105, 48);
             this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(574, 377);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnThoat.Location = new System.Drawing.Point(287, 196);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(210, 92);
+            this.btnThoat.Size = new System.Drawing.Size(105, 48);
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -104,10 +100,9 @@ namespace DoAnMNM
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(106, 227);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(53, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 51);
+            this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Mật Khẩu";
             // 
@@ -116,19 +111,18 @@ namespace DoAnMNM
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(106, 127);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(53, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 51);
+            this.label1.Size = new System.Drawing.Size(94, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Tài Khoản";
             // 
             // FormDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(950, 556);
+            this.ClientSize = new System.Drawing.Size(475, 289);
             this.Controls.Add(this.llbQuenMatKhau);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label1);
@@ -136,7 +130,6 @@ namespace DoAnMNM
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMauKhau);
             this.Controls.Add(this.btnDangNhap);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FormDangNhap";
             this.Text = "FormDangNhap";
             this.ResumeLayout(false);

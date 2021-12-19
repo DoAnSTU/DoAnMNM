@@ -15,10 +15,16 @@ namespace DoAnMNM
 {
     public partial class FormDangNhap : Form
     {
+        //doi ten 
         public FormDangNhap()
         {
             InitializeComponent();
             this.ActiveControl = txtTaiKhoan;
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
