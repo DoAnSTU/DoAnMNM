@@ -180,7 +180,7 @@ namespace DoAnMNM
                 pic.TabStop = false;
                 pic.MouseHover += Pic_MouseHover;
                 pic.MouseLeave += Pic_MouseLeave;
-                
+                pic.MouseClick += Pic_MouseClick;
 
 
                 //Tạo label
@@ -208,6 +208,30 @@ namespace DoAnMNM
 
                 tableLayoutPanelDSPhong.Controls.Add(p);
             }
+        }
+
+        private void Pic_MouseClick(object sender, MouseEventArgs e)
+        {
+            PictureBox pic = ((PictureBox)sender);
+            //int index = dsPic.FindIndex(a => a == (PictureBox)sender);
+            Phong p = db.Phongs.Find(pic.Name);
+            tabControlKTX.SelectedTab = tpSuaPhong;
+            cboLoaiPhong_ThemPhong.Items.Clear();
+            cboKhu_ThemPhong.Items.Clear();
+            txtMaPhong_SuaPhong.Text = p.MaPhong;
+            txtTenPhong_SuaPhong.Text = p.TenPhong;
+            List<LoaiPhong> dsLoaiPhong = db.LoaiPhongs.ToList();
+            foreach (LoaiPhong x in dsLoaiPhong)
+            {
+                cboLoaiPhong_SuaPhong.Items.Add(x);
+            }
+            cboLoaiPhong_SuaPhong.SelectedItem = dsLoaiPhong.Find(a => a.MaLoaiPhong == p.MaLoaiPhong);
+            List<Khu> dsKhu = db.Khus.ToList();
+            foreach (Khu x in dsKhu)
+            {
+                cboKhu_SuaPhong.Items.Add(x);
+            }
+            cboKhu_SuaPhong.SelectedItem = dsKhu.Find(a => a.MaKhu == p.MaKhu);
         }
 
         private void Pic_MouseHover(object sender, EventArgs e)
