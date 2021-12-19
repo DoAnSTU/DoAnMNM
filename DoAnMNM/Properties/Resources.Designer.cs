@@ -61,6 +61,24 @@ namespace DoAnMNM.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 6.
+        /// </summary>
+        internal static string DonGiaDien {
+            get {
+                return ResourceManager.GetString("DonGiaDien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1200.
+        /// </summary>
+        internal static string DonGiaPhong {
+            get {
+                return ResourceManager.GetString("DonGiaPhong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap home_2 {
