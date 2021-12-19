@@ -24,10 +24,6 @@ namespace DoAnMNM.Models
         [StringLength(20)]
         public string TenPhong { get; set; }
 
-        public int SoGiuongDaO { get; set; }
-
-        public int SoGiuongTrong { get; set; }
-
         [Required]
         [StringLength(10)]
         public string MaLoaiPhong { get; set; }

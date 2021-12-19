@@ -24,7 +24,6 @@ namespace DoAnMNM.Models
 
         public int Nam { get; set; }
 
-        [Column(TypeName = "money")]
         public decimal ThanhTien { get; set; }
 
         [Column(TypeName = "date")]

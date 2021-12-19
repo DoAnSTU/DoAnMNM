@@ -45,7 +45,7 @@ namespace DoAnMNM.Models
 
             modelBuilder.Entity<HoaDonDien>()
                 .Property(e => e.DonGiaDien)
-                .HasPrecision(19, 4);
+                .HasPrecision(18, 0);
 
             modelBuilder.Entity<HoaDonTienPhong>()
                 .Property(e => e.MaQL)
@@ -57,7 +57,7 @@ namespace DoAnMNM.Models
 
             modelBuilder.Entity<HoaDonTienPhong>()
                 .Property(e => e.ThanhTien)
-                .HasPrecision(19, 4);
+                .HasPrecision(18, 0);
 
             modelBuilder.Entity<Khu>()
                 .Property(e => e.MaKhu)
