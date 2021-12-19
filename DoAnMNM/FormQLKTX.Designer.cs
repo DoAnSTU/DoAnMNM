@@ -30,55 +30,46 @@ namespace DoAnMNM
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLKTX));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.indicator = new System.Windows.Forms.PictureBox();
             this.panelSubHDP = new System.Windows.Forms.Panel();
-            this.indicatorSubPanelHDP = new System.Windows.Forms.PictureBox();
             this.btnDSHDP = new System.Windows.Forms.Button();
             this.btnThemHDP = new System.Windows.Forms.Button();
-            this.btnHDP = new System.Windows.Forms.Button();
             this.panelSubHDD = new System.Windows.Forms.Panel();
-            this.indicatorSubPanelHDD = new System.Windows.Forms.PictureBox();
             this.btnDSHDD = new System.Windows.Forms.Button();
             this.btnThemHDD = new System.Windows.Forms.Button();
             this.btnHDD = new System.Windows.Forms.Button();
             this.panelSubPhong = new System.Windows.Forms.Panel();
-            this.indicatorSubPanelPhong = new System.Windows.Forms.PictureBox();
             this.btnDSPhong = new System.Windows.Forms.Button();
             this.btnThemPhong = new System.Windows.Forms.Button();
-            this.btnPhong = new System.Windows.Forms.Button();
             this.btnDSSV = new System.Windows.Forms.Button();
             this.panelSubDonDangKy = new System.Windows.Forms.Panel();
-            this.indicatorSubPanelDDK = new System.Windows.Forms.PictureBox();
             this.btnDSDDK = new System.Windows.Forms.Button();
             this.btnDDK = new System.Windows.Forms.Button();
-            this.btnDonDangKy = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSua_QL = new System.Windows.Forms.Button();
             this.btnDangXuat_QL = new System.Windows.Forms.Button();
             this.lbQuanLy = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.tabControlKTX = new System.Windows.Forms.TabControl();
             this.tpThongKe = new System.Windows.Forms.TabPage();
@@ -98,15 +89,12 @@ namespace DoAnMNM
             this.cboQuy_ThongKe = new System.Windows.Forms.ComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lbSoGiuong_ThongKe = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lbSoSV_ThongKe = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbSoPhong_ThongKe = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tpDangKyMoi = new System.Windows.Forms.TabPage();
@@ -133,7 +121,6 @@ namespace DoAnMNM
             this.label2 = new System.Windows.Forms.Label();
             this.txtMSSV_DKM = new System.Windows.Forms.TextBox();
             this.btnTaiAnh = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tpDSSV = new System.Windows.Forms.TabPage();
             this.dataDSSV = new System.Windows.Forms.DataGridView();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -358,9 +345,16 @@ namespace DoAnMNM
             this.txtTenPhong_SuaPhong = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
             this.txtMaPhong_SuaPhong = new System.Windows.Forms.TextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tpSuaQL = new System.Windows.Forms.TabPage();
+            this.btnSua_SuaQL = new System.Windows.Forms.Button();
+            this.txtMatKhau_SuaQL = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.txtEMAIL_SuaQL = new System.Windows.Forms.TextBox();
+            this.label92 = new System.Windows.Forms.Label();
+            this.txtSDT_SuaQL = new System.Windows.Forms.TextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.txtCMND_SuaQL = new System.Windows.Forms.TextBox();
             this.label87 = new System.Windows.Forms.Label();
             this.dtpNgaySinh_SuaQL = new System.Windows.Forms.DateTimePicker();
             this.rdbNu_SuaQL = new System.Windows.Forms.RadioButton();
@@ -371,27 +365,27 @@ namespace DoAnMNM
             this.txtHoTen_SuaQL = new System.Windows.Forms.TextBox();
             this.label91 = new System.Windows.Forms.Label();
             this.txtMaQL_SuaQL = new System.Windows.Forms.TextBox();
-            this.txtEMAIL_SuaQL = new System.Windows.Forms.TextBox();
-            this.label92 = new System.Windows.Forms.Label();
-            this.txtSDT_SuaQL = new System.Windows.Forms.TextBox();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.txtCMND_SuaQL = new System.Windows.Forms.TextBox();
-            this.txtMatKhau_SuaQL = new System.Windows.Forms.TextBox();
-            this.label95 = new System.Windows.Forms.Label();
-            this.btnSua_SuaQL = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.indicator = new System.Windows.Forms.PictureBox();
+            this.indicatorSubPanelHDP = new System.Windows.Forms.PictureBox();
+            this.btnHDP = new System.Windows.Forms.Button();
+            this.indicatorSubPanelHDD = new System.Windows.Forms.PictureBox();
+            this.indicatorSubPanelPhong = new System.Windows.Forms.PictureBox();
+            this.btnPhong = new System.Windows.Forms.Button();
+            this.indicatorSubPanelDDK = new System.Windows.Forms.PictureBox();
+            this.btnDonDangKy = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
             this.panelSubHDP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).BeginInit();
             this.panelSubHDD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).BeginInit();
             this.panelSubPhong.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).BeginInit();
             this.panelSubDonDangKy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.tabControlKTX.SuspendLayout();
             this.tpThongKe.SuspendLayout();
@@ -400,13 +394,9 @@ namespace DoAnMNM
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTienPhong_ThongKe)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tpDangKyMoi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tpDSSV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDSSV)).BeginInit();
             this.panel3.SuspendLayout();
@@ -434,6 +424,16 @@ namespace DoAnMNM
             this.tpQLDonGia.SuspendLayout();
             this.tpSuaPhong.SuspendLayout();
             this.tpSuaQL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -473,20 +473,12 @@ namespace DoAnMNM
             this.button2.Location = new System.Drawing.Point(0, 912);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(197, 52);
+            this.button2.Size = new System.Drawing.Size(180, 52);
             this.button2.TabIndex = 16;
             this.button2.Text = "Quản lý đơn giá";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // indicator
-            // 
-            this.indicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicator.Location = new System.Drawing.Point(0, 172);
-            this.indicator.Name = "indicator";
-            this.indicator.Size = new System.Drawing.Size(8, 52);
-            this.indicator.TabIndex = 0;
-            this.indicator.TabStop = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panelSubHDP
             // 
@@ -497,17 +489,8 @@ namespace DoAnMNM
             this.panelSubHDP.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubHDP.Location = new System.Drawing.Point(0, 806);
             this.panelSubHDP.Name = "panelSubHDP";
-            this.panelSubHDP.Size = new System.Drawing.Size(197, 106);
+            this.panelSubHDP.Size = new System.Drawing.Size(180, 106);
             this.panelSubHDP.TabIndex = 15;
-            // 
-            // indicatorSubPanelHDP
-            // 
-            this.indicatorSubPanelHDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelHDP.Location = new System.Drawing.Point(0, 0);
-            this.indicatorSubPanelHDP.Name = "indicatorSubPanelHDP";
-            this.indicatorSubPanelHDP.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelHDP.TabIndex = 1;
-            this.indicatorSubPanelHDP.TabStop = false;
             // 
             // btnDSHDP
             // 
@@ -523,7 +506,7 @@ namespace DoAnMNM
             this.btnDSHDP.Location = new System.Drawing.Point(0, 52);
             this.btnDSHDP.Name = "btnDSHDP";
             this.btnDSHDP.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDSHDP.Size = new System.Drawing.Size(197, 48);
+            this.btnDSHDP.Size = new System.Drawing.Size(180, 48);
             this.btnDSHDP.TabIndex = 12;
             this.btnDSHDP.Text = "Danh sách hóa đơn";
             this.btnDSHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -543,32 +526,11 @@ namespace DoAnMNM
             this.btnThemHDP.Location = new System.Drawing.Point(0, 0);
             this.btnThemHDP.Name = "btnThemHDP";
             this.btnThemHDP.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnThemHDP.Size = new System.Drawing.Size(197, 52);
+            this.btnThemHDP.Size = new System.Drawing.Size(180, 52);
             this.btnThemHDP.TabIndex = 11;
             this.btnThemHDP.Text = "Thêm hóa đơn";
             this.btnThemHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemHDP.UseVisualStyleBackColor = false;
-            // 
-            // btnHDP
-            // 
-            this.btnHDP.BackColor = System.Drawing.Color.Transparent;
-            this.btnHDP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHDP.FlatAppearance.BorderSize = 0;
-            this.btnHDP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnHDP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnHDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHDP.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.btnHDP.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnHDP.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
-            this.btnHDP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHDP.Location = new System.Drawing.Point(0, 754);
-            this.btnHDP.Name = "btnHDP";
-            this.btnHDP.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHDP.Size = new System.Drawing.Size(197, 52);
-            this.btnHDP.TabIndex = 14;
-            this.btnHDP.Text = "Hóa đơn phòng";
-            this.btnHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHDP.UseVisualStyleBackColor = false;
             // 
             // panelSubHDD
             // 
@@ -579,17 +541,8 @@ namespace DoAnMNM
             this.panelSubHDD.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubHDD.Location = new System.Drawing.Point(0, 648);
             this.panelSubHDD.Name = "panelSubHDD";
-            this.panelSubHDD.Size = new System.Drawing.Size(197, 106);
+            this.panelSubHDD.Size = new System.Drawing.Size(180, 106);
             this.panelSubHDD.TabIndex = 13;
-            // 
-            // indicatorSubPanelHDD
-            // 
-            this.indicatorSubPanelHDD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelHDD.Location = new System.Drawing.Point(0, 0);
-            this.indicatorSubPanelHDD.Name = "indicatorSubPanelHDD";
-            this.indicatorSubPanelHDD.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelHDD.TabIndex = 1;
-            this.indicatorSubPanelHDD.TabStop = false;
             // 
             // btnDSHDD
             // 
@@ -605,7 +558,7 @@ namespace DoAnMNM
             this.btnDSHDD.Location = new System.Drawing.Point(0, 52);
             this.btnDSHDD.Name = "btnDSHDD";
             this.btnDSHDD.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDSHDD.Size = new System.Drawing.Size(197, 48);
+            this.btnDSHDD.Size = new System.Drawing.Size(180, 48);
             this.btnDSHDD.TabIndex = 12;
             this.btnDSHDD.Text = "Danh sách hóa đơn";
             this.btnDSHDD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -625,7 +578,7 @@ namespace DoAnMNM
             this.btnThemHDD.Location = new System.Drawing.Point(0, 0);
             this.btnThemHDD.Name = "btnThemHDD";
             this.btnThemHDD.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnThemHDD.Size = new System.Drawing.Size(197, 52);
+            this.btnThemHDD.Size = new System.Drawing.Size(180, 52);
             this.btnThemHDD.TabIndex = 11;
             this.btnThemHDD.Text = "Thêm hóa đơn";
             this.btnThemHDD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -645,7 +598,7 @@ namespace DoAnMNM
             this.btnHDD.Location = new System.Drawing.Point(0, 596);
             this.btnHDD.Name = "btnHDD";
             this.btnHDD.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHDD.Size = new System.Drawing.Size(197, 52);
+            this.btnHDD.Size = new System.Drawing.Size(180, 52);
             this.btnHDD.TabIndex = 12;
             this.btnHDD.Text = "Hóa đơn điện";
             this.btnHDD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -660,17 +613,8 @@ namespace DoAnMNM
             this.panelSubPhong.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubPhong.Location = new System.Drawing.Point(0, 490);
             this.panelSubPhong.Name = "panelSubPhong";
-            this.panelSubPhong.Size = new System.Drawing.Size(197, 106);
+            this.panelSubPhong.Size = new System.Drawing.Size(180, 106);
             this.panelSubPhong.TabIndex = 11;
-            // 
-            // indicatorSubPanelPhong
-            // 
-            this.indicatorSubPanelPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelPhong.Location = new System.Drawing.Point(0, 0);
-            this.indicatorSubPanelPhong.Name = "indicatorSubPanelPhong";
-            this.indicatorSubPanelPhong.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelPhong.TabIndex = 1;
-            this.indicatorSubPanelPhong.TabStop = false;
             // 
             // btnDSPhong
             // 
@@ -686,7 +630,7 @@ namespace DoAnMNM
             this.btnDSPhong.Location = new System.Drawing.Point(0, 52);
             this.btnDSPhong.Name = "btnDSPhong";
             this.btnDSPhong.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDSPhong.Size = new System.Drawing.Size(197, 48);
+            this.btnDSPhong.Size = new System.Drawing.Size(180, 48);
             this.btnDSPhong.TabIndex = 12;
             this.btnDSPhong.Text = "Danh sách phòng";
             this.btnDSPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -706,32 +650,11 @@ namespace DoAnMNM
             this.btnThemPhong.Location = new System.Drawing.Point(0, 0);
             this.btnThemPhong.Name = "btnThemPhong";
             this.btnThemPhong.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnThemPhong.Size = new System.Drawing.Size(197, 52);
+            this.btnThemPhong.Size = new System.Drawing.Size(180, 52);
             this.btnThemPhong.TabIndex = 11;
             this.btnThemPhong.Text = "Thêm phòng";
             this.btnThemPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemPhong.UseVisualStyleBackColor = false;
-            // 
-            // btnPhong
-            // 
-            this.btnPhong.BackColor = System.Drawing.Color.Transparent;
-            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPhong.FlatAppearance.BorderSize = 0;
-            this.btnPhong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPhong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhong.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.btnPhong.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPhong.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
-            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPhong.Location = new System.Drawing.Point(0, 438);
-            this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnPhong.Size = new System.Drawing.Size(197, 52);
-            this.btnPhong.TabIndex = 8;
-            this.btnPhong.Text = "Phòng";
-            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhong.UseVisualStyleBackColor = false;
             // 
             // btnDSSV
             // 
@@ -747,7 +670,7 @@ namespace DoAnMNM
             this.btnDSSV.Location = new System.Drawing.Point(0, 386);
             this.btnDSSV.Name = "btnDSSV";
             this.btnDSSV.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnDSSV.Size = new System.Drawing.Size(197, 52);
+            this.btnDSSV.Size = new System.Drawing.Size(180, 52);
             this.btnDSSV.TabIndex = 7;
             this.btnDSSV.Text = "Danh sách sinh viên";
             this.btnDSSV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -762,17 +685,8 @@ namespace DoAnMNM
             this.panelSubDonDangKy.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubDonDangKy.Location = new System.Drawing.Point(0, 276);
             this.panelSubDonDangKy.Name = "panelSubDonDangKy";
-            this.panelSubDonDangKy.Size = new System.Drawing.Size(197, 110);
+            this.panelSubDonDangKy.Size = new System.Drawing.Size(180, 110);
             this.panelSubDonDangKy.TabIndex = 6;
-            // 
-            // indicatorSubPanelDDK
-            // 
-            this.indicatorSubPanelDDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicatorSubPanelDDK.Location = new System.Drawing.Point(0, 3);
-            this.indicatorSubPanelDDK.Name = "indicatorSubPanelDDK";
-            this.indicatorSubPanelDDK.Size = new System.Drawing.Size(8, 52);
-            this.indicatorSubPanelDDK.TabIndex = 11;
-            this.indicatorSubPanelDDK.TabStop = false;
             // 
             // btnDSDDK
             // 
@@ -788,7 +702,7 @@ namespace DoAnMNM
             this.btnDSDDK.Location = new System.Drawing.Point(0, 52);
             this.btnDSDDK.Name = "btnDSDDK";
             this.btnDSDDK.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDSDDK.Size = new System.Drawing.Size(197, 52);
+            this.btnDSDDK.Size = new System.Drawing.Size(180, 52);
             this.btnDSDDK.TabIndex = 10;
             this.btnDSDDK.Text = "Danh sách đơn";
             this.btnDSDDK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -808,32 +722,11 @@ namespace DoAnMNM
             this.btnDDK.Location = new System.Drawing.Point(0, 0);
             this.btnDDK.Name = "btnDDK";
             this.btnDDK.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDDK.Size = new System.Drawing.Size(197, 52);
+            this.btnDDK.Size = new System.Drawing.Size(180, 52);
             this.btnDDK.TabIndex = 9;
             this.btnDDK.Text = "Đăng ký mới";
             this.btnDDK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDDK.UseVisualStyleBackColor = false;
-            // 
-            // btnDonDangKy
-            // 
-            this.btnDonDangKy.BackColor = System.Drawing.Color.Transparent;
-            this.btnDonDangKy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDonDangKy.FlatAppearance.BorderSize = 0;
-            this.btnDonDangKy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnDonDangKy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnDonDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonDangKy.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.btnDonDangKy.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnDonDangKy.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
-            this.btnDonDangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDonDangKy.Location = new System.Drawing.Point(0, 224);
-            this.btnDonDangKy.Name = "btnDonDangKy";
-            this.btnDonDangKy.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnDonDangKy.Size = new System.Drawing.Size(197, 52);
-            this.btnDonDangKy.TabIndex = 2;
-            this.btnDonDangKy.Text = "Đơn đăng ký";
-            this.btnDonDangKy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonDangKy.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -849,7 +742,7 @@ namespace DoAnMNM
             this.button1.Location = new System.Drawing.Point(0, 172);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(197, 52);
+            this.button1.Size = new System.Drawing.Size(180, 52);
             this.button1.TabIndex = 1;
             this.button1.Text = "Thống kê";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -864,7 +757,7 @@ namespace DoAnMNM
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 172);
+            this.panel2.Size = new System.Drawing.Size(180, 172);
             this.panel2.TabIndex = 0;
             // 
             // btnSua_QL
@@ -912,21 +805,11 @@ namespace DoAnMNM
             this.lbQuanLy.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbQuanLy.Location = new System.Drawing.Point(40, 93);
             this.lbQuanLy.Name = "lbQuanLy";
-            this.lbQuanLy.Size = new System.Drawing.Size(112, 39);
+            this.lbQuanLy.Size = new System.Drawing.Size(95, 39);
             this.lbQuanLy.TabIndex = 2;
             this.lbQuanLy.Text = "Quan Ly";
             this.lbQuanLy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbQuanLy.UseWaitCursor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(40, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // fileSystemWatcher1
             // 
@@ -969,10 +852,10 @@ namespace DoAnMNM
             this.tpThongKe.Controls.Add(this.panel11);
             this.tpThongKe.Controls.Add(this.panel10);
             this.tpThongKe.Controls.Add(this.panel9);
-            this.tpThongKe.Location = new System.Drawing.Point(4, 22);
+            this.tpThongKe.Location = new System.Drawing.Point(8, 39);
             this.tpThongKe.Name = "tpThongKe";
             this.tpThongKe.Padding = new System.Windows.Forms.Padding(3);
-            this.tpThongKe.Size = new System.Drawing.Size(992, 654);
+            this.tpThongKe.Size = new System.Drawing.Size(984, 633);
             this.tpThongKe.TabIndex = 0;
             this.tpThongKe.Text = "Thống kê";
             // 
@@ -992,26 +875,26 @@ namespace DoAnMNM
             // chartTienDien_ThongKe
             // 
             this.chartTienDien_ThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea5.BackImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea5.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea5.Name = "ChartArea1";
-            this.chartTienDien_ThongKe.ChartAreas.Add(chartArea5);
-            legend5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            legend5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend5.ForeColor = System.Drawing.Color.Gainsboro;
-            legend5.IsTextAutoFit = false;
-            legend5.Name = "Legend1";
-            this.chartTienDien_ThongKe.Legends.Add(legend5);
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            chartArea1.BackImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            chartArea1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            chartArea1.Name = "ChartArea1";
+            this.chartTienDien_ThongKe.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            legend1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.ForeColor = System.Drawing.Color.Gainsboro;
+            legend1.IsTextAutoFit = false;
+            legend1.Name = "Legend1";
+            this.chartTienDien_ThongKe.Legends.Add(legend1);
             this.chartTienDien_ThongKe.Location = new System.Drawing.Point(3, 98);
             this.chartTienDien_ThongKe.Name = "chartTienDien_ThongKe";
             this.chartTienDien_ThongKe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series5.LabelForeColor = System.Drawing.Color.Gainsboro;
-            series5.Legend = "Legend1";
-            series5.Name = "s1";
-            this.chartTienDien_ThongKe.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.LabelForeColor = System.Drawing.Color.Gainsboro;
+            series1.Legend = "Legend1";
+            series1.Name = "s1";
+            this.chartTienDien_ThongKe.Series.Add(series1);
             this.chartTienDien_ThongKe.Size = new System.Drawing.Size(415, 293);
             this.chartTienDien_ThongKe.TabIndex = 11;
             this.chartTienDien_ThongKe.Text = "chart1";
@@ -1024,7 +907,7 @@ namespace DoAnMNM
             this.cboThang_ThongKe.FormattingEnabled = true;
             this.cboThang_ThongKe.Location = new System.Drawing.Point(230, 7);
             this.cboThang_ThongKe.Name = "cboThang_ThongKe";
-            this.cboThang_ThongKe.Size = new System.Drawing.Size(61, 21);
+            this.cboThang_ThongKe.Size = new System.Drawing.Size(61, 33);
             this.cboThang_ThongKe.TabIndex = 5;
             // 
             // txtNam2_ThongKe
@@ -1034,7 +917,7 @@ namespace DoAnMNM
             this.txtNam2_ThongKe.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtNam2_ThongKe.Location = new System.Drawing.Point(340, 4);
             this.txtNam2_ThongKe.Name = "txtNam2_ThongKe";
-            this.txtNam2_ThongKe.Size = new System.Drawing.Size(68, 29);
+            this.txtNam2_ThongKe.Size = new System.Drawing.Size(68, 50);
             this.txtNam2_ThongKe.TabIndex = 9;
             // 
             // label77
@@ -1044,7 +927,7 @@ namespace DoAnMNM
             this.label77.ForeColor = System.Drawing.Color.Gainsboro;
             this.label77.Location = new System.Drawing.Point(297, 8);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(42, 20);
+            this.label77.Size = new System.Drawing.Size(86, 37);
             this.label77.TabIndex = 8;
             this.label77.Text = "Năm";
             // 
@@ -1055,7 +938,7 @@ namespace DoAnMNM
             this.label78.ForeColor = System.Drawing.Color.Gainsboro;
             this.label78.Location = new System.Drawing.Point(179, 8);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(54, 20);
+            this.label78.Size = new System.Drawing.Size(109, 37);
             this.label78.TabIndex = 6;
             this.label78.Text = "Tháng";
             // 
@@ -1066,7 +949,7 @@ namespace DoAnMNM
             this.label79.ForeColor = System.Drawing.Color.Gainsboro;
             this.label79.Location = new System.Drawing.Point(3, 8);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(182, 20);
+            this.label79.Size = new System.Drawing.Size(372, 37);
             this.label79.TabIndex = 4;
             this.label79.Text = "Theo dõi đóng tiền điện :";
             // 
@@ -1086,25 +969,25 @@ namespace DoAnMNM
             // chartTienPhong_ThongKe
             // 
             this.chartTienPhong_ThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea6.BackImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea6.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            chartArea6.Name = "ChartArea1";
-            this.chartTienPhong_ThongKe.ChartAreas.Add(chartArea6);
-            legend6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
-            legend6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend6.ForeColor = System.Drawing.Color.Gainsboro;
-            legend6.IsTextAutoFit = false;
-            legend6.Name = "Legend1";
-            this.chartTienPhong_ThongKe.Legends.Add(legend6);
+            chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            chartArea2.BackImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            chartArea2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            chartArea2.Name = "ChartArea1";
+            this.chartTienPhong_ThongKe.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
+            legend2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.ForeColor = System.Drawing.Color.Gainsboro;
+            legend2.IsTextAutoFit = false;
+            legend2.Name = "Legend1";
+            this.chartTienPhong_ThongKe.Legends.Add(legend2);
             this.chartTienPhong_ThongKe.Location = new System.Drawing.Point(3, 98);
             this.chartTienPhong_ThongKe.Name = "chartTienPhong_ThongKe";
             this.chartTienPhong_ThongKe.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series6.Legend = "Legend1";
-            series6.Name = "s1";
-            this.chartTienPhong_ThongKe.Series.Add(series6);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "s1";
+            this.chartTienPhong_ThongKe.Series.Add(series2);
             this.chartTienPhong_ThongKe.Size = new System.Drawing.Size(418, 293);
             this.chartTienPhong_ThongKe.TabIndex = 10;
             this.chartTienPhong_ThongKe.Text = "chart1";
@@ -1116,7 +999,7 @@ namespace DoAnMNM
             this.txtNam_ThongKe.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtNam_ThongKe.Location = new System.Drawing.Point(340, 4);
             this.txtNam_ThongKe.Name = "txtNam_ThongKe";
-            this.txtNam_ThongKe.Size = new System.Drawing.Size(68, 29);
+            this.txtNam_ThongKe.Size = new System.Drawing.Size(68, 50);
             this.txtNam_ThongKe.TabIndex = 9;
             // 
             // label76
@@ -1126,7 +1009,7 @@ namespace DoAnMNM
             this.label76.ForeColor = System.Drawing.Color.Gainsboro;
             this.label76.Location = new System.Drawing.Point(297, 8);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(42, 20);
+            this.label76.Size = new System.Drawing.Size(86, 37);
             this.label76.TabIndex = 8;
             this.label76.Text = "Năm";
             // 
@@ -1137,7 +1020,7 @@ namespace DoAnMNM
             this.label74.ForeColor = System.Drawing.Color.Gainsboro;
             this.label74.Location = new System.Drawing.Point(187, 8);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(37, 20);
+            this.label74.Size = new System.Drawing.Size(75, 37);
             this.label74.TabIndex = 6;
             this.label74.Text = "Quý";
             // 
@@ -1148,7 +1031,7 @@ namespace DoAnMNM
             this.label72.ForeColor = System.Drawing.Color.Gainsboro;
             this.label72.Location = new System.Drawing.Point(3, 8);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(191, 20);
+            this.label72.Size = new System.Drawing.Size(393, 37);
             this.label72.TabIndex = 4;
             this.label72.Text = "Theo dõi đóng phí nội trú :";
             // 
@@ -1160,7 +1043,7 @@ namespace DoAnMNM
             this.cboQuy_ThongKe.FormattingEnabled = true;
             this.cboQuy_ThongKe.Location = new System.Drawing.Point(230, 7);
             this.cboQuy_ThongKe.Name = "cboQuy_ThongKe";
-            this.cboQuy_ThongKe.Size = new System.Drawing.Size(61, 21);
+            this.cboQuy_ThongKe.Size = new System.Drawing.Size(61, 33);
             this.cboQuy_ThongKe.TabIndex = 5;
             // 
             // panel12
@@ -1170,7 +1053,7 @@ namespace DoAnMNM
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Location = new System.Drawing.Point(48, 116);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(898, 2);
+            this.panel12.Size = new System.Drawing.Size(890, 2);
             this.panel12.TabIndex = 3;
             // 
             // panel11
@@ -1184,15 +1067,6 @@ namespace DoAnMNM
             this.panel11.Size = new System.Drawing.Size(188, 70);
             this.panel11.TabIndex = 2;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(7, 10);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(52, 50);
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
             // lbSoGiuong_ThongKe
             // 
             this.lbSoGiuong_ThongKe.AutoSize = true;
@@ -1200,7 +1074,7 @@ namespace DoAnMNM
             this.lbSoGiuong_ThongKe.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbSoGiuong_ThongKe.Location = new System.Drawing.Point(81, 33);
             this.lbSoGiuong_ThongKe.Name = "lbSoGiuong_ThongKe";
-            this.lbSoGiuong_ThongKe.Size = new System.Drawing.Size(73, 21);
+            this.lbSoGiuong_ThongKe.Size = new System.Drawing.Size(139, 45);
             this.lbSoGiuong_ThongKe.TabIndex = 1;
             this.lbSoGiuong_ThongKe.Text = "0000000";
             // 
@@ -1211,7 +1085,7 @@ namespace DoAnMNM
             this.label75.ForeColor = System.Drawing.Color.Gainsboro;
             this.label75.Location = new System.Drawing.Point(80, 7);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(82, 21);
+            this.label75.Size = new System.Drawing.Size(167, 45);
             this.label75.TabIndex = 0;
             this.label75.Text = "Số giường";
             // 
@@ -1226,15 +1100,6 @@ namespace DoAnMNM
             this.panel10.Size = new System.Drawing.Size(188, 70);
             this.panel10.TabIndex = 1;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(7, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
             // lbSoSV_ThongKe
             // 
             this.lbSoSV_ThongKe.AutoSize = true;
@@ -1242,7 +1107,7 @@ namespace DoAnMNM
             this.lbSoSV_ThongKe.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbSoSV_ThongKe.Location = new System.Drawing.Point(81, 33);
             this.lbSoSV_ThongKe.Name = "lbSoSV_ThongKe";
-            this.lbSoSV_ThongKe.Size = new System.Drawing.Size(73, 21);
+            this.lbSoSV_ThongKe.Size = new System.Drawing.Size(139, 45);
             this.lbSoSV_ThongKe.TabIndex = 1;
             this.lbSoSV_ThongKe.Text = "0000000";
             // 
@@ -1253,7 +1118,7 @@ namespace DoAnMNM
             this.label73.ForeColor = System.Drawing.Color.Gainsboro;
             this.label73.Location = new System.Drawing.Point(80, 7);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(94, 21);
+            this.label73.Size = new System.Drawing.Size(190, 45);
             this.label73.TabIndex = 0;
             this.label73.Text = "Số sinh viên";
             // 
@@ -1268,15 +1133,6 @@ namespace DoAnMNM
             this.panel9.Size = new System.Drawing.Size(188, 70);
             this.panel9.TabIndex = 0;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 10);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(52, 50);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // lbSoPhong_ThongKe
             // 
             this.lbSoPhong_ThongKe.AutoSize = true;
@@ -1284,7 +1140,7 @@ namespace DoAnMNM
             this.lbSoPhong_ThongKe.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbSoPhong_ThongKe.Location = new System.Drawing.Point(81, 33);
             this.lbSoPhong_ThongKe.Name = "lbSoPhong_ThongKe";
-            this.lbSoPhong_ThongKe.Size = new System.Drawing.Size(73, 21);
+            this.lbSoPhong_ThongKe.Size = new System.Drawing.Size(139, 45);
             this.lbSoPhong_ThongKe.TabIndex = 1;
             this.lbSoPhong_ThongKe.Text = "0000000";
             // 
@@ -1295,7 +1151,7 @@ namespace DoAnMNM
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
             this.label13.Location = new System.Drawing.Point(80, 7);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 21);
+            this.label13.Size = new System.Drawing.Size(158, 45);
             this.label13.TabIndex = 0;
             this.label13.Text = "Số phòng";
             // 
@@ -1327,10 +1183,10 @@ namespace DoAnMNM
             this.tpDangKyMoi.Controls.Add(this.txtMSSV_DKM);
             this.tpDangKyMoi.Controls.Add(this.btnTaiAnh);
             this.tpDangKyMoi.Controls.Add(this.pictureBox2);
-            this.tpDangKyMoi.Location = new System.Drawing.Point(4, 22);
+            this.tpDangKyMoi.Location = new System.Drawing.Point(8, 39);
             this.tpDangKyMoi.Name = "tpDangKyMoi";
             this.tpDangKyMoi.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDangKyMoi.Size = new System.Drawing.Size(992, 654);
+            this.tpDangKyMoi.Size = new System.Drawing.Size(984, 633);
             this.tpDangKyMoi.TabIndex = 1;
             this.tpDangKyMoi.Text = "Đăng ký mới";
             // 
@@ -1341,7 +1197,7 @@ namespace DoAnMNM
             this.label23.ForeColor = System.Drawing.Color.Gainsboro;
             this.label23.Location = new System.Drawing.Point(123, 599);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(93, 25);
+            this.label23.Size = new System.Drawing.Size(182, 51);
             this.label23.TabIndex = 57;
             this.label23.Text = "Thời Gian";
             // 
@@ -1354,7 +1210,7 @@ namespace DoAnMNM
             this.cboThoiGian_DKM.FormattingEnabled = true;
             this.cboThoiGian_DKM.Location = new System.Drawing.Point(251, 595);
             this.cboThoiGian_DKM.Name = "cboThoiGian_DKM";
-            this.cboThoiGian_DKM.Size = new System.Drawing.Size(304, 29);
+            this.cboThoiGian_DKM.Size = new System.Drawing.Size(304, 53);
             this.cboThoiGian_DKM.TabIndex = 56;
             // 
             // dtpNgayVao_DKM
@@ -1362,7 +1218,7 @@ namespace DoAnMNM
             this.dtpNgayVao_DKM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayVao_DKM.Location = new System.Drawing.Point(251, 540);
             this.dtpNgayVao_DKM.Name = "dtpNgayVao_DKM";
-            this.dtpNgayVao_DKM.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgayVao_DKM.Size = new System.Drawing.Size(305, 50);
             this.dtpNgayVao_DKM.TabIndex = 55;
             // 
             // label22
@@ -1372,7 +1228,7 @@ namespace DoAnMNM
             this.label22.ForeColor = System.Drawing.Color.Gainsboro;
             this.label22.Location = new System.Drawing.Point(120, 544);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(93, 25);
+            this.label22.Size = new System.Drawing.Size(181, 51);
             this.label22.TabIndex = 54;
             this.label22.Text = "Ngày Vào";
             // 
@@ -1386,7 +1242,7 @@ namespace DoAnMNM
             this.cboPhong_DKM.FormattingEnabled = true;
             this.cboPhong_DKM.Location = new System.Drawing.Point(251, 484);
             this.cboPhong_DKM.Name = "cboPhong_DKM";
-            this.cboPhong_DKM.Size = new System.Drawing.Size(304, 29);
+            this.cboPhong_DKM.Size = new System.Drawing.Size(304, 53);
             this.cboPhong_DKM.TabIndex = 53;
             // 
             // label9
@@ -1396,7 +1252,7 @@ namespace DoAnMNM
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
             this.label9.Location = new System.Drawing.Point(120, 321);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 25);
+            this.label9.Size = new System.Drawing.Size(135, 51);
             this.label9.TabIndex = 25;
             this.label9.Text = "CMND";
             // 
@@ -1407,7 +1263,7 @@ namespace DoAnMNM
             this.txtEmail_DKM.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtEmail_DKM.Location = new System.Drawing.Point(252, 430);
             this.txtEmail_DKM.Name = "txtEmail_DKM";
-            this.txtEmail_DKM.Size = new System.Drawing.Size(305, 29);
+            this.txtEmail_DKM.Size = new System.Drawing.Size(305, 50);
             this.txtEmail_DKM.TabIndex = 24;
             // 
             // btnDangKy_DKM
@@ -1432,7 +1288,7 @@ namespace DoAnMNM
             this.dtpNgaySinh_DKM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaySinh_DKM.Location = new System.Drawing.Point(251, 265);
             this.dtpNgaySinh_DKM.Name = "dtpNgaySinh_DKM";
-            this.dtpNgaySinh_DKM.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgaySinh_DKM.Size = new System.Drawing.Size(305, 50);
             this.dtpNgaySinh_DKM.TabIndex = 22;
             // 
             // rbNu_DKM
@@ -1444,7 +1300,7 @@ namespace DoAnMNM
             this.rbNu_DKM.ForeColor = System.Drawing.Color.Gainsboro;
             this.rbNu_DKM.Location = new System.Drawing.Point(320, 217);
             this.rbNu_DKM.Name = "rbNu_DKM";
-            this.rbNu_DKM.Size = new System.Drawing.Size(49, 25);
+            this.rbNu_DKM.Size = new System.Drawing.Size(94, 49);
             this.rbNu_DKM.TabIndex = 21;
             this.rbNu_DKM.TabStop = true;
             this.rbNu_DKM.Text = "Nữ";
@@ -1459,7 +1315,7 @@ namespace DoAnMNM
             this.rbNam_DKM.ForeColor = System.Drawing.Color.Gainsboro;
             this.rbNam_DKM.Location = new System.Drawing.Point(252, 217);
             this.rbNam_DKM.Name = "rbNam_DKM";
-            this.rbNam_DKM.Size = new System.Drawing.Size(62, 25);
+            this.rbNam_DKM.Size = new System.Drawing.Size(119, 49);
             this.rbNam_DKM.TabIndex = 20;
             this.rbNam_DKM.TabStop = true;
             this.rbNam_DKM.Text = "Nam";
@@ -1472,7 +1328,7 @@ namespace DoAnMNM
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
             this.label8.Location = new System.Drawing.Point(120, 488);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 25);
+            this.label8.Size = new System.Drawing.Size(131, 51);
             this.label8.TabIndex = 19;
             this.label8.Text = "Phòng";
             // 
@@ -1483,7 +1339,7 @@ namespace DoAnMNM
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
             this.label7.Location = new System.Drawing.Point(120, 430);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 25);
+            this.label7.Size = new System.Drawing.Size(111, 51);
             this.label7.TabIndex = 17;
             this.label7.Text = "Email";
             // 
@@ -1494,7 +1350,7 @@ namespace DoAnMNM
             this.txtSDT_DKM.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtSDT_DKM.Location = new System.Drawing.Point(251, 373);
             this.txtSDT_DKM.Name = "txtSDT_DKM";
-            this.txtSDT_DKM.Size = new System.Drawing.Size(305, 29);
+            this.txtSDT_DKM.Size = new System.Drawing.Size(305, 50);
             this.txtSDT_DKM.TabIndex = 16;
             // 
             // label6
@@ -1504,7 +1360,7 @@ namespace DoAnMNM
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
             this.label6.Location = new System.Drawing.Point(120, 373);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 25);
+            this.label6.Size = new System.Drawing.Size(242, 51);
             this.label6.TabIndex = 15;
             this.label6.Text = "Số điện thoại";
             // 
@@ -1515,7 +1371,7 @@ namespace DoAnMNM
             this.txtCMND_DKM.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtCMND_DKM.Location = new System.Drawing.Point(251, 321);
             this.txtCMND_DKM.Name = "txtCMND_DKM";
-            this.txtCMND_DKM.Size = new System.Drawing.Size(305, 29);
+            this.txtCMND_DKM.Size = new System.Drawing.Size(305, 50);
             this.txtCMND_DKM.TabIndex = 14;
             // 
             // label5
@@ -1525,7 +1381,7 @@ namespace DoAnMNM
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
             this.label5.Location = new System.Drawing.Point(120, 269);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 25);
+            this.label5.Size = new System.Drawing.Size(188, 51);
             this.label5.TabIndex = 13;
             this.label5.Text = "Ngày sinh";
             // 
@@ -1536,7 +1392,7 @@ namespace DoAnMNM
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Location = new System.Drawing.Point(120, 211);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 25);
+            this.label4.Size = new System.Drawing.Size(165, 51);
             this.label4.TabIndex = 11;
             this.label4.Text = "Giới tính";
             // 
@@ -1547,7 +1403,7 @@ namespace DoAnMNM
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
             this.label3.Location = new System.Drawing.Point(120, 159);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 25);
+            this.label3.Size = new System.Drawing.Size(136, 51);
             this.label3.TabIndex = 9;
             this.label3.Text = "Họ tên";
             // 
@@ -1558,7 +1414,7 @@ namespace DoAnMNM
             this.txtHoTen_DKM.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtHoTen_DKM.Location = new System.Drawing.Point(251, 162);
             this.txtHoTen_DKM.Name = "txtHoTen_DKM";
-            this.txtHoTen_DKM.Size = new System.Drawing.Size(305, 29);
+            this.txtHoTen_DKM.Size = new System.Drawing.Size(305, 50);
             this.txtHoTen_DKM.TabIndex = 8;
             // 
             // label2
@@ -1568,7 +1424,7 @@ namespace DoAnMNM
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
             this.label2.Location = new System.Drawing.Point(120, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 25);
+            this.label2.Size = new System.Drawing.Size(120, 51);
             this.label2.TabIndex = 7;
             this.label2.Text = "MSSV";
             // 
@@ -1579,7 +1435,7 @@ namespace DoAnMNM
             this.txtMSSV_DKM.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMSSV_DKM.Location = new System.Drawing.Point(251, 112);
             this.txtMSSV_DKM.Name = "txtMSSV_DKM";
-            this.txtMSSV_DKM.Size = new System.Drawing.Size(305, 29);
+            this.txtMSSV_DKM.Size = new System.Drawing.Size(305, 50);
             this.txtMSSV_DKM.TabIndex = 6;
             // 
             // btnTaiAnh
@@ -1593,22 +1449,12 @@ namespace DoAnMNM
             this.btnTaiAnh.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.btnTaiAnh.ForeColor = System.Drawing.Color.White;
             this.btnTaiAnh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiAnh.Location = new System.Drawing.Point(286, 52);
+            this.btnTaiAnh.Location = new System.Drawing.Point(265, 51);
             this.btnTaiAnh.Name = "btnTaiAnh";
             this.btnTaiAnh.Size = new System.Drawing.Size(125, 37);
             this.btnTaiAnh.TabIndex = 5;
             this.btnTaiAnh.Text = "Tải ảnh lên";
             this.btnTaiAnh.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(107, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(136, 83);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
             // 
             // tpDSSV
             // 
@@ -1616,10 +1462,10 @@ namespace DoAnMNM
             this.tpDSSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.tpDSSV.Controls.Add(this.dataDSSV);
             this.tpDSSV.Controls.Add(this.panel3);
-            this.tpDSSV.Location = new System.Drawing.Point(4, 22);
+            this.tpDSSV.Location = new System.Drawing.Point(8, 39);
             this.tpDSSV.Name = "tpDSSV";
             this.tpDSSV.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDSSV.Size = new System.Drawing.Size(992, 654);
+            this.tpDSSV.Size = new System.Drawing.Size(984, 633);
             this.tpDSSV.TabIndex = 2;
             this.tpDSSV.Text = "Danh sách sinh viên";
             // 
@@ -1627,25 +1473,25 @@ namespace DoAnMNM
             // 
             this.dataDSSV.AllowUserToAddRows = false;
             this.dataDSSV.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            this.dataDSSV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.dataDSSV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataDSSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataDSSV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataDSSV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.dataDSSV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataDSSV.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataDSSV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataDSSV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataDSSV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataDSSV.ColumnHeadersHeight = 35;
             this.dataDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataDSSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1657,14 +1503,14 @@ namespace DoAnMNM
             this.SDT,
             this.Mail,
             this.Phong});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataDSSV.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDSSV.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataDSSV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataDSSV.EnableHeadersVisualStyles = false;
             this.dataDSSV.GridColor = System.Drawing.Color.White;
@@ -1675,7 +1521,7 @@ namespace DoAnMNM
             this.dataDSSV.RowHeadersVisible = false;
             this.dataDSSV.RowHeadersWidth = 82;
             this.dataDSSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataDSSV.Size = new System.Drawing.Size(986, 520);
+            this.dataDSSV.Size = new System.Drawing.Size(978, 499);
             this.dataDSSV.TabIndex = 1;
             // 
             // MSSV
@@ -1747,7 +1593,7 @@ namespace DoAnMNM
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(986, 128);
+            this.panel3.Size = new System.Drawing.Size(978, 128);
             this.panel3.TabIndex = 0;
             // 
             // btnXoa_DSSV
@@ -1794,7 +1640,7 @@ namespace DoAnMNM
             this.cboPhong_DSSV.FormattingEnabled = true;
             this.cboPhong_DSSV.Location = new System.Drawing.Point(104, 79);
             this.cboPhong_DSSV.Name = "cboPhong_DSSV";
-            this.cboPhong_DSSV.Size = new System.Drawing.Size(304, 29);
+            this.cboPhong_DSSV.Size = new System.Drawing.Size(304, 53);
             this.cboPhong_DSSV.TabIndex = 54;
             // 
             // btnTatCa_DSSV
@@ -1821,7 +1667,7 @@ namespace DoAnMNM
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
             this.label11.Location = new System.Drawing.Point(23, 83);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 25);
+            this.label11.Size = new System.Drawing.Size(131, 51);
             this.label11.TabIndex = 11;
             this.label11.Text = "Phòng";
             // 
@@ -1849,7 +1695,7 @@ namespace DoAnMNM
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
             this.label10.Location = new System.Drawing.Point(23, 27);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 25);
+            this.label10.Size = new System.Drawing.Size(120, 51);
             this.label10.TabIndex = 8;
             this.label10.Text = "MSSV";
             // 
@@ -1859,7 +1705,7 @@ namespace DoAnMNM
             this.txtMSSV_DSSV.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMSSV_DSSV.Location = new System.Drawing.Point(104, 27);
             this.txtMSSV_DSSV.Name = "txtMSSV_DSSV";
-            this.txtMSSV_DSSV.Size = new System.Drawing.Size(305, 29);
+            this.txtMSSV_DSSV.Size = new System.Drawing.Size(305, 50);
             this.txtMSSV_DSSV.TabIndex = 7;
             // 
             // tpDSDDK
@@ -1867,10 +1713,10 @@ namespace DoAnMNM
             this.tpDSDDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.tpDSDDK.Controls.Add(this.dataDSDDK);
             this.tpDSDDK.Controls.Add(this.panel4);
-            this.tpDSDDK.Location = new System.Drawing.Point(4, 22);
+            this.tpDSDDK.Location = new System.Drawing.Point(8, 39);
             this.tpDSDDK.Name = "tpDSDDK";
             this.tpDSDDK.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDSDDK.Size = new System.Drawing.Size(992, 654);
+            this.tpDSDDK.Size = new System.Drawing.Size(984, 633);
             this.tpDSDDK.TabIndex = 3;
             this.tpDSDDK.Text = "Danh sách đơn";
             // 
@@ -1878,25 +1724,25 @@ namespace DoAnMNM
             // 
             this.dataDSDDK.AllowUserToAddRows = false;
             this.dataDSDDK.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            this.dataDSDDK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.dataDSDDK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataDSDDK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataDSDDK.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataDSDDK.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.dataDSDDK.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataDSDDK.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataDSDDK.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataDSDDK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataDSDDK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataDSDDK.ColumnHeadersHeight = 35;
             this.dataDSDDK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataDSDDK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1906,14 +1752,14 @@ namespace DoAnMNM
             this.Column9,
             this.column10,
             this.dataGridViewTextBoxColumn4});
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataDSDDK.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDSDDK.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataDSDDK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataDSDDK.EnableHeadersVisualStyles = false;
             this.dataDSDDK.GridColor = System.Drawing.Color.White;
@@ -1923,7 +1769,7 @@ namespace DoAnMNM
             this.dataDSDDK.RowHeadersVisible = false;
             this.dataDSDDK.RowHeadersWidth = 82;
             this.dataDSDDK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataDSDDK.Size = new System.Drawing.Size(986, 503);
+            this.dataDSDDK.Size = new System.Drawing.Size(978, 482);
             this.dataDSDDK.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -1981,7 +1827,7 @@ namespace DoAnMNM
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(986, 145);
+            this.panel4.Size = new System.Drawing.Size(978, 145);
             this.panel4.TabIndex = 0;
             // 
             // btnXoa_DSD
@@ -2057,7 +1903,7 @@ namespace DoAnMNM
             this.dtpNgayLap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayLap.Location = new System.Drawing.Point(134, 89);
             this.dtpNgayLap.Name = "dtpNgayLap";
-            this.dtpNgayLap.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgayLap.Size = new System.Drawing.Size(305, 50);
             this.dtpNgayLap.TabIndex = 24;
             // 
             // label14
@@ -2067,7 +1913,7 @@ namespace DoAnMNM
             this.label14.ForeColor = System.Drawing.Color.Gainsboro;
             this.label14.Location = new System.Drawing.Point(22, 92);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 25);
+            this.label14.Size = new System.Drawing.Size(169, 51);
             this.label14.TabIndex = 23;
             this.label14.Text = "Ngày lập";
             // 
@@ -2078,7 +1924,7 @@ namespace DoAnMNM
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
             this.label12.Location = new System.Drawing.Point(22, 27);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 25);
+            this.label12.Size = new System.Drawing.Size(207, 51);
             this.label12.TabIndex = 10;
             this.label12.Text = "Mã quản lý";
             // 
@@ -2088,7 +1934,7 @@ namespace DoAnMNM
             this.txtMaQL_DSDDK.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaQL_DSDDK.Location = new System.Drawing.Point(134, 27);
             this.txtMaQL_DSDDK.Name = "txtMaQL_DSDDK";
-            this.txtMaQL_DSDDK.Size = new System.Drawing.Size(305, 29);
+            this.txtMaQL_DSDDK.Size = new System.Drawing.Size(305, 50);
             this.txtMaQL_DSDDK.TabIndex = 9;
             // 
             // tpThemPhong
@@ -2103,10 +1949,10 @@ namespace DoAnMNM
             this.tpThemPhong.Controls.Add(this.txtTenPhong_ThemPhong);
             this.tpThemPhong.Controls.Add(this.label18);
             this.tpThemPhong.Controls.Add(this.txtMaPhong_ThemPhong);
-            this.tpThemPhong.Location = new System.Drawing.Point(4, 22);
+            this.tpThemPhong.Location = new System.Drawing.Point(8, 39);
             this.tpThemPhong.Name = "tpThemPhong";
             this.tpThemPhong.Padding = new System.Windows.Forms.Padding(3);
-            this.tpThemPhong.Size = new System.Drawing.Size(992, 654);
+            this.tpThemPhong.Size = new System.Drawing.Size(984, 633);
             this.tpThemPhong.TabIndex = 4;
             this.tpThemPhong.Text = "Thêm phòng";
             // 
@@ -2137,7 +1983,7 @@ namespace DoAnMNM
             this.cboKhu_ThemPhong.FormattingEnabled = true;
             this.cboKhu_ThemPhong.Location = new System.Drawing.Point(312, 344);
             this.cboKhu_ThemPhong.Name = "cboKhu_ThemPhong";
-            this.cboKhu_ThemPhong.Size = new System.Drawing.Size(304, 29);
+            this.cboKhu_ThemPhong.Size = new System.Drawing.Size(304, 53);
             this.cboKhu_ThemPhong.TabIndex = 52;
             // 
             // cboLoaiPhong_ThemPhong
@@ -2150,7 +1996,7 @@ namespace DoAnMNM
             this.cboLoaiPhong_ThemPhong.FormattingEnabled = true;
             this.cboLoaiPhong_ThemPhong.Location = new System.Drawing.Point(312, 267);
             this.cboLoaiPhong_ThemPhong.Name = "cboLoaiPhong_ThemPhong";
-            this.cboLoaiPhong_ThemPhong.Size = new System.Drawing.Size(304, 29);
+            this.cboLoaiPhong_ThemPhong.Size = new System.Drawing.Size(304, 53);
             this.cboLoaiPhong_ThemPhong.TabIndex = 51;
             // 
             // label15
@@ -2160,7 +2006,7 @@ namespace DoAnMNM
             this.label15.ForeColor = System.Drawing.Color.Gainsboro;
             this.label15.Location = new System.Drawing.Point(180, 272);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(107, 25);
+            this.label15.Size = new System.Drawing.Size(210, 51);
             this.label15.TabIndex = 50;
             this.label15.Text = "Loại phòng";
             // 
@@ -2171,7 +2017,7 @@ namespace DoAnMNM
             this.label16.ForeColor = System.Drawing.Color.Gainsboro;
             this.label16.Location = new System.Drawing.Point(180, 348);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(45, 25);
+            this.label16.Size = new System.Drawing.Size(88, 51);
             this.label16.TabIndex = 49;
             this.label16.Text = "Khu";
             // 
@@ -2182,7 +2028,7 @@ namespace DoAnMNM
             this.label17.ForeColor = System.Drawing.Color.Gainsboro;
             this.label17.Location = new System.Drawing.Point(178, 203);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(101, 25);
+            this.label17.Size = new System.Drawing.Size(200, 51);
             this.label17.TabIndex = 48;
             this.label17.Text = "Tên phòng";
             // 
@@ -2193,7 +2039,7 @@ namespace DoAnMNM
             this.txtTenPhong_ThemPhong.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtTenPhong_ThemPhong.Location = new System.Drawing.Point(311, 199);
             this.txtTenPhong_ThemPhong.Name = "txtTenPhong_ThemPhong";
-            this.txtTenPhong_ThemPhong.Size = new System.Drawing.Size(305, 29);
+            this.txtTenPhong_ThemPhong.Size = new System.Drawing.Size(305, 50);
             this.txtTenPhong_ThemPhong.TabIndex = 47;
             // 
             // label18
@@ -2203,7 +2049,7 @@ namespace DoAnMNM
             this.label18.ForeColor = System.Drawing.Color.Gainsboro;
             this.label18.Location = new System.Drawing.Point(180, 125);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(99, 25);
+            this.label18.Size = new System.Drawing.Size(195, 51);
             this.label18.TabIndex = 46;
             this.label18.Text = "Mã phòng";
             // 
@@ -2214,7 +2060,7 @@ namespace DoAnMNM
             this.txtMaPhong_ThemPhong.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMaPhong_ThemPhong.Location = new System.Drawing.Point(311, 125);
             this.txtMaPhong_ThemPhong.Name = "txtMaPhong_ThemPhong";
-            this.txtMaPhong_ThemPhong.Size = new System.Drawing.Size(305, 29);
+            this.txtMaPhong_ThemPhong.Size = new System.Drawing.Size(305, 50);
             this.txtMaPhong_ThemPhong.TabIndex = 45;
             // 
             // tpDanhSachPhong
@@ -2222,10 +2068,10 @@ namespace DoAnMNM
             this.tpDanhSachPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.tpDanhSachPhong.Controls.Add(this.panel6);
             this.tpDanhSachPhong.Controls.Add(this.panel5);
-            this.tpDanhSachPhong.Location = new System.Drawing.Point(4, 22);
+            this.tpDanhSachPhong.Location = new System.Drawing.Point(8, 39);
             this.tpDanhSachPhong.Name = "tpDanhSachPhong";
             this.tpDanhSachPhong.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDanhSachPhong.Size = new System.Drawing.Size(992, 654);
+            this.tpDanhSachPhong.Size = new System.Drawing.Size(984, 633);
             this.tpDanhSachPhong.TabIndex = 5;
             this.tpDanhSachPhong.Text = "Danh sách phòng";
             // 
@@ -2236,7 +2082,7 @@ namespace DoAnMNM
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 153);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(986, 498);
+            this.panel6.Size = new System.Drawing.Size(978, 477);
             this.panel6.TabIndex = 1;
             // 
             // tableLayoutPanelDSPhong
@@ -2255,7 +2101,7 @@ namespace DoAnMNM
             this.tableLayoutPanelDSPhong.Name = "tableLayoutPanelDSPhong";
             this.tableLayoutPanelDSPhong.RowCount = 1;
             this.tableLayoutPanelDSPhong.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanelDSPhong.Size = new System.Drawing.Size(986, 160);
+            this.tableLayoutPanelDSPhong.Size = new System.Drawing.Size(978, 160);
             this.tableLayoutPanelDSPhong.TabIndex = 3;
             // 
             // panel5
@@ -2271,7 +2117,7 @@ namespace DoAnMNM
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(986, 150);
+            this.panel5.Size = new System.Drawing.Size(978, 150);
             this.panel5.TabIndex = 0;
             // 
             // button4
@@ -2318,7 +2164,7 @@ namespace DoAnMNM
             this.cboKhu_DSPhong.FormattingEnabled = true;
             this.cboKhu_DSPhong.Location = new System.Drawing.Point(562, 24);
             this.cboKhu_DSPhong.Name = "cboKhu_DSPhong";
-            this.cboKhu_DSPhong.Size = new System.Drawing.Size(304, 29);
+            this.cboKhu_DSPhong.Size = new System.Drawing.Size(304, 53);
             this.cboKhu_DSPhong.TabIndex = 55;
             // 
             // label21
@@ -2328,7 +2174,7 @@ namespace DoAnMNM
             this.label21.ForeColor = System.Drawing.Color.Gainsboro;
             this.label21.Location = new System.Drawing.Point(511, 28);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(45, 25);
+            this.label21.Size = new System.Drawing.Size(88, 51);
             this.label21.TabIndex = 54;
             this.label21.Text = "Khu";
             // 
@@ -2342,7 +2188,7 @@ namespace DoAnMNM
             this.cboLoaiPhong_DSPhong.FormattingEnabled = true;
             this.cboLoaiPhong_DSPhong.Location = new System.Drawing.Point(164, 81);
             this.cboLoaiPhong_DSPhong.Name = "cboLoaiPhong_DSPhong";
-            this.cboLoaiPhong_DSPhong.Size = new System.Drawing.Size(304, 29);
+            this.cboLoaiPhong_DSPhong.Size = new System.Drawing.Size(304, 53);
             this.cboLoaiPhong_DSPhong.TabIndex = 53;
             // 
             // label20
@@ -2352,7 +2198,7 @@ namespace DoAnMNM
             this.label20.ForeColor = System.Drawing.Color.Gainsboro;
             this.label20.Location = new System.Drawing.Point(32, 86);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 25);
+            this.label20.Size = new System.Drawing.Size(210, 51);
             this.label20.TabIndex = 52;
             this.label20.Text = "Loại phòng";
             // 
@@ -2363,7 +2209,7 @@ namespace DoAnMNM
             this.label19.ForeColor = System.Drawing.Color.Gainsboro;
             this.label19.Location = new System.Drawing.Point(32, 24);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 25);
+            this.label19.Size = new System.Drawing.Size(195, 51);
             this.label19.TabIndex = 48;
             this.label19.Text = "Mã phòng";
             // 
@@ -2374,7 +2220,7 @@ namespace DoAnMNM
             this.txtMaPhong_DSPhong.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMaPhong_DSPhong.Location = new System.Drawing.Point(163, 24);
             this.txtMaPhong_DSPhong.Name = "txtMaPhong_DSPhong";
-            this.txtMaPhong_DSPhong.Size = new System.Drawing.Size(305, 29);
+            this.txtMaPhong_DSPhong.Size = new System.Drawing.Size(305, 50);
             this.txtMaPhong_DSPhong.TabIndex = 47;
             // 
             // tpSuaSinhVien
@@ -2400,10 +2246,10 @@ namespace DoAnMNM
             this.tpSuaSinhVien.Controls.Add(this.txtTenSV_SuaSV);
             this.tpSuaSinhVien.Controls.Add(this.label27);
             this.tpSuaSinhVien.Controls.Add(this.txtMSSV_SuaSV);
-            this.tpSuaSinhVien.Location = new System.Drawing.Point(4, 22);
+            this.tpSuaSinhVien.Location = new System.Drawing.Point(8, 39);
             this.tpSuaSinhVien.Name = "tpSuaSinhVien";
             this.tpSuaSinhVien.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSuaSinhVien.Size = new System.Drawing.Size(992, 654);
+            this.tpSuaSinhVien.Size = new System.Drawing.Size(984, 633);
             this.tpSuaSinhVien.TabIndex = 6;
             this.tpSuaSinhVien.Text = "Sửa sinh viên";
             // 
@@ -2431,7 +2277,7 @@ namespace DoAnMNM
             this.label31.ForeColor = System.Drawing.Color.Gainsboro;
             this.label31.Location = new System.Drawing.Point(364, 11);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(218, 25);
+            this.label31.Size = new System.Drawing.Size(430, 51);
             this.label31.TabIndex = 57;
             this.label31.Text = "Sửa Thông Tin Sinh Viên";
             // 
@@ -2461,7 +2307,7 @@ namespace DoAnMNM
             this.cboPhong_SuaSV.FormattingEnabled = true;
             this.cboPhong_SuaSV.Location = new System.Drawing.Point(346, 440);
             this.cboPhong_SuaSV.Name = "cboPhong_SuaSV";
-            this.cboPhong_SuaSV.Size = new System.Drawing.Size(304, 29);
+            this.cboPhong_SuaSV.Size = new System.Drawing.Size(304, 53);
             this.cboPhong_SuaSV.TabIndex = 55;
             // 
             // label30
@@ -2471,7 +2317,7 @@ namespace DoAnMNM
             this.label30.ForeColor = System.Drawing.Color.Gainsboro;
             this.label30.Location = new System.Drawing.Point(215, 444);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(67, 25);
+            this.label30.Size = new System.Drawing.Size(131, 51);
             this.label30.TabIndex = 54;
             this.label30.Text = "Phòng";
             // 
@@ -2482,7 +2328,7 @@ namespace DoAnMNM
             this.txtDiaChi_SuaSV.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtDiaChi_SuaSV.Location = new System.Drawing.Point(346, 392);
             this.txtDiaChi_SuaSV.Name = "txtDiaChi_SuaSV";
-            this.txtDiaChi_SuaSV.Size = new System.Drawing.Size(305, 29);
+            this.txtDiaChi_SuaSV.Size = new System.Drawing.Size(305, 50);
             this.txtDiaChi_SuaSV.TabIndex = 40;
             // 
             // label29
@@ -2492,7 +2338,7 @@ namespace DoAnMNM
             this.label29.ForeColor = System.Drawing.Color.Gainsboro;
             this.label29.Location = new System.Drawing.Point(214, 392);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(58, 25);
+            this.label29.Size = new System.Drawing.Size(111, 51);
             this.label29.TabIndex = 39;
             this.label29.Text = "Email";
             // 
@@ -2503,7 +2349,7 @@ namespace DoAnMNM
             this.txtSDT_SuaSV.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtSDT_SuaSV.Location = new System.Drawing.Point(345, 340);
             this.txtSDT_SuaSV.Name = "txtSDT_SuaSV";
-            this.txtSDT_SuaSV.Size = new System.Drawing.Size(305, 29);
+            this.txtSDT_SuaSV.Size = new System.Drawing.Size(305, 50);
             this.txtSDT_SuaSV.TabIndex = 38;
             // 
             // label28
@@ -2513,7 +2359,7 @@ namespace DoAnMNM
             this.label28.ForeColor = System.Drawing.Color.Gainsboro;
             this.label28.Location = new System.Drawing.Point(214, 340);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(123, 25);
+            this.label28.Size = new System.Drawing.Size(242, 51);
             this.label28.TabIndex = 37;
             this.label28.Text = "Số điện thoại";
             // 
@@ -2524,7 +2370,7 @@ namespace DoAnMNM
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
             this.label1.Location = new System.Drawing.Point(214, 285);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.Size = new System.Drawing.Size(135, 51);
             this.label1.TabIndex = 36;
             this.label1.Text = "CMND";
             // 
@@ -2533,7 +2379,7 @@ namespace DoAnMNM
             this.dtpNgaySinh_SuaSV.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaySinh_SuaSV.Location = new System.Drawing.Point(345, 229);
             this.dtpNgaySinh_SuaSV.Name = "dtpNgaySinh_SuaSV";
-            this.dtpNgaySinh_SuaSV.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgaySinh_SuaSV.Size = new System.Drawing.Size(305, 50);
             this.dtpNgaySinh_SuaSV.TabIndex = 35;
             // 
             // rbNu_SuaSV
@@ -2545,7 +2391,7 @@ namespace DoAnMNM
             this.rbNu_SuaSV.ForeColor = System.Drawing.Color.Gainsboro;
             this.rbNu_SuaSV.Location = new System.Drawing.Point(414, 181);
             this.rbNu_SuaSV.Name = "rbNu_SuaSV";
-            this.rbNu_SuaSV.Size = new System.Drawing.Size(49, 25);
+            this.rbNu_SuaSV.Size = new System.Drawing.Size(94, 49);
             this.rbNu_SuaSV.TabIndex = 34;
             this.rbNu_SuaSV.TabStop = true;
             this.rbNu_SuaSV.Text = "Nữ";
@@ -2560,7 +2406,7 @@ namespace DoAnMNM
             this.rbNam_SuaSV.ForeColor = System.Drawing.Color.Gainsboro;
             this.rbNam_SuaSV.Location = new System.Drawing.Point(346, 181);
             this.rbNam_SuaSV.Name = "rbNam_SuaSV";
-            this.rbNam_SuaSV.Size = new System.Drawing.Size(62, 25);
+            this.rbNam_SuaSV.Size = new System.Drawing.Size(119, 49);
             this.rbNam_SuaSV.TabIndex = 33;
             this.rbNam_SuaSV.TabStop = true;
             this.rbNam_SuaSV.Text = "Nam";
@@ -2573,7 +2419,7 @@ namespace DoAnMNM
             this.txtCMND_SuaSV.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtCMND_SuaSV.Location = new System.Drawing.Point(345, 285);
             this.txtCMND_SuaSV.Name = "txtCMND_SuaSV";
-            this.txtCMND_SuaSV.Size = new System.Drawing.Size(305, 29);
+            this.txtCMND_SuaSV.Size = new System.Drawing.Size(305, 50);
             this.txtCMND_SuaSV.TabIndex = 32;
             // 
             // label24
@@ -2583,7 +2429,7 @@ namespace DoAnMNM
             this.label24.ForeColor = System.Drawing.Color.Gainsboro;
             this.label24.Location = new System.Drawing.Point(214, 233);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(96, 25);
+            this.label24.Size = new System.Drawing.Size(188, 51);
             this.label24.TabIndex = 31;
             this.label24.Text = "Ngày sinh";
             // 
@@ -2594,7 +2440,7 @@ namespace DoAnMNM
             this.label25.ForeColor = System.Drawing.Color.Gainsboro;
             this.label25.Location = new System.Drawing.Point(214, 175);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(84, 25);
+            this.label25.Size = new System.Drawing.Size(165, 51);
             this.label25.TabIndex = 30;
             this.label25.Text = "Giới tính";
             // 
@@ -2605,7 +2451,7 @@ namespace DoAnMNM
             this.label26.ForeColor = System.Drawing.Color.Gainsboro;
             this.label26.Location = new System.Drawing.Point(214, 123);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(68, 25);
+            this.label26.Size = new System.Drawing.Size(136, 51);
             this.label26.TabIndex = 29;
             this.label26.Text = "Họ tên";
             // 
@@ -2616,7 +2462,7 @@ namespace DoAnMNM
             this.txtTenSV_SuaSV.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtTenSV_SuaSV.Location = new System.Drawing.Point(345, 126);
             this.txtTenSV_SuaSV.Name = "txtTenSV_SuaSV";
-            this.txtTenSV_SuaSV.Size = new System.Drawing.Size(305, 29);
+            this.txtTenSV_SuaSV.Size = new System.Drawing.Size(305, 50);
             this.txtTenSV_SuaSV.TabIndex = 28;
             // 
             // label27
@@ -2626,7 +2472,7 @@ namespace DoAnMNM
             this.label27.ForeColor = System.Drawing.Color.Gainsboro;
             this.label27.Location = new System.Drawing.Point(214, 76);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(61, 25);
+            this.label27.Size = new System.Drawing.Size(120, 51);
             this.label27.TabIndex = 27;
             this.label27.Text = "MSSV";
             // 
@@ -2638,7 +2484,7 @@ namespace DoAnMNM
             this.txtMSSV_SuaSV.Location = new System.Drawing.Point(345, 76);
             this.txtMSSV_SuaSV.Name = "txtMSSV_SuaSV";
             this.txtMSSV_SuaSV.ReadOnly = true;
-            this.txtMSSV_SuaSV.Size = new System.Drawing.Size(305, 29);
+            this.txtMSSV_SuaSV.Size = new System.Drawing.Size(305, 50);
             this.txtMSSV_SuaSV.TabIndex = 26;
             // 
             // tpSuaDDK
@@ -2659,10 +2505,10 @@ namespace DoAnMNM
             this.tpSuaDDK.Controls.Add(this.label33);
             this.tpSuaDDK.Controls.Add(this.label32);
             this.tpSuaDDK.Controls.Add(this.txtMSSV_SuaDDK);
-            this.tpSuaDDK.Location = new System.Drawing.Point(4, 22);
+            this.tpSuaDDK.Location = new System.Drawing.Point(8, 39);
             this.tpSuaDDK.Name = "tpSuaDDK";
             this.tpSuaDDK.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSuaDDK.Size = new System.Drawing.Size(992, 654);
+            this.tpSuaDDK.Size = new System.Drawing.Size(984, 633);
             this.tpSuaDDK.TabIndex = 7;
             this.tpSuaDDK.Text = "Sửa đơn DK";
             // 
@@ -2707,7 +2553,7 @@ namespace DoAnMNM
             this.label38.ForeColor = System.Drawing.Color.Gainsboro;
             this.label38.Location = new System.Drawing.Point(224, 85);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(106, 25);
+            this.label38.Size = new System.Drawing.Size(207, 51);
             this.label38.TabIndex = 66;
             this.label38.Text = "Mã quản lý";
             // 
@@ -2719,7 +2565,7 @@ namespace DoAnMNM
             this.txtMaQL_SuaDDK.Location = new System.Drawing.Point(355, 85);
             this.txtMaQL_SuaDDK.Name = "txtMaQL_SuaDDK";
             this.txtMaQL_SuaDDK.ReadOnly = true;
-            this.txtMaQL_SuaDDK.Size = new System.Drawing.Size(305, 29);
+            this.txtMaQL_SuaDDK.Size = new System.Drawing.Size(305, 50);
             this.txtMaQL_SuaDDK.TabIndex = 65;
             // 
             // label37
@@ -2729,7 +2575,7 @@ namespace DoAnMNM
             this.label37.ForeColor = System.Drawing.Color.Gainsboro;
             this.label37.Location = new System.Drawing.Point(224, 137);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(79, 25);
+            this.label37.Size = new System.Drawing.Size(157, 51);
             this.label37.TabIndex = 64;
             this.label37.Text = "Mã Đơn";
             // 
@@ -2741,7 +2587,7 @@ namespace DoAnMNM
             this.txtMaDDK_SuaDDK.Location = new System.Drawing.Point(355, 137);
             this.txtMaDDK_SuaDDK.Name = "txtMaDDK_SuaDDK";
             this.txtMaDDK_SuaDDK.ReadOnly = true;
-            this.txtMaDDK_SuaDDK.Size = new System.Drawing.Size(305, 29);
+            this.txtMaDDK_SuaDDK.Size = new System.Drawing.Size(305, 50);
             this.txtMaDDK_SuaDDK.TabIndex = 63;
             // 
             // label35
@@ -2751,7 +2597,7 @@ namespace DoAnMNM
             this.label35.ForeColor = System.Drawing.Color.Gainsboro;
             this.label35.Location = new System.Drawing.Point(227, 344);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(93, 25);
+            this.label35.Size = new System.Drawing.Size(182, 51);
             this.label35.TabIndex = 62;
             this.label35.Text = "Thời Gian";
             // 
@@ -2764,7 +2610,7 @@ namespace DoAnMNM
             this.cboThoiGian_SuaDDK.FormattingEnabled = true;
             this.cboThoiGian_SuaDDK.Location = new System.Drawing.Point(355, 340);
             this.cboThoiGian_SuaDDK.Name = "cboThoiGian_SuaDDK";
-            this.cboThoiGian_SuaDDK.Size = new System.Drawing.Size(304, 29);
+            this.cboThoiGian_SuaDDK.Size = new System.Drawing.Size(304, 53);
             this.cboThoiGian_SuaDDK.TabIndex = 61;
             // 
             // dtpNgayVao_SuaDDK
@@ -2772,7 +2618,7 @@ namespace DoAnMNM
             this.dtpNgayVao_SuaDDK.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayVao_SuaDDK.Location = new System.Drawing.Point(355, 285);
             this.dtpNgayVao_SuaDDK.Name = "dtpNgayVao_SuaDDK";
-            this.dtpNgayVao_SuaDDK.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgayVao_SuaDDK.Size = new System.Drawing.Size(305, 50);
             this.dtpNgayVao_SuaDDK.TabIndex = 60;
             // 
             // label36
@@ -2782,7 +2628,7 @@ namespace DoAnMNM
             this.label36.ForeColor = System.Drawing.Color.Gainsboro;
             this.label36.Location = new System.Drawing.Point(224, 289);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(93, 25);
+            this.label36.Size = new System.Drawing.Size(181, 51);
             this.label36.TabIndex = 59;
             this.label36.Text = "Ngày Vào";
             // 
@@ -2793,7 +2639,7 @@ namespace DoAnMNM
             this.label34.ForeColor = System.Drawing.Color.Gainsboro;
             this.label34.Location = new System.Drawing.Point(405, 16);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(157, 25);
+            this.label34.Size = new System.Drawing.Size(313, 51);
             this.label34.TabIndex = 58;
             this.label34.Text = "Sửa Đơn Đăng Ký";
             // 
@@ -2802,7 +2648,7 @@ namespace DoAnMNM
             this.dtpNgapLap_SuaDDK.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgapLap_SuaDDK.Location = new System.Drawing.Point(355, 234);
             this.dtpNgapLap_SuaDDK.Name = "dtpNgapLap_SuaDDK";
-            this.dtpNgapLap_SuaDDK.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgapLap_SuaDDK.Size = new System.Drawing.Size(305, 50);
             this.dtpNgapLap_SuaDDK.TabIndex = 37;
             // 
             // label33
@@ -2812,7 +2658,7 @@ namespace DoAnMNM
             this.label33.ForeColor = System.Drawing.Color.Gainsboro;
             this.label33.Location = new System.Drawing.Point(224, 238);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(87, 25);
+            this.label33.Size = new System.Drawing.Size(169, 51);
             this.label33.TabIndex = 36;
             this.label33.Text = "Ngày lập";
             // 
@@ -2823,7 +2669,7 @@ namespace DoAnMNM
             this.label32.ForeColor = System.Drawing.Color.Gainsboro;
             this.label32.Location = new System.Drawing.Point(224, 187);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(61, 25);
+            this.label32.Size = new System.Drawing.Size(120, 51);
             this.label32.TabIndex = 9;
             this.label32.Text = "MSSV";
             // 
@@ -2835,7 +2681,7 @@ namespace DoAnMNM
             this.txtMSSV_SuaDDK.Location = new System.Drawing.Point(355, 187);
             this.txtMSSV_SuaDDK.Name = "txtMSSV_SuaDDK";
             this.txtMSSV_SuaDDK.ReadOnly = true;
-            this.txtMSSV_SuaDDK.Size = new System.Drawing.Size(305, 29);
+            this.txtMSSV_SuaDDK.Size = new System.Drawing.Size(305, 50);
             this.txtMSSV_SuaDDK.TabIndex = 8;
             // 
             // tpThemHDD
@@ -2856,10 +2702,10 @@ namespace DoAnMNM
             this.tpThemHDD.Controls.Add(this.txtSoDoDien_HDD);
             this.tpThemHDD.Controls.Add(this.label41);
             this.tpThemHDD.Controls.Add(this.label42);
-            this.tpThemHDD.Location = new System.Drawing.Point(4, 22);
+            this.tpThemHDD.Location = new System.Drawing.Point(8, 39);
             this.tpThemHDD.Name = "tpThemHDD";
             this.tpThemHDD.Padding = new System.Windows.Forms.Padding(3);
-            this.tpThemHDD.Size = new System.Drawing.Size(992, 654);
+            this.tpThemHDD.Size = new System.Drawing.Size(984, 633);
             this.tpThemHDD.TabIndex = 8;
             this.tpThemHDD.Text = "Thêm hóa đơn điện";
             // 
@@ -2870,7 +2716,7 @@ namespace DoAnMNM
             this.txtNam_ThemHDD.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtNam_ThemHDD.Location = new System.Drawing.Point(367, 348);
             this.txtNam_ThemHDD.Name = "txtNam_ThemHDD";
-            this.txtNam_ThemHDD.Size = new System.Drawing.Size(305, 29);
+            this.txtNam_ThemHDD.Size = new System.Drawing.Size(305, 50);
             this.txtNam_ThemHDD.TabIndex = 73;
             // 
             // label71
@@ -2880,7 +2726,7 @@ namespace DoAnMNM
             this.label71.ForeColor = System.Drawing.Color.Gainsboro;
             this.label71.Location = new System.Drawing.Point(235, 352);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(52, 25);
+            this.label71.Size = new System.Drawing.Size(102, 51);
             this.label71.TabIndex = 72;
             this.label71.Text = "Năm";
             // 
@@ -2893,7 +2739,7 @@ namespace DoAnMNM
             this.cboThang_ThemHDD.FormattingEnabled = true;
             this.cboThang_ThemHDD.Location = new System.Drawing.Point(367, 281);
             this.cboThang_ThemHDD.Name = "cboThang_ThemHDD";
-            this.cboThang_ThemHDD.Size = new System.Drawing.Size(304, 29);
+            this.cboThang_ThemHDD.Size = new System.Drawing.Size(304, 53);
             this.cboThang_ThemHDD.TabIndex = 71;
             // 
             // label70
@@ -2903,7 +2749,7 @@ namespace DoAnMNM
             this.label70.ForeColor = System.Drawing.Color.Gainsboro;
             this.label70.Location = new System.Drawing.Point(235, 281);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(65, 25);
+            this.label70.Size = new System.Drawing.Size(127, 51);
             this.label70.TabIndex = 70;
             this.label70.Text = "Tháng";
             // 
@@ -2914,7 +2760,7 @@ namespace DoAnMNM
             this.lbSoDo_ThemHDD.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbSoDo_ThemHDD.Location = new System.Drawing.Point(463, 133);
             this.lbSoDo_ThemHDD.Name = "lbSoDo_ThemHDD";
-            this.lbSoDo_ThemHDD.Size = new System.Drawing.Size(43, 17);
+            this.lbSoDo_ThemHDD.Size = new System.Drawing.Size(81, 36);
             this.lbSoDo_ThemHDD.TabIndex = 69;
             this.lbSoDo_ThemHDD.Text = "Số đo";
             // 
@@ -2925,7 +2771,7 @@ namespace DoAnMNM
             this.label69.ForeColor = System.Drawing.Color.Gainsboro;
             this.label69.Location = new System.Drawing.Point(365, 133);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(92, 17);
+            this.label69.Size = new System.Drawing.Size(179, 36);
             this.label69.TabIndex = 68;
             this.label69.Text = "Số đo hiện tại:";
             // 
@@ -2938,7 +2784,7 @@ namespace DoAnMNM
             this.cboPhong_ThemHDD.FormattingEnabled = true;
             this.cboPhong_ThemHDD.Location = new System.Drawing.Point(367, 101);
             this.cboPhong_ThemHDD.Name = "cboPhong_ThemHDD";
-            this.cboPhong_ThemHDD.Size = new System.Drawing.Size(304, 29);
+            this.cboPhong_ThemHDD.Size = new System.Drawing.Size(304, 53);
             this.cboPhong_ThemHDD.TabIndex = 67;
             // 
             // btnThem_HDD
@@ -2965,7 +2811,7 @@ namespace DoAnMNM
             this.label44.ForeColor = System.Drawing.Color.Gainsboro;
             this.label44.Location = new System.Drawing.Point(235, 416);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(91, 25);
+            this.label44.Size = new System.Drawing.Size(178, 51);
             this.label44.TabIndex = 65;
             this.label44.Text = "Ngày Lập";
             // 
@@ -2974,7 +2820,7 @@ namespace DoAnMNM
             this.dtpNgayLap_HDD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayLap_HDD.Location = new System.Drawing.Point(368, 416);
             this.dtpNgayLap_HDD.Name = "dtpNgayLap_HDD";
-            this.dtpNgayLap_HDD.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgayLap_HDD.Size = new System.Drawing.Size(305, 50);
             this.dtpNgayLap_HDD.TabIndex = 64;
             // 
             // txtDonGia_HDD
@@ -2984,7 +2830,7 @@ namespace DoAnMNM
             this.txtDonGia_HDD.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtDonGia_HDD.Location = new System.Drawing.Point(367, 214);
             this.txtDonGia_HDD.Name = "txtDonGia_HDD";
-            this.txtDonGia_HDD.Size = new System.Drawing.Size(305, 29);
+            this.txtDonGia_HDD.Size = new System.Drawing.Size(305, 50);
             this.txtDonGia_HDD.TabIndex = 63;
             // 
             // label43
@@ -2994,7 +2840,7 @@ namespace DoAnMNM
             this.label43.ForeColor = System.Drawing.Color.Gainsboro;
             this.label43.Location = new System.Drawing.Point(235, 218);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(80, 25);
+            this.label43.Size = new System.Drawing.Size(158, 51);
             this.label43.TabIndex = 62;
             this.label43.Text = "Đơn Giá";
             // 
@@ -3005,7 +2851,7 @@ namespace DoAnMNM
             this.txtSoDoDien_HDD.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtSoDoDien_HDD.Location = new System.Drawing.Point(367, 158);
             this.txtSoDoDien_HDD.Name = "txtSoDoDien_HDD";
-            this.txtSoDoDien_HDD.Size = new System.Drawing.Size(305, 29);
+            this.txtSoDoDien_HDD.Size = new System.Drawing.Size(305, 50);
             this.txtSoDoDien_HDD.TabIndex = 59;
             // 
             // label41
@@ -3015,7 +2861,7 @@ namespace DoAnMNM
             this.label41.ForeColor = System.Drawing.Color.Gainsboro;
             this.label41.Location = new System.Drawing.Point(235, 158);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(106, 25);
+            this.label41.Size = new System.Drawing.Size(211, 51);
             this.label41.TabIndex = 57;
             this.label41.Text = "Số Đo Điện";
             // 
@@ -3026,7 +2872,7 @@ namespace DoAnMNM
             this.label42.ForeColor = System.Drawing.Color.Gainsboro;
             this.label42.Location = new System.Drawing.Point(235, 101);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(67, 25);
+            this.label42.Size = new System.Drawing.Size(131, 51);
             this.label42.TabIndex = 55;
             this.label42.Text = "Phòng";
             // 
@@ -3035,10 +2881,10 @@ namespace DoAnMNM
             this.tpDSHDD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.tpDSHDD.Controls.Add(this.dataDSHDD);
             this.tpDSHDD.Controls.Add(this.panel7);
-            this.tpDSHDD.Location = new System.Drawing.Point(4, 22);
+            this.tpDSHDD.Location = new System.Drawing.Point(8, 39);
             this.tpDSHDD.Name = "tpDSHDD";
             this.tpDSHDD.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDSHDD.Size = new System.Drawing.Size(992, 654);
+            this.tpDSHDD.Size = new System.Drawing.Size(984, 633);
             this.tpDSHDD.TabIndex = 9;
             this.tpDSHDD.Text = "DS HDD";
             // 
@@ -3046,25 +2892,25 @@ namespace DoAnMNM
             // 
             this.dataDSHDD.AllowUserToAddRows = false;
             this.dataDSHDD.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            this.dataDSHDD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.dataDSHDD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataDSHDD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataDSHDD.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataDSHDD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.dataDSHDD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataDSHDD.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataDSHDD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataDSHDD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataDSHDD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataDSHDD.ColumnHeadersHeight = 35;
             this.dataDSHDD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataDSHDD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3078,14 +2924,14 @@ namespace DoAnMNM
             this.Column14,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn9});
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataDSHDD.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDSHDD.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataDSHDD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataDSHDD.EnableHeadersVisualStyles = false;
             this.dataDSHDD.GridColor = System.Drawing.Color.White;
@@ -3095,7 +2941,7 @@ namespace DoAnMNM
             this.dataDSHDD.RowHeadersVisible = false;
             this.dataDSHDD.RowHeadersWidth = 82;
             this.dataDSHDD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataDSHDD.Size = new System.Drawing.Size(986, 520);
+            this.dataDSHDD.Size = new System.Drawing.Size(978, 499);
             this.dataDSHDD.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn11
@@ -3183,7 +3029,7 @@ namespace DoAnMNM
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(986, 128);
+            this.panel7.Size = new System.Drawing.Size(978, 128);
             this.panel7.TabIndex = 2;
             // 
             // label46
@@ -3193,7 +3039,7 @@ namespace DoAnMNM
             this.label46.ForeColor = System.Drawing.Color.Gainsboro;
             this.label46.Location = new System.Drawing.Point(444, 27);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(70, 25);
+            this.label46.Size = new System.Drawing.Size(139, 51);
             this.label46.TabIndex = 58;
             this.label46.Text = "Mã HD";
             // 
@@ -3203,7 +3049,7 @@ namespace DoAnMNM
             this.txtMaHD_DSHDD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHD_DSHDD.Location = new System.Drawing.Point(549, 27);
             this.txtMaHD_DSHDD.Name = "txtMaHD_DSHDD";
-            this.txtMaHD_DSHDD.Size = new System.Drawing.Size(281, 29);
+            this.txtMaHD_DSHDD.Size = new System.Drawing.Size(281, 50);
             this.txtMaHD_DSHDD.TabIndex = 57;
             // 
             // btnXoa_DSHDD
@@ -3249,7 +3095,7 @@ namespace DoAnMNM
             this.cboMaPhong_DSHDD.FormattingEnabled = true;
             this.cboMaPhong_DSHDD.Location = new System.Drawing.Point(128, 79);
             this.cboMaPhong_DSHDD.Name = "cboMaPhong_DSHDD";
-            this.cboMaPhong_DSHDD.Size = new System.Drawing.Size(280, 29);
+            this.cboMaPhong_DSHDD.Size = new System.Drawing.Size(280, 53);
             this.cboMaPhong_DSHDD.TabIndex = 54;
             // 
             // btnTatCa_DSHDD
@@ -3276,7 +3122,7 @@ namespace DoAnMNM
             this.label40.ForeColor = System.Drawing.Color.Gainsboro;
             this.label40.Location = new System.Drawing.Point(23, 83);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(67, 25);
+            this.label40.Size = new System.Drawing.Size(131, 51);
             this.label40.TabIndex = 11;
             this.label40.Text = "Phòng";
             // 
@@ -3304,7 +3150,7 @@ namespace DoAnMNM
             this.label45.ForeColor = System.Drawing.Color.Gainsboro;
             this.label45.Location = new System.Drawing.Point(23, 27);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(67, 25);
+            this.label45.Size = new System.Drawing.Size(132, 51);
             this.label45.TabIndex = 8;
             this.label45.Text = "Mã QL";
             // 
@@ -3314,7 +3160,7 @@ namespace DoAnMNM
             this.txtMaQL_DSHDD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaQL_DSHDD.Location = new System.Drawing.Point(128, 27);
             this.txtMaQL_DSHDD.Name = "txtMaQL_DSHDD";
-            this.txtMaQL_DSHDD.Size = new System.Drawing.Size(281, 29);
+            this.txtMaQL_DSHDD.Size = new System.Drawing.Size(281, 50);
             this.txtMaQL_DSHDD.TabIndex = 7;
             // 
             // tpSuaHDD
@@ -3335,10 +3181,10 @@ namespace DoAnMNM
             this.tpSuaHDD.Controls.Add(this.txtSoDoDien_SuaHDD);
             this.tpSuaHDD.Controls.Add(this.label48);
             this.tpSuaHDD.Controls.Add(this.label49);
-            this.tpSuaHDD.Location = new System.Drawing.Point(4, 22);
+            this.tpSuaHDD.Location = new System.Drawing.Point(8, 39);
             this.tpSuaHDD.Name = "tpSuaHDD";
             this.tpSuaHDD.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSuaHDD.Size = new System.Drawing.Size(992, 654);
+            this.tpSuaHDD.Size = new System.Drawing.Size(984, 633);
             this.tpSuaHDD.TabIndex = 10;
             this.tpSuaHDD.Text = "Sửa HDD";
             // 
@@ -3349,7 +3195,7 @@ namespace DoAnMNM
             this.label85.ForeColor = System.Drawing.Color.Gainsboro;
             this.label85.Location = new System.Drawing.Point(470, 26);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(160, 25);
+            this.label85.Size = new System.Drawing.Size(316, 51);
             this.label85.TabIndex = 83;
             this.label85.Text = "Sửa hóa đơn điện";
             // 
@@ -3386,7 +3232,7 @@ namespace DoAnMNM
             this.rdbDaThanhToan_SuaHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbDaThanhToan_SuaHDD.Location = new System.Drawing.Point(150, 15);
             this.rdbDaThanhToan_SuaHDD.Name = "rdbDaThanhToan_SuaHDD";
-            this.rdbDaThanhToan_SuaHDD.Size = new System.Drawing.Size(137, 24);
+            this.rdbDaThanhToan_SuaHDD.Size = new System.Drawing.Size(273, 41);
             this.rdbDaThanhToan_SuaHDD.TabIndex = 1;
             this.rdbDaThanhToan_SuaHDD.TabStop = true;
             this.rdbDaThanhToan_SuaHDD.Text = "Đã Thanh Toán";
@@ -3398,7 +3244,7 @@ namespace DoAnMNM
             this.rdbNo_SuaHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbNo_SuaHDD.Location = new System.Drawing.Point(36, 15);
             this.rdbNo_SuaHDD.Name = "rdbNo_SuaHDD";
-            this.rdbNo_SuaHDD.Size = new System.Drawing.Size(47, 24);
+            this.rdbNo_SuaHDD.Size = new System.Drawing.Size(90, 41);
             this.rdbNo_SuaHDD.TabIndex = 0;
             this.rdbNo_SuaHDD.TabStop = true;
             this.rdbNo_SuaHDD.Text = "Nợ";
@@ -3412,7 +3258,7 @@ namespace DoAnMNM
             this.txtMaHD_SuaHDD.Location = new System.Drawing.Point(395, 85);
             this.txtMaHD_SuaHDD.Name = "txtMaHD_SuaHDD";
             this.txtMaHD_SuaHDD.ReadOnly = true;
-            this.txtMaHD_SuaHDD.Size = new System.Drawing.Size(305, 29);
+            this.txtMaHD_SuaHDD.Size = new System.Drawing.Size(305, 50);
             this.txtMaHD_SuaHDD.TabIndex = 80;
             // 
             // label51
@@ -3422,7 +3268,7 @@ namespace DoAnMNM
             this.label51.ForeColor = System.Drawing.Color.Gainsboro;
             this.label51.Location = new System.Drawing.Point(263, 85);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(70, 25);
+            this.label51.Size = new System.Drawing.Size(139, 51);
             this.label51.TabIndex = 79;
             this.label51.Text = "Mã HD";
             // 
@@ -3433,7 +3279,7 @@ namespace DoAnMNM
             this.label50.ForeColor = System.Drawing.Color.Gainsboro;
             this.label50.Location = new System.Drawing.Point(263, 373);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(101, 25);
+            this.label50.Size = new System.Drawing.Size(199, 51);
             this.label50.TabIndex = 77;
             this.label50.Text = "Tình Trạng";
             // 
@@ -3446,7 +3292,7 @@ namespace DoAnMNM
             this.cboPhong_SuaHDD.FormattingEnabled = true;
             this.cboPhong_SuaHDD.Location = new System.Drawing.Point(395, 139);
             this.cboPhong_SuaHDD.Name = "cboPhong_SuaHDD";
-            this.cboPhong_SuaHDD.Size = new System.Drawing.Size(304, 29);
+            this.cboPhong_SuaHDD.Size = new System.Drawing.Size(304, 53);
             this.cboPhong_SuaHDD.TabIndex = 76;
             // 
             // btnSua_SuaHDD
@@ -3473,7 +3319,7 @@ namespace DoAnMNM
             this.label39.ForeColor = System.Drawing.Color.Gainsboro;
             this.label39.Location = new System.Drawing.Point(263, 311);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(91, 25);
+            this.label39.Size = new System.Drawing.Size(178, 51);
             this.label39.TabIndex = 74;
             this.label39.Text = "Ngày Lập";
             // 
@@ -3482,7 +3328,7 @@ namespace DoAnMNM
             this.dtpNgayLap_SuaHDD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayLap_SuaHDD.Location = new System.Drawing.Point(396, 311);
             this.dtpNgayLap_SuaHDD.Name = "dtpNgayLap_SuaHDD";
-            this.dtpNgayLap_SuaHDD.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgayLap_SuaHDD.Size = new System.Drawing.Size(305, 50);
             this.dtpNgayLap_SuaHDD.TabIndex = 73;
             // 
             // txtDonGia_SuaHDD
@@ -3492,7 +3338,7 @@ namespace DoAnMNM
             this.txtDonGia_SuaHDD.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtDonGia_SuaHDD.Location = new System.Drawing.Point(395, 252);
             this.txtDonGia_SuaHDD.Name = "txtDonGia_SuaHDD";
-            this.txtDonGia_SuaHDD.Size = new System.Drawing.Size(305, 29);
+            this.txtDonGia_SuaHDD.Size = new System.Drawing.Size(305, 50);
             this.txtDonGia_SuaHDD.TabIndex = 72;
             // 
             // label47
@@ -3502,7 +3348,7 @@ namespace DoAnMNM
             this.label47.ForeColor = System.Drawing.Color.Gainsboro;
             this.label47.Location = new System.Drawing.Point(263, 256);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(80, 25);
+            this.label47.Size = new System.Drawing.Size(158, 51);
             this.label47.TabIndex = 71;
             this.label47.Text = "Đơn Giá";
             // 
@@ -3513,7 +3359,7 @@ namespace DoAnMNM
             this.txtSoDoDien_SuaHDD.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtSoDoDien_SuaHDD.Location = new System.Drawing.Point(395, 196);
             this.txtSoDoDien_SuaHDD.Name = "txtSoDoDien_SuaHDD";
-            this.txtSoDoDien_SuaHDD.Size = new System.Drawing.Size(305, 29);
+            this.txtSoDoDien_SuaHDD.Size = new System.Drawing.Size(305, 50);
             this.txtSoDoDien_SuaHDD.TabIndex = 70;
             // 
             // label48
@@ -3523,7 +3369,7 @@ namespace DoAnMNM
             this.label48.ForeColor = System.Drawing.Color.Gainsboro;
             this.label48.Location = new System.Drawing.Point(263, 196);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(106, 25);
+            this.label48.Size = new System.Drawing.Size(211, 51);
             this.label48.TabIndex = 69;
             this.label48.Text = "Số Đo Điện";
             // 
@@ -3534,7 +3380,7 @@ namespace DoAnMNM
             this.label49.ForeColor = System.Drawing.Color.Gainsboro;
             this.label49.Location = new System.Drawing.Point(263, 139);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(67, 25);
+            this.label49.Size = new System.Drawing.Size(131, 51);
             this.label49.TabIndex = 68;
             this.label49.Text = "Phòng";
             // 
@@ -3543,10 +3389,10 @@ namespace DoAnMNM
             this.tpDSHDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.tpDSHDP.Controls.Add(this.dataDSHDP);
             this.tpDSHDP.Controls.Add(this.panel8);
-            this.tpDSHDP.Location = new System.Drawing.Point(4, 22);
+            this.tpDSHDP.Location = new System.Drawing.Point(8, 39);
             this.tpDSHDP.Name = "tpDSHDP";
             this.tpDSHDP.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDSHDP.Size = new System.Drawing.Size(992, 654);
+            this.tpDSHDP.Size = new System.Drawing.Size(984, 633);
             this.tpDSHDP.TabIndex = 11;
             this.tpDSHDP.Text = "DS HDP";
             // 
@@ -3554,25 +3400,25 @@ namespace DoAnMNM
             // 
             this.dataDSHDP.AllowUserToAddRows = false;
             this.dataDSHDP.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            this.dataDSHDP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.dataDSHDP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataDSHDP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataDSHDP.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataDSHDP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
             this.dataDSHDP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataDSHDP.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataDSHDP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataDSHDP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataDSHDP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataDSHDP.ColumnHeadersHeight = 35;
             this.dataDSHDP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataDSHDP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3584,14 +3430,14 @@ namespace DoAnMNM
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18,
             this.Column11});
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataDSHDP.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDSHDP.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataDSHDP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataDSHDP.EnableHeadersVisualStyles = false;
             this.dataDSHDP.GridColor = System.Drawing.Color.White;
@@ -3601,7 +3447,7 @@ namespace DoAnMNM
             this.dataDSHDP.RowHeadersVisible = false;
             this.dataDSHDP.RowHeadersWidth = 82;
             this.dataDSHDP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataDSHDP.Size = new System.Drawing.Size(986, 520);
+            this.dataDSHDP.Size = new System.Drawing.Size(978, 499);
             this.dataDSHDP.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn12
@@ -3675,7 +3521,7 @@ namespace DoAnMNM
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(986, 128);
+            this.panel8.Size = new System.Drawing.Size(978, 128);
             this.panel8.TabIndex = 4;
             // 
             // txtMSSV_DSHDP
@@ -3684,7 +3530,7 @@ namespace DoAnMNM
             this.txtMSSV_DSHDP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMSSV_DSHDP.Location = new System.Drawing.Point(128, 78);
             this.txtMSSV_DSHDP.Name = "txtMSSV_DSHDP";
-            this.txtMSSV_DSHDP.Size = new System.Drawing.Size(281, 29);
+            this.txtMSSV_DSHDP.Size = new System.Drawing.Size(281, 50);
             this.txtMSSV_DSHDP.TabIndex = 59;
             // 
             // label52
@@ -3694,7 +3540,7 @@ namespace DoAnMNM
             this.label52.ForeColor = System.Drawing.Color.Gainsboro;
             this.label52.Location = new System.Drawing.Point(444, 27);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(70, 25);
+            this.label52.Size = new System.Drawing.Size(139, 51);
             this.label52.TabIndex = 58;
             this.label52.Text = "Mã HD";
             // 
@@ -3704,7 +3550,7 @@ namespace DoAnMNM
             this.txtMaHD_DSHDP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHD_DSHDP.Location = new System.Drawing.Point(549, 27);
             this.txtMaHD_DSHDP.Name = "txtMaHD_DSHDP";
-            this.txtMaHD_DSHDP.Size = new System.Drawing.Size(281, 29);
+            this.txtMaHD_DSHDP.Size = new System.Drawing.Size(281, 50);
             this.txtMaHD_DSHDP.TabIndex = 57;
             // 
             // btnXoa_DSHDP
@@ -3765,7 +3611,7 @@ namespace DoAnMNM
             this.label53.ForeColor = System.Drawing.Color.Gainsboro;
             this.label53.Location = new System.Drawing.Point(23, 83);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(61, 25);
+            this.label53.Size = new System.Drawing.Size(120, 51);
             this.label53.TabIndex = 11;
             this.label53.Text = "MSSV";
             // 
@@ -3793,7 +3639,7 @@ namespace DoAnMNM
             this.label54.ForeColor = System.Drawing.Color.Gainsboro;
             this.label54.Location = new System.Drawing.Point(23, 27);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(67, 25);
+            this.label54.Size = new System.Drawing.Size(132, 51);
             this.label54.TabIndex = 8;
             this.label54.Text = "Mã QL";
             // 
@@ -3803,7 +3649,7 @@ namespace DoAnMNM
             this.txtMaQL_DSHDP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaQL_DSHDP.Location = new System.Drawing.Point(128, 27);
             this.txtMaQL_DSHDP.Name = "txtMaQL_DSHDP";
-            this.txtMaQL_DSHDP.Size = new System.Drawing.Size(281, 29);
+            this.txtMaQL_DSHDP.Size = new System.Drawing.Size(281, 50);
             this.txtMaQL_DSHDP.TabIndex = 7;
             // 
             // tpSuaHDP
@@ -3826,10 +3672,10 @@ namespace DoAnMNM
             this.tpSuaHDP.Controls.Add(this.txtMSSV_SuaHDP);
             this.tpSuaHDP.Controls.Add(this.label59);
             this.tpSuaHDP.Controls.Add(this.label60);
-            this.tpSuaHDP.Location = new System.Drawing.Point(4, 22);
+            this.tpSuaHDP.Location = new System.Drawing.Point(8, 39);
             this.tpSuaHDP.Name = "tpSuaHDP";
             this.tpSuaHDP.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSuaHDP.Size = new System.Drawing.Size(992, 654);
+            this.tpSuaHDP.Size = new System.Drawing.Size(984, 633);
             this.tpSuaHDP.TabIndex = 12;
             this.tpSuaHDP.Text = "Sửa HDP";
             // 
@@ -3840,7 +3686,7 @@ namespace DoAnMNM
             this.label86.ForeColor = System.Drawing.Color.Gainsboro;
             this.label86.Location = new System.Drawing.Point(432, 30);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(178, 25);
+            this.label86.Size = new System.Drawing.Size(353, 51);
             this.label86.TabIndex = 98;
             this.label86.Text = "Sửa hóa đơn phòng";
             // 
@@ -3877,7 +3723,7 @@ namespace DoAnMNM
             this.rdbDaThanhToan_SuaHDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbDaThanhToan_SuaHDP.Location = new System.Drawing.Point(150, 15);
             this.rdbDaThanhToan_SuaHDP.Name = "rdbDaThanhToan_SuaHDP";
-            this.rdbDaThanhToan_SuaHDP.Size = new System.Drawing.Size(137, 24);
+            this.rdbDaThanhToan_SuaHDP.Size = new System.Drawing.Size(273, 41);
             this.rdbDaThanhToan_SuaHDP.TabIndex = 1;
             this.rdbDaThanhToan_SuaHDP.TabStop = true;
             this.rdbDaThanhToan_SuaHDP.Text = "Đã Thanh Toán";
@@ -3889,7 +3735,7 @@ namespace DoAnMNM
             this.rdbNo_SuaHDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbNo_SuaHDP.Location = new System.Drawing.Point(36, 15);
             this.rdbNo_SuaHDP.Name = "rdbNo_SuaHDP";
-            this.rdbNo_SuaHDP.Size = new System.Drawing.Size(47, 24);
+            this.rdbNo_SuaHDP.Size = new System.Drawing.Size(90, 41);
             this.rdbNo_SuaHDP.TabIndex = 0;
             this.rdbNo_SuaHDP.TabStop = true;
             this.rdbNo_SuaHDP.Text = "Nợ";
@@ -3902,7 +3748,7 @@ namespace DoAnMNM
             this.label61.ForeColor = System.Drawing.Color.Gainsboro;
             this.label61.Location = new System.Drawing.Point(248, 432);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(101, 25);
+            this.label61.Size = new System.Drawing.Size(199, 51);
             this.label61.TabIndex = 94;
             this.label61.Text = "Tình Trạng";
             // 
@@ -3914,7 +3760,7 @@ namespace DoAnMNM
             this.txtMaHD_SuaHDP.Location = new System.Drawing.Point(379, 85);
             this.txtMaHD_SuaHDP.Name = "txtMaHD_SuaHDP";
             this.txtMaHD_SuaHDP.ReadOnly = true;
-            this.txtMaHD_SuaHDP.Size = new System.Drawing.Size(305, 29);
+            this.txtMaHD_SuaHDP.Size = new System.Drawing.Size(305, 50);
             this.txtMaHD_SuaHDP.TabIndex = 93;
             // 
             // label55
@@ -3924,7 +3770,7 @@ namespace DoAnMNM
             this.label55.ForeColor = System.Drawing.Color.Gainsboro;
             this.label55.Location = new System.Drawing.Point(247, 85);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(70, 25);
+            this.label55.Size = new System.Drawing.Size(139, 51);
             this.label55.TabIndex = 92;
             this.label55.Text = "Mã HD";
             // 
@@ -3935,7 +3781,7 @@ namespace DoAnMNM
             this.txtThanhTien_SuaHDP.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtThanhTien_SuaHDP.Location = new System.Drawing.Point(379, 369);
             this.txtThanhTien_SuaHDP.Name = "txtThanhTien_SuaHDP";
-            this.txtThanhTien_SuaHDP.Size = new System.Drawing.Size(305, 29);
+            this.txtThanhTien_SuaHDP.Size = new System.Drawing.Size(305, 50);
             this.txtThanhTien_SuaHDP.TabIndex = 91;
             // 
             // label56
@@ -3945,7 +3791,7 @@ namespace DoAnMNM
             this.label56.ForeColor = System.Drawing.Color.Gainsboro;
             this.label56.Location = new System.Drawing.Point(247, 373);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(102, 25);
+            this.label56.Size = new System.Drawing.Size(201, 51);
             this.label56.TabIndex = 90;
             this.label56.Text = "Thành tiền";
             // 
@@ -3958,7 +3804,7 @@ namespace DoAnMNM
             this.cboQuy_SuaHDP.FormattingEnabled = true;
             this.cboQuy_SuaHDP.Location = new System.Drawing.Point(379, 196);
             this.cboQuy_SuaHDP.Name = "cboQuy_SuaHDP";
-            this.cboQuy_SuaHDP.Size = new System.Drawing.Size(304, 29);
+            this.cboQuy_SuaHDP.Size = new System.Drawing.Size(304, 53);
             this.cboQuy_SuaHDP.TabIndex = 89;
             // 
             // btnSua_SuaHDP
@@ -3985,7 +3831,7 @@ namespace DoAnMNM
             this.label57.ForeColor = System.Drawing.Color.Gainsboro;
             this.label57.Location = new System.Drawing.Point(247, 311);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(91, 25);
+            this.label57.Size = new System.Drawing.Size(178, 51);
             this.label57.TabIndex = 87;
             this.label57.Text = "Ngày Lập";
             // 
@@ -3994,7 +3840,7 @@ namespace DoAnMNM
             this.dtpNgayLap_SuaHDP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayLap_SuaHDP.Location = new System.Drawing.Point(380, 311);
             this.dtpNgayLap_SuaHDP.Name = "dtpNgayLap_SuaHDP";
-            this.dtpNgayLap_SuaHDP.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgayLap_SuaHDP.Size = new System.Drawing.Size(305, 50);
             this.dtpNgayLap_SuaHDP.TabIndex = 86;
             // 
             // txtNam_SuaHDP
@@ -4004,7 +3850,7 @@ namespace DoAnMNM
             this.txtNam_SuaHDP.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtNam_SuaHDP.Location = new System.Drawing.Point(379, 252);
             this.txtNam_SuaHDP.Name = "txtNam_SuaHDP";
-            this.txtNam_SuaHDP.Size = new System.Drawing.Size(305, 29);
+            this.txtNam_SuaHDP.Size = new System.Drawing.Size(305, 50);
             this.txtNam_SuaHDP.TabIndex = 85;
             // 
             // label58
@@ -4014,7 +3860,7 @@ namespace DoAnMNM
             this.label58.ForeColor = System.Drawing.Color.Gainsboro;
             this.label58.Location = new System.Drawing.Point(247, 256);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(52, 25);
+            this.label58.Size = new System.Drawing.Size(102, 51);
             this.label58.TabIndex = 84;
             this.label58.Text = "Năm";
             // 
@@ -4025,7 +3871,7 @@ namespace DoAnMNM
             this.txtMSSV_SuaHDP.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMSSV_SuaHDP.Location = new System.Drawing.Point(380, 139);
             this.txtMSSV_SuaHDP.Name = "txtMSSV_SuaHDP";
-            this.txtMSSV_SuaHDP.Size = new System.Drawing.Size(305, 29);
+            this.txtMSSV_SuaHDP.Size = new System.Drawing.Size(305, 50);
             this.txtMSSV_SuaHDP.TabIndex = 83;
             // 
             // label59
@@ -4035,7 +3881,7 @@ namespace DoAnMNM
             this.label59.ForeColor = System.Drawing.Color.Gainsboro;
             this.label59.Location = new System.Drawing.Point(247, 196);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(46, 25);
+            this.label59.Size = new System.Drawing.Size(91, 51);
             this.label59.TabIndex = 82;
             this.label59.Text = "Quý";
             // 
@@ -4046,7 +3892,7 @@ namespace DoAnMNM
             this.label60.ForeColor = System.Drawing.Color.Gainsboro;
             this.label60.Location = new System.Drawing.Point(247, 139);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(61, 25);
+            this.label60.Size = new System.Drawing.Size(120, 51);
             this.label60.TabIndex = 81;
             this.label60.Text = "MSSV";
             // 
@@ -4064,10 +3910,10 @@ namespace DoAnMNM
             this.tpThemHDP.Controls.Add(this.txtNam_ThemHDP);
             this.tpThemHDP.Controls.Add(this.label64);
             this.tpThemHDP.Controls.Add(this.label65);
-            this.tpThemHDP.Location = new System.Drawing.Point(4, 22);
+            this.tpThemHDP.Location = new System.Drawing.Point(8, 39);
             this.tpThemHDP.Name = "tpThemHDP";
             this.tpThemHDP.Padding = new System.Windows.Forms.Padding(3);
-            this.tpThemHDP.Size = new System.Drawing.Size(992, 654);
+            this.tpThemHDP.Size = new System.Drawing.Size(984, 633);
             this.tpThemHDP.TabIndex = 13;
             this.tpThemHDP.Text = "Them HDP";
             // 
@@ -4078,7 +3924,7 @@ namespace DoAnMNM
             this.txtMSSV_ThemHDP.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMSSV_ThemHDP.Location = new System.Drawing.Point(390, 43);
             this.txtMSSV_ThemHDP.Name = "txtMSSV_ThemHDP";
-            this.txtMSSV_ThemHDP.Size = new System.Drawing.Size(305, 29);
+            this.txtMSSV_ThemHDP.Size = new System.Drawing.Size(305, 50);
             this.txtMSSV_ThemHDP.TabIndex = 78;
             // 
             // label66
@@ -4088,7 +3934,7 @@ namespace DoAnMNM
             this.label66.ForeColor = System.Drawing.Color.Gainsboro;
             this.label66.Location = new System.Drawing.Point(258, 47);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(61, 25);
+            this.label66.Size = new System.Drawing.Size(120, 51);
             this.label66.TabIndex = 77;
             this.label66.Text = "MSSV";
             // 
@@ -4102,7 +3948,7 @@ namespace DoAnMNM
             this.cboQuy_ThemHDP.FormattingEnabled = true;
             this.cboQuy_ThemHDP.Location = new System.Drawing.Point(390, 110);
             this.cboQuy_ThemHDP.Name = "cboQuy_ThemHDP";
-            this.cboQuy_ThemHDP.Size = new System.Drawing.Size(304, 29);
+            this.cboQuy_ThemHDP.Size = new System.Drawing.Size(304, 53);
             this.cboQuy_ThemHDP.TabIndex = 76;
             // 
             // btnThem_ThemHDP
@@ -4129,7 +3975,7 @@ namespace DoAnMNM
             this.label62.ForeColor = System.Drawing.Color.Gainsboro;
             this.label62.Location = new System.Drawing.Point(258, 282);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(91, 25);
+            this.label62.Size = new System.Drawing.Size(178, 51);
             this.label62.TabIndex = 74;
             this.label62.Text = "Ngày Lập";
             // 
@@ -4138,7 +3984,7 @@ namespace DoAnMNM
             this.dtpNgayLap_ThemHDP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayLap_ThemHDP.Location = new System.Drawing.Point(391, 282);
             this.dtpNgayLap_ThemHDP.Name = "dtpNgayLap_ThemHDP";
-            this.dtpNgayLap_ThemHDP.Size = new System.Drawing.Size(305, 29);
+            this.dtpNgayLap_ThemHDP.Size = new System.Drawing.Size(305, 50);
             this.dtpNgayLap_ThemHDP.TabIndex = 73;
             // 
             // txtThanhTien_ThemHDP
@@ -4149,7 +3995,7 @@ namespace DoAnMNM
             this.txtThanhTien_ThemHDP.Location = new System.Drawing.Point(390, 223);
             this.txtThanhTien_ThemHDP.Name = "txtThanhTien_ThemHDP";
             this.txtThanhTien_ThemHDP.ReadOnly = true;
-            this.txtThanhTien_ThemHDP.Size = new System.Drawing.Size(305, 29);
+            this.txtThanhTien_ThemHDP.Size = new System.Drawing.Size(305, 50);
             this.txtThanhTien_ThemHDP.TabIndex = 72;
             // 
             // label63
@@ -4159,7 +4005,7 @@ namespace DoAnMNM
             this.label63.ForeColor = System.Drawing.Color.Gainsboro;
             this.label63.Location = new System.Drawing.Point(258, 227);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(106, 25);
+            this.label63.Size = new System.Drawing.Size(208, 51);
             this.label63.TabIndex = 71;
             this.label63.Text = "Thành Tiền";
             // 
@@ -4170,7 +4016,7 @@ namespace DoAnMNM
             this.txtNam_ThemHDP.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtNam_ThemHDP.Location = new System.Drawing.Point(390, 167);
             this.txtNam_ThemHDP.Name = "txtNam_ThemHDP";
-            this.txtNam_ThemHDP.Size = new System.Drawing.Size(305, 29);
+            this.txtNam_ThemHDP.Size = new System.Drawing.Size(305, 50);
             this.txtNam_ThemHDP.TabIndex = 70;
             // 
             // label64
@@ -4180,7 +4026,7 @@ namespace DoAnMNM
             this.label64.ForeColor = System.Drawing.Color.Gainsboro;
             this.label64.Location = new System.Drawing.Point(258, 167);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(52, 25);
+            this.label64.Size = new System.Drawing.Size(102, 51);
             this.label64.TabIndex = 69;
             this.label64.Text = "Năm";
             // 
@@ -4191,7 +4037,7 @@ namespace DoAnMNM
             this.label65.ForeColor = System.Drawing.Color.Gainsboro;
             this.label65.Location = new System.Drawing.Point(258, 110);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(46, 25);
+            this.label65.Size = new System.Drawing.Size(91, 51);
             this.label65.TabIndex = 68;
             this.label65.Text = "Quý";
             // 
@@ -4204,10 +4050,10 @@ namespace DoAnMNM
             this.tpQLDonGia.Controls.Add(this.label68);
             this.tpQLDonGia.Controls.Add(this.txtDGD_QLDonGia);
             this.tpQLDonGia.Controls.Add(this.label67);
-            this.tpQLDonGia.Location = new System.Drawing.Point(4, 22);
+            this.tpQLDonGia.Location = new System.Drawing.Point(8, 39);
             this.tpQLDonGia.Name = "tpQLDonGia";
             this.tpQLDonGia.Padding = new System.Windows.Forms.Padding(3);
-            this.tpQLDonGia.Size = new System.Drawing.Size(992, 654);
+            this.tpQLDonGia.Size = new System.Drawing.Size(984, 633);
             this.tpQLDonGia.TabIndex = 14;
             this.tpQLDonGia.Text = "QL đơn giá";
             // 
@@ -4244,6 +4090,7 @@ namespace DoAnMNM
             this.btnSuaDGD_QLDonGia.TabIndex = 89;
             this.btnSuaDGD_QLDonGia.Text = "Sửa";
             this.btnSuaDGD_QLDonGia.UseVisualStyleBackColor = false;
+            this.btnSuaDGD_QLDonGia.Click += new System.EventHandler(this.btnSuaDGD_QLDonGia_Click);
             // 
             // txtDGP_QLDonGia
             // 
@@ -4252,7 +4099,7 @@ namespace DoAnMNM
             this.txtDGP_QLDonGia.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtDGP_QLDonGia.Location = new System.Drawing.Point(332, 173);
             this.txtDGP_QLDonGia.Name = "txtDGP_QLDonGia";
-            this.txtDGP_QLDonGia.Size = new System.Drawing.Size(305, 29);
+            this.txtDGP_QLDonGia.Size = new System.Drawing.Size(305, 50);
             this.txtDGP_QLDonGia.TabIndex = 76;
             // 
             // label68
@@ -4262,7 +4109,7 @@ namespace DoAnMNM
             this.label68.ForeColor = System.Drawing.Color.Gainsboro;
             this.label68.Location = new System.Drawing.Point(63, 173);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(251, 25);
+            this.label68.Size = new System.Drawing.Size(497, 51);
             this.label68.TabIndex = 75;
             this.label68.Text = "Đơn giá phòng(Nghìn đồng)";
             // 
@@ -4273,7 +4120,7 @@ namespace DoAnMNM
             this.txtDGD_QLDonGia.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtDGD_QLDonGia.Location = new System.Drawing.Point(332, 81);
             this.txtDGD_QLDonGia.Name = "txtDGD_QLDonGia";
-            this.txtDGD_QLDonGia.Size = new System.Drawing.Size(305, 29);
+            this.txtDGD_QLDonGia.Size = new System.Drawing.Size(305, 50);
             this.txtDGD_QLDonGia.TabIndex = 74;
             // 
             // label67
@@ -4283,7 +4130,7 @@ namespace DoAnMNM
             this.label67.ForeColor = System.Drawing.Color.Gainsboro;
             this.label67.Location = new System.Drawing.Point(63, 85);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(233, 25);
+            this.label67.Size = new System.Drawing.Size(460, 51);
             this.label67.TabIndex = 73;
             this.label67.Text = "Đơn giá điện(Nghìn đồng)";
             // 
@@ -4302,10 +4149,10 @@ namespace DoAnMNM
             this.tpSuaPhong.Controls.Add(this.label84);
             this.tpSuaPhong.Controls.Add(this.txtMaPhong_SuaPhong);
             this.tpSuaPhong.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tpSuaPhong.Location = new System.Drawing.Point(4, 22);
+            this.tpSuaPhong.Location = new System.Drawing.Point(8, 39);
             this.tpSuaPhong.Name = "tpSuaPhong";
             this.tpSuaPhong.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSuaPhong.Size = new System.Drawing.Size(992, 654);
+            this.tpSuaPhong.Size = new System.Drawing.Size(984, 633);
             this.tpSuaPhong.TabIndex = 15;
             this.tpSuaPhong.Text = "Sửa phòng";
             // 
@@ -4333,7 +4180,7 @@ namespace DoAnMNM
             this.label80.ForeColor = System.Drawing.Color.Gainsboro;
             this.label80.Location = new System.Drawing.Point(363, 47);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(185, 25);
+            this.label80.Size = new System.Drawing.Size(368, 51);
             this.label80.TabIndex = 63;
             this.label80.Text = "Sửa thông tin phòng";
             // 
@@ -4363,7 +4210,7 @@ namespace DoAnMNM
             this.cboKhu_SuaPhong.FormattingEnabled = true;
             this.cboKhu_SuaPhong.Location = new System.Drawing.Point(351, 369);
             this.cboKhu_SuaPhong.Name = "cboKhu_SuaPhong";
-            this.cboKhu_SuaPhong.Size = new System.Drawing.Size(304, 29);
+            this.cboKhu_SuaPhong.Size = new System.Drawing.Size(304, 53);
             this.cboKhu_SuaPhong.TabIndex = 61;
             // 
             // cboLoaiPhong_SuaPhong
@@ -4375,7 +4222,7 @@ namespace DoAnMNM
             this.cboLoaiPhong_SuaPhong.FormattingEnabled = true;
             this.cboLoaiPhong_SuaPhong.Location = new System.Drawing.Point(351, 292);
             this.cboLoaiPhong_SuaPhong.Name = "cboLoaiPhong_SuaPhong";
-            this.cboLoaiPhong_SuaPhong.Size = new System.Drawing.Size(304, 29);
+            this.cboLoaiPhong_SuaPhong.Size = new System.Drawing.Size(304, 53);
             this.cboLoaiPhong_SuaPhong.TabIndex = 60;
             // 
             // label81
@@ -4385,7 +4232,7 @@ namespace DoAnMNM
             this.label81.ForeColor = System.Drawing.Color.Gainsboro;
             this.label81.Location = new System.Drawing.Point(219, 297);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(107, 25);
+            this.label81.Size = new System.Drawing.Size(210, 51);
             this.label81.TabIndex = 59;
             this.label81.Text = "Loại phòng";
             // 
@@ -4396,7 +4243,7 @@ namespace DoAnMNM
             this.label82.ForeColor = System.Drawing.Color.Gainsboro;
             this.label82.Location = new System.Drawing.Point(219, 373);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(45, 25);
+            this.label82.Size = new System.Drawing.Size(88, 51);
             this.label82.TabIndex = 58;
             this.label82.Text = "Khu";
             // 
@@ -4407,7 +4254,7 @@ namespace DoAnMNM
             this.label83.ForeColor = System.Drawing.Color.Gainsboro;
             this.label83.Location = new System.Drawing.Point(217, 228);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(101, 25);
+            this.label83.Size = new System.Drawing.Size(200, 51);
             this.label83.TabIndex = 57;
             this.label83.Text = "Tên phòng";
             // 
@@ -4418,7 +4265,7 @@ namespace DoAnMNM
             this.txtTenPhong_SuaPhong.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtTenPhong_SuaPhong.Location = new System.Drawing.Point(350, 224);
             this.txtTenPhong_SuaPhong.Name = "txtTenPhong_SuaPhong";
-            this.txtTenPhong_SuaPhong.Size = new System.Drawing.Size(305, 29);
+            this.txtTenPhong_SuaPhong.Size = new System.Drawing.Size(305, 50);
             this.txtTenPhong_SuaPhong.TabIndex = 56;
             // 
             // label84
@@ -4428,7 +4275,7 @@ namespace DoAnMNM
             this.label84.ForeColor = System.Drawing.Color.Gainsboro;
             this.label84.Location = new System.Drawing.Point(219, 150);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(99, 25);
+            this.label84.Size = new System.Drawing.Size(195, 51);
             this.label84.TabIndex = 55;
             this.label84.Text = "Mã phòng";
             // 
@@ -4439,14 +4286,8 @@ namespace DoAnMNM
             this.txtMaPhong_SuaPhong.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMaPhong_SuaPhong.Location = new System.Drawing.Point(350, 150);
             this.txtMaPhong_SuaPhong.Name = "txtMaPhong_SuaPhong";
-            this.txtMaPhong_SuaPhong.Size = new System.Drawing.Size(305, 29);
+            this.txtMaPhong_SuaPhong.Size = new System.Drawing.Size(305, 50);
             this.txtMaPhong_SuaPhong.TabIndex = 54;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // tpSuaQL
             // 
@@ -4470,210 +4311,12 @@ namespace DoAnMNM
             this.tpSuaQL.Controls.Add(this.txtHoTen_SuaQL);
             this.tpSuaQL.Controls.Add(this.label91);
             this.tpSuaQL.Controls.Add(this.txtMaQL_SuaQL);
-            this.tpSuaQL.Location = new System.Drawing.Point(4, 22);
+            this.tpSuaQL.Location = new System.Drawing.Point(8, 39);
             this.tpSuaQL.Name = "tpSuaQL";
             this.tpSuaQL.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSuaQL.Size = new System.Drawing.Size(992, 654);
+            this.tpSuaQL.Size = new System.Drawing.Size(984, 633);
             this.tpSuaQL.TabIndex = 16;
             this.tpSuaQL.Text = "Sửa QL ";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label87.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label87.Location = new System.Drawing.Point(397, 47);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(206, 25);
-            this.label87.TabIndex = 67;
-            this.label87.Text = "Sửa Thông Tin Quản Lý";
-            // 
-            // dtpNgaySinh_SuaQL
-            // 
-            this.dtpNgaySinh_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgaySinh_SuaQL.Location = new System.Drawing.Point(378, 265);
-            this.dtpNgaySinh_SuaQL.Name = "dtpNgaySinh_SuaQL";
-            this.dtpNgaySinh_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.dtpNgaySinh_SuaQL.TabIndex = 66;
-            // 
-            // rdbNu_SuaQL
-            // 
-            this.rdbNu_SuaQL.AutoSize = true;
-            this.rdbNu_SuaQL.BackColor = System.Drawing.Color.Transparent;
-            this.rdbNu_SuaQL.Cursor = System.Windows.Forms.Cursors.Default;
-            this.rdbNu_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbNu_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rdbNu_SuaQL.Location = new System.Drawing.Point(447, 217);
-            this.rdbNu_SuaQL.Name = "rdbNu_SuaQL";
-            this.rdbNu_SuaQL.Size = new System.Drawing.Size(49, 25);
-            this.rdbNu_SuaQL.TabIndex = 65;
-            this.rdbNu_SuaQL.TabStop = true;
-            this.rdbNu_SuaQL.Text = "Nữ";
-            this.rdbNu_SuaQL.UseVisualStyleBackColor = false;
-            // 
-            // rdbNam_SuaQL
-            // 
-            this.rdbNam_SuaQL.AutoSize = true;
-            this.rdbNam_SuaQL.BackColor = System.Drawing.Color.Transparent;
-            this.rdbNam_SuaQL.Cursor = System.Windows.Forms.Cursors.Default;
-            this.rdbNam_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbNam_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rdbNam_SuaQL.Location = new System.Drawing.Point(379, 217);
-            this.rdbNam_SuaQL.Name = "rdbNam_SuaQL";
-            this.rdbNam_SuaQL.Size = new System.Drawing.Size(62, 25);
-            this.rdbNam_SuaQL.TabIndex = 64;
-            this.rdbNam_SuaQL.TabStop = true;
-            this.rdbNam_SuaQL.Text = "Nam";
-            this.rdbNam_SuaQL.UseVisualStyleBackColor = false;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label88.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label88.Location = new System.Drawing.Point(247, 269);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(96, 25);
-            this.label88.TabIndex = 63;
-            this.label88.Text = "Ngày sinh";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label89.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label89.Location = new System.Drawing.Point(247, 211);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(84, 25);
-            this.label89.TabIndex = 62;
-            this.label89.Text = "Giới tính";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label90.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label90.Location = new System.Drawing.Point(247, 159);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(68, 25);
-            this.label90.TabIndex = 61;
-            this.label90.Text = "Họ tên";
-            // 
-            // txtHoTen_SuaQL
-            // 
-            this.txtHoTen_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtHoTen_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtHoTen_SuaQL.Location = new System.Drawing.Point(378, 162);
-            this.txtHoTen_SuaQL.Name = "txtHoTen_SuaQL";
-            this.txtHoTen_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtHoTen_SuaQL.TabIndex = 60;
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label91.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label91.Location = new System.Drawing.Point(247, 112);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(67, 25);
-            this.label91.TabIndex = 59;
-            this.label91.Text = "Mã QL";
-            // 
-            // txtMaQL_SuaQL
-            // 
-            this.txtMaQL_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtMaQL_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaQL_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtMaQL_SuaQL.Location = new System.Drawing.Point(378, 112);
-            this.txtMaQL_SuaQL.Name = "txtMaQL_SuaQL";
-            this.txtMaQL_SuaQL.ReadOnly = true;
-            this.txtMaQL_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtMaQL_SuaQL.TabIndex = 58;
-            // 
-            // txtEMAIL_SuaQL
-            // 
-            this.txtEMAIL_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtEMAIL_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEMAIL_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtEMAIL_SuaQL.Location = new System.Drawing.Point(379, 440);
-            this.txtEMAIL_SuaQL.Name = "txtEMAIL_SuaQL";
-            this.txtEMAIL_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtEMAIL_SuaQL.TabIndex = 73;
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label92.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label92.Location = new System.Drawing.Point(247, 440);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(58, 25);
-            this.label92.TabIndex = 72;
-            this.label92.Text = "Email";
-            // 
-            // txtSDT_SuaQL
-            // 
-            this.txtSDT_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtSDT_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtSDT_SuaQL.Location = new System.Drawing.Point(378, 388);
-            this.txtSDT_SuaQL.Name = "txtSDT_SuaQL";
-            this.txtSDT_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtSDT_SuaQL.TabIndex = 71;
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label93.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label93.Location = new System.Drawing.Point(247, 388);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(123, 25);
-            this.label93.TabIndex = 70;
-            this.label93.Text = "Số điện thoại";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label94.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label94.Location = new System.Drawing.Point(247, 333);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(68, 25);
-            this.label94.TabIndex = 69;
-            this.label94.Text = "CMND";
-            // 
-            // txtCMND_SuaQL
-            // 
-            this.txtCMND_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtCMND_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMND_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCMND_SuaQL.Location = new System.Drawing.Point(378, 333);
-            this.txtCMND_SuaQL.Name = "txtCMND_SuaQL";
-            this.txtCMND_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtCMND_SuaQL.TabIndex = 68;
-            // 
-            // txtMatKhau_SuaQL
-            // 
-            this.txtMatKhau_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtMatKhau_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtMatKhau_SuaQL.Location = new System.Drawing.Point(379, 495);
-            this.txtMatKhau_SuaQL.Name = "txtMatKhau_SuaQL";
-            this.txtMatKhau_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtMatKhau_SuaQL.TabIndex = 75;
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label95.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label95.Location = new System.Drawing.Point(247, 495);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(91, 25);
-            this.label95.TabIndex = 74;
-            this.label95.Text = "Mật khẩu";
             // 
             // btnSua_SuaQL
             // 
@@ -4693,6 +4336,365 @@ namespace DoAnMNM
             this.btnSua_SuaQL.UseVisualStyleBackColor = false;
             this.btnSua_SuaQL.Click += new System.EventHandler(this.btnSua_SuaQL_Click);
             // 
+            // txtMatKhau_SuaQL
+            // 
+            this.txtMatKhau_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtMatKhau_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtMatKhau_SuaQL.Location = new System.Drawing.Point(379, 495);
+            this.txtMatKhau_SuaQL.Name = "txtMatKhau_SuaQL";
+            this.txtMatKhau_SuaQL.Size = new System.Drawing.Size(305, 50);
+            this.txtMatKhau_SuaQL.TabIndex = 75;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label95.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label95.Location = new System.Drawing.Point(247, 495);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(180, 51);
+            this.label95.TabIndex = 74;
+            this.label95.Text = "Mật khẩu";
+            // 
+            // txtEMAIL_SuaQL
+            // 
+            this.txtEMAIL_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtEMAIL_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEMAIL_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtEMAIL_SuaQL.Location = new System.Drawing.Point(379, 440);
+            this.txtEMAIL_SuaQL.Name = "txtEMAIL_SuaQL";
+            this.txtEMAIL_SuaQL.Size = new System.Drawing.Size(305, 50);
+            this.txtEMAIL_SuaQL.TabIndex = 73;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label92.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label92.Location = new System.Drawing.Point(247, 440);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(111, 51);
+            this.label92.TabIndex = 72;
+            this.label92.Text = "Email";
+            // 
+            // txtSDT_SuaQL
+            // 
+            this.txtSDT_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtSDT_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtSDT_SuaQL.Location = new System.Drawing.Point(378, 388);
+            this.txtSDT_SuaQL.Name = "txtSDT_SuaQL";
+            this.txtSDT_SuaQL.Size = new System.Drawing.Size(305, 50);
+            this.txtSDT_SuaQL.TabIndex = 71;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label93.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label93.Location = new System.Drawing.Point(247, 388);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(242, 51);
+            this.label93.TabIndex = 70;
+            this.label93.Text = "Số điện thoại";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label94.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label94.Location = new System.Drawing.Point(247, 333);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(135, 51);
+            this.label94.TabIndex = 69;
+            this.label94.Text = "CMND";
+            // 
+            // txtCMND_SuaQL
+            // 
+            this.txtCMND_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtCMND_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCMND_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCMND_SuaQL.Location = new System.Drawing.Point(378, 333);
+            this.txtCMND_SuaQL.Name = "txtCMND_SuaQL";
+            this.txtCMND_SuaQL.Size = new System.Drawing.Size(305, 50);
+            this.txtCMND_SuaQL.TabIndex = 68;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label87.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label87.Location = new System.Drawing.Point(397, 47);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(408, 51);
+            this.label87.TabIndex = 67;
+            this.label87.Text = "Sửa Thông Tin Quản Lý";
+            // 
+            // dtpNgaySinh_SuaQL
+            // 
+            this.dtpNgaySinh_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh_SuaQL.Location = new System.Drawing.Point(378, 265);
+            this.dtpNgaySinh_SuaQL.Name = "dtpNgaySinh_SuaQL";
+            this.dtpNgaySinh_SuaQL.Size = new System.Drawing.Size(305, 50);
+            this.dtpNgaySinh_SuaQL.TabIndex = 66;
+            // 
+            // rdbNu_SuaQL
+            // 
+            this.rdbNu_SuaQL.AutoSize = true;
+            this.rdbNu_SuaQL.BackColor = System.Drawing.Color.Transparent;
+            this.rdbNu_SuaQL.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rdbNu_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNu_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.rdbNu_SuaQL.Location = new System.Drawing.Point(447, 217);
+            this.rdbNu_SuaQL.Name = "rdbNu_SuaQL";
+            this.rdbNu_SuaQL.Size = new System.Drawing.Size(94, 49);
+            this.rdbNu_SuaQL.TabIndex = 65;
+            this.rdbNu_SuaQL.TabStop = true;
+            this.rdbNu_SuaQL.Text = "Nữ";
+            this.rdbNu_SuaQL.UseVisualStyleBackColor = false;
+            // 
+            // rdbNam_SuaQL
+            // 
+            this.rdbNam_SuaQL.AutoSize = true;
+            this.rdbNam_SuaQL.BackColor = System.Drawing.Color.Transparent;
+            this.rdbNam_SuaQL.Cursor = System.Windows.Forms.Cursors.Default;
+            this.rdbNam_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNam_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.rdbNam_SuaQL.Location = new System.Drawing.Point(379, 217);
+            this.rdbNam_SuaQL.Name = "rdbNam_SuaQL";
+            this.rdbNam_SuaQL.Size = new System.Drawing.Size(119, 49);
+            this.rdbNam_SuaQL.TabIndex = 64;
+            this.rdbNam_SuaQL.TabStop = true;
+            this.rdbNam_SuaQL.Text = "Nam";
+            this.rdbNam_SuaQL.UseVisualStyleBackColor = false;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label88.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label88.Location = new System.Drawing.Point(247, 269);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(188, 51);
+            this.label88.TabIndex = 63;
+            this.label88.Text = "Ngày sinh";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label89.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label89.Location = new System.Drawing.Point(247, 211);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(165, 51);
+            this.label89.TabIndex = 62;
+            this.label89.Text = "Giới tính";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label90.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label90.Location = new System.Drawing.Point(247, 159);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(136, 51);
+            this.label90.TabIndex = 61;
+            this.label90.Text = "Họ tên";
+            // 
+            // txtHoTen_SuaQL
+            // 
+            this.txtHoTen_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtHoTen_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTen_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtHoTen_SuaQL.Location = new System.Drawing.Point(378, 162);
+            this.txtHoTen_SuaQL.Name = "txtHoTen_SuaQL";
+            this.txtHoTen_SuaQL.Size = new System.Drawing.Size(305, 50);
+            this.txtHoTen_SuaQL.TabIndex = 60;
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label91.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label91.Location = new System.Drawing.Point(247, 112);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(132, 51);
+            this.label91.TabIndex = 59;
+            this.label91.Text = "Mã QL";
+            // 
+            // txtMaQL_SuaQL
+            // 
+            this.txtMaQL_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtMaQL_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaQL_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtMaQL_SuaQL.Location = new System.Drawing.Point(378, 112);
+            this.txtMaQL_SuaQL.Name = "txtMaQL_SuaQL";
+            this.txtMaQL_SuaQL.ReadOnly = true;
+            this.txtMaQL_SuaQL.Size = new System.Drawing.Size(305, 50);
+            this.txtMaQL_SuaQL.TabIndex = 58;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(107, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(136, 83);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // indicator
+            // 
+            this.indicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicator.Location = new System.Drawing.Point(0, 456);
+            this.indicator.Name = "indicator";
+            this.indicator.Size = new System.Drawing.Size(8, 52);
+            this.indicator.TabIndex = 0;
+            this.indicator.TabStop = false;
+            // 
+            // indicatorSubPanelHDP
+            // 
+            this.indicatorSubPanelHDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelHDP.Location = new System.Drawing.Point(0, 0);
+            this.indicatorSubPanelHDP.Name = "indicatorSubPanelHDP";
+            this.indicatorSubPanelHDP.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelHDP.TabIndex = 1;
+            this.indicatorSubPanelHDP.TabStop = false;
+            // 
+            // btnHDP
+            // 
+            this.btnHDP.BackColor = System.Drawing.Color.Transparent;
+            this.btnHDP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHDP.FlatAppearance.BorderSize = 0;
+            this.btnHDP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnHDP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnHDP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHDP.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.btnHDP.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnHDP.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            this.btnHDP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHDP.Location = new System.Drawing.Point(0, 754);
+            this.btnHDP.Name = "btnHDP";
+            this.btnHDP.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnHDP.Size = new System.Drawing.Size(180, 52);
+            this.btnHDP.TabIndex = 14;
+            this.btnHDP.Text = "Hóa đơn phòng";
+            this.btnHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHDP.UseVisualStyleBackColor = false;
+            // 
+            // indicatorSubPanelHDD
+            // 
+            this.indicatorSubPanelHDD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelHDD.Location = new System.Drawing.Point(0, 0);
+            this.indicatorSubPanelHDD.Name = "indicatorSubPanelHDD";
+            this.indicatorSubPanelHDD.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelHDD.TabIndex = 1;
+            this.indicatorSubPanelHDD.TabStop = false;
+            // 
+            // indicatorSubPanelPhong
+            // 
+            this.indicatorSubPanelPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelPhong.Location = new System.Drawing.Point(0, 0);
+            this.indicatorSubPanelPhong.Name = "indicatorSubPanelPhong";
+            this.indicatorSubPanelPhong.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelPhong.TabIndex = 1;
+            this.indicatorSubPanelPhong.TabStop = false;
+            // 
+            // btnPhong
+            // 
+            this.btnPhong.BackColor = System.Drawing.Color.Transparent;
+            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPhong.FlatAppearance.BorderSize = 0;
+            this.btnPhong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPhong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhong.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.btnPhong.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPhong.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPhong.Location = new System.Drawing.Point(0, 438);
+            this.btnPhong.Name = "btnPhong";
+            this.btnPhong.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnPhong.Size = new System.Drawing.Size(180, 52);
+            this.btnPhong.TabIndex = 8;
+            this.btnPhong.Text = "Phòng";
+            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhong.UseVisualStyleBackColor = false;
+            // 
+            // indicatorSubPanelDDK
+            // 
+            this.indicatorSubPanelDDK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
+            this.indicatorSubPanelDDK.Location = new System.Drawing.Point(0, 3);
+            this.indicatorSubPanelDDK.Name = "indicatorSubPanelDDK";
+            this.indicatorSubPanelDDK.Size = new System.Drawing.Size(8, 52);
+            this.indicatorSubPanelDDK.TabIndex = 11;
+            this.indicatorSubPanelDDK.TabStop = false;
+            // 
+            // btnDonDangKy
+            // 
+            this.btnDonDangKy.BackColor = System.Drawing.Color.Transparent;
+            this.btnDonDangKy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDonDangKy.FlatAppearance.BorderSize = 0;
+            this.btnDonDangKy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDonDangKy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnDonDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDonDangKy.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.btnDonDangKy.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDonDangKy.Image = global::DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            this.btnDonDangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDonDangKy.Location = new System.Drawing.Point(0, 224);
+            this.btnDonDangKy.Name = "btnDonDangKy";
+            this.btnDonDangKy.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnDonDangKy.Size = new System.Drawing.Size(180, 52);
+            this.btnDonDangKy.TabIndex = 2;
+            this.btnDonDangKy.Text = "Đơn đăng ký";
+            this.btnDonDangKy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonDangKy.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(40, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormQLKTX
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4703,17 +4705,11 @@ namespace DoAnMNM
             this.Name = "FormQLKTX";
             this.Text = "FormQLKTX";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
             this.panelSubHDP.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).EndInit();
             this.panelSubHDD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).EndInit();
             this.panelSubPhong.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).EndInit();
             this.panelSubDonDangKy.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.tabControlKTX.ResumeLayout(false);
             this.tpThongKe.ResumeLayout(false);
@@ -4725,16 +4721,12 @@ namespace DoAnMNM
             ((System.ComponentModel.ISupportInitialize)(this.chartTienPhong_ThongKe)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tpDangKyMoi.ResumeLayout(false);
             this.tpDangKyMoi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tpDSSV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataDSSV)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -4779,6 +4771,16 @@ namespace DoAnMNM
             this.tpSuaPhong.PerformLayout();
             this.tpSuaQL.ResumeLayout(false);
             this.tpSuaQL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelHDD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelPhong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicatorSubPanelDDK)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
