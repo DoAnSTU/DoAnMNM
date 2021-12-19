@@ -258,5 +258,7 @@ namespace DoAnMNM
             }
             return sum;
         }
+
+        private void xoaPhong() { }
     }
 }
