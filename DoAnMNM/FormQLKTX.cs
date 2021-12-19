@@ -232,5 +232,80 @@ namespace DoAnMNM
             else
                 HienThi_DSHDD(timHDDTheoMaQLvaPhong(maql, maphong));
         }
+
+        private void btnDSHDD_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSHDD;
+            khoiTao_DSHDD();
+        }
+
+        private void btnSua_DSHDD_Click(object sender, EventArgs e)
+        {
+            int Index = dataDSHDD.CurrentCell.RowIndex;
+            int maHD = (int)dataDSHDD.Rows[Index].Cells[0].Value;
+            HoaDonDien hdd = db.HoaDonDiens.Find(maHD);
+            txtMaHD_SuaHDD.Text = hdd.MaHoaDonDien.ToString();
+            txtDonGia_SuaHDD.Text = hdd.DonGiaDien.ToString();
+            txtSoDoDien_SuaHDD.Text = hdd.SoDienSuDung.ToString();
+            dtpNgayLap_HDD.Value = hdd.NgayLap;
+            if (hdd.TinhTrang.ToString().Equals("True"))
+            {
+                rdbDaThanhToan_SuaHDD.Checked = true;
+            }
+            else
+            {
+                rdbNo_SuaHDD.Checked = true;
+            }
+
+            foreach (var x in db.Phongs)
+            {
+                cboPhong_SuaHDD.Items.Add(x);
+            }
+
+            String phong = hdd.Phong.MaPhong.ToString();
+            int i = 0;
+            for (int j = 0; j < db.Phongs.Count(); j++)
+            {
+                if (db.Phongs.ToList()[j].MaPhong == phong)
+                    i = j;
+            }
+            cboPhong_SuaHDD.SelectedIndex = i;
+            tabControlKTX.SelectedTab = tpSuaHDD;
+        }
+
+        private void btnXoa_DSHDD_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Không thể xóa Hóa đơn điện", "Không xóa được", MessageBoxButtons.OK);
+        }
+
+        private void btnTatCa_DSHDD_Click(object sender, EventArgs e)
+        {
+            cboMaPhong_DSHDD.SelectedIndex = -1;
+            khoiTao_DSHDD();
+        }
+
+        private void btnQuayLai_SuaHDD_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSHDD;
+            khoiTao_DSHDD();
+        }
+
+        private void btnSua_SuaHDD_Click(object sender, EventArgs e)
+        {
+            HoaDonDien hdd = db.HoaDonDiens.Find(int.Parse(txtMaHD_SuaHDD.Text));
+            hdd.NgayLap = dtpNgayLap_SuaHDD.Value;
+            hdd.SoDienSuDung = int.Parse(txtSoDoDien_SuaHDD.Text.ToString());
+            hdd.Phong = (Phong)cboPhong_SuaHDD.SelectedItem;
+            hdd.DonGiaDien = decimal.Parse(txtDonGia_SuaHDD.Text.ToString());
+            if (rdbNo_SuaHDD.Checked == true)
+            {
+                hdd.TinhTrang = false;
+            }
+            else
+                hdd.TinhTrang = true;
+            db.SaveChanges();
+            tabControlKTX.SelectedTab = tpDSHDD;
+            khoiTao_DSHDD();
+        }
     }
 }

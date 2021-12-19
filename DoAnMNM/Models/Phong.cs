@@ -24,10 +24,6 @@ namespace DoAnMNM.Models
         [StringLength(20)]
         public string TenPhong { get; set; }
 
-        public int SoGiuongDaO { get; set; }
-
-        public int SoGiuongTrong { get; set; }
-
         [Required]
         [StringLength(10)]
         public string MaLoaiPhong { get; set; }
@@ -58,5 +54,10 @@ namespace DoAnMNM.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SinhVien> SinhViens { get; set; }
+
+        public override string ToString()
+        {
+            return TenPhong;
+        }
     }
 }
