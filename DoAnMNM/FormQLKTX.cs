@@ -440,6 +440,50 @@ namespace DoAnMNM
             string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
             string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
             string FileName1 = string.Format("{0}Resources\\DonGiaDien.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+			string donGiaPhong;
+            using (StreamReader sr = new StreamReader(FileName))
+            {
+                donGiaPhong = sr.ReadToEnd();
+            }
+            string donGiaDien;
+            using (StreamReader sr1 = new StreamReader(FileName1))
+            {
+                donGiaDien = sr1.ReadToEnd();
+            }
+            txtDGD_QLDonGia.Text = donGiaDien;
+            txtDGP_QLDonGia.Text= donGiaPhong;
+        }
+		
+        private void btnHDP_Click(object sender, EventArgs e)
+        {
+            if (panelSubHDP.Visible == false)
+            {
+                panelSubHDP.Visible = true;
+                btnHDP.Image = DoAnMNM.Properties.Resources.icons8_collapse_arrow_16;
+            }
+            else
+            {
+                panelSubHDP.Visible = false;
+                btnHDP.Image = DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            }
+        }
+
+        private void btnThemHDP_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpThemHDP;
+            KhoiTao_HDP();
+        }
+
+        private void btnDSHDP_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSHDP;
+            KhoiTao_DSHDP();
+        }
+
+        private void KhoiTao_HDP()
+        {
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
             string donGiaPhong;
             using (StreamReader sr = new StreamReader(FileName))
             {
@@ -565,6 +609,63 @@ namespace DoAnMNM
                     i.SoDienSuDung,
                     i.DonGiaDien,
                     i.SoDienSuDung*i.DonGiaDien,
+					i.NgayLap.ToShortDateString(),
+                    i.TinhTrang?"Đã thanh toán":"Nợ"
+                });
+            }
+        }
+		
+		private void KhoiTao_HDP()
+        {
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+            string donGiaPhong;
+            using (StreamReader sr = new StreamReader(FileName))
+            {
+                donGiaPhong=sr.ReadToEnd();
+            }    
+            cboQuy_ThemHDP.Items.Clear();
+            txtMSSV_ThemHDP.Text = "";
+            txtNam_ThemHDP.Text = DateTime.Now.Year.ToString();
+            txtThanhTien_ThemHDP.Text = donGiaPhong;
+            dtpNgayLap_ThemHDP.Value = DateTime.Now;
+            for (int i = 1; i < 5; i++)
+            {
+                cboQuy_ThemHDP.Items.Add(i);
+            }
+            cboQuy_ThemHDP.SelectedIndex = 0;
+
+            if (DateTime.Now.Month >= 1 || DateTime.Now.Month <= 3)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(1);
+            if (DateTime.Now.Month >= 4 || DateTime.Now.Month <= 6)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(2);
+            if (DateTime.Now.Month >= 7 || DateTime.Now.Month <= 9)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(3);
+            if (DateTime.Now.Month >= 10 || DateTime.Now.Month <= 12)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(4);
+        }
+
+        private void KhoiTao_DSHDP()
+        {
+            txtMaHD_DSHDP.Text = "";
+            txtMaQL_DSHDP.Text = "";
+            txtMSSV_DSHDP.Text = "";
+            HienThi_DSHDP(db.HoaDonTienPhongs.ToList());
+        }
+
+        private void HienThi_DSHDP(List<HoaDonTienPhong> dsHDP)
+        {
+            dataDSHDP.Rows.Clear();
+            foreach (var i in dsHDP)
+            {
+                dataDSHDP.Rows.Add(new object[]
+                {
+                    i.MaHoaDonTP,
+                    i.MaQL,
+                    i.MSSV,
+                    i.Quy,
+                    i.Nam,
+                    i.ThanhTien,
                     i.NgayLap.ToShortDateString(),
                     i.TinhTrang?"Đã thanh toán":"Nợ"
                 });
@@ -736,6 +837,99 @@ namespace DoAnMNM
             khoiTao_HDD();           
             tabControlKTX.SelectedTab = tpDSHDD;
             khoiTao_DSHDD();
+		}
+
+        private void btnThem_ThemHDP_Click(object sender, EventArgs e)
+        {
+            if (txtNam_ThemHDP.Text == "" || txtThanhTien_ThemHDP.Text == "" || txtMSSV_ThemHDP.Text == "")
+            {
+                MessageBox.Show("Không được để trống", "Không thêm được", MessageBoxButtons.OK);
+            }
+            else
+            {
+                int quy = int.Parse(cboQuy_ThemHDP.SelectedItem.ToString());
+                HoaDonTienPhong hdp = new HoaDonTienPhong();
+                hdp.MaQL = maQL;
+                hdp.Quy = quy;
+                hdp.MSSV = txtMSSV_ThemHDP.Text;
+                hdp.Nam = int.Parse(txtNam_ThemHDP.Text);
+                hdp.ThanhTien = decimal.Parse(txtThanhTien_ThemHDP.Text);
+                hdp.NgayLap = dtpNgayLap_ThemHDP.Value;
+                db.HoaDonTienPhongs.Add(hdp);
+                db.SaveChanges();
+
+                KhoiTao_HDP();               
+                tabControlKTX.SelectedTab = tpDSHDP;
+                KhoiTao_DSHDP();
+
+            }
+        }
+
+        private void btnTim_DSHDP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_DSHDP_Click(object sender, EventArgs e)
+        {
+            int Index = dataDSHDP.CurrentCell.RowIndex;          
+            int maHD = (int)dataDSHDP.Rows[Index].Cells[0].Value;
+            HoaDonTienPhong hdp = db.HoaDonTienPhongs.Find(maHD);
+            txtMaHD_SuaHDP.Text = hdp.MaHoaDonTP.ToString();
+            txtMSSV_SuaHDP.Text = hdp.MSSV.ToString();
+            txtNam_SuaHDP.Text = hdp.Nam.ToString();
+            txtThanhTien_SuaHDP.Text = hdp.ThanhTien.ToString();
+            dtpNgayLap_SuaHDP.Value = hdp.NgayLap;
+            if (hdp.TinhTrang.ToString().Equals("True"))
+            {
+                rdbDaThanhToan_SuaHDP.Checked = true;
+            }
+            else
+                rdbNo_SuaHDP.Checked = true;
+
+            for (int j = 1; j < 5; j++)
+            {
+                cboQuy_SuaHDP.Items.Add(j);
+            }
+
+            cboQuy_SuaHDP.SelectedIndex = cboQuy_SuaHDP.Items.IndexOf(hdp.Quy);
+            tabControlKTX.SelectedTab = tpSuaHDP;
+        }
+
+        private void btnXoa_DSHDP_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Không thể xóa Hóa tền phòng", "Không xóa được", MessageBoxButtons.OK);
+        }
+
+        private void btnTatCa_DSHDP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuayLai_SuaHDP_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSHDP;
+            KhoiTao_DSHDP();
+        }
+
+        private void btnSua_SuaHDP_Click(object sender, EventArgs e)
+        {
+            HoaDonTienPhong hdp = db.HoaDonTienPhongs.Find(int.Parse(txtMaHD_SuaHDP.Text));
+            hdp.NgayLap = dtpNgayLap_SuaHDP.Value;
+            hdp.MSSV = txtMSSV_SuaHDP.Text.ToString();
+            hdp.Nam = int.Parse(txtNam_SuaHDP.Text.ToString());
+            hdp.ThanhTien = decimal.Parse(txtThanhTien_SuaHDP.Text.ToString());
+            hdp.Quy = int.Parse(cboQuy_SuaHDP.SelectedItem.ToString());
+            if (rdbNo_SuaHDP.Checked == true)
+            {
+                hdp.TinhTrang = false;
+            }
+            else
+                hdp.TinhTrang = true;
+            db.SaveChanges();
+            tabControlKTX.SelectedTab = tpDSHDP;
+            KhoiTao_DSHDP();
+
         }
     }
 }
