@@ -85,5 +85,53 @@ namespace DoAnMNM
 
             MessageBox.Show("Đã cập nhật thông tin quản lý");
         }
+
+        private void btnThemPhong_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpThemPhong;
+            KhoiTao_ThemPhong();
+
+        }
+
+        private void KhoiTao_ThemPhong()
+        {
+            cboLoaiPhong_ThemPhong.Items.Clear();
+            cboKhu_ThemPhong.Items.Clear();
+            txtMaPhong_ThemPhong.Text = "";
+            txtTenPhong_ThemPhong.Text = "";
+            List<LoaiPhong> dsLoaiPhong = db.LoaiPhongs.ToList();
+            foreach (LoaiPhong x in dsLoaiPhong)
+            {
+                cboLoaiPhong_ThemPhong.Items.Add(x);
+            }
+            cboLoaiPhong_ThemPhong.SelectedIndex = 0;
+            List<Khu> dsKhu = db.Khus.ToList();
+            foreach (Khu x in dsKhu)
+            {
+                cboKhu_ThemPhong.Items.Add(x);
+            }
+            cboKhu_ThemPhong.SelectedIndex = 0;
+        }
+
+        private void btnThem_ThemPhong_Click(object sender, EventArgs e)
+        {
+            if (txtTenPhong_ThemPhong.Text == "" || txtMaPhong_ThemPhong.Text == "")
+            {
+                DialogResult result = MessageBox.Show("Không được để trống", "Không thêm được", MessageBoxButtons.OK);
+            }
+            else
+            {
+                Phong p = new Phong();
+                p.MaPhong = txtMaPhong_ThemPhong.Text;
+                p.TenPhong = txtTenPhong_ThemPhong.Text;
+                p.MaKhu = ((Khu)cboKhu_ThemPhong.SelectedItem).MaKhu;
+                p.MaLoaiPhong = ((LoaiPhong)cboLoaiPhong_ThemPhong.SelectedItem).MaLoaiPhong;
+                p.MaQL = maQL;
+                p.SoDien = 0;
+                db.Phongs.Add(p);
+                db.SaveChanges();
+                KhoiTao_ThemPhong();
+            }
+        }
     }
 }
