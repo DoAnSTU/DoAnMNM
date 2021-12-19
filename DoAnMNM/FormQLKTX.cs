@@ -480,23 +480,6 @@ namespace DoAnMNM
             KhoiTao_DSHDP();
         }
 
-        private void KhoiTao_HDP()
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            string donGiaPhong;
-            using (StreamReader sr = new StreamReader(FileName))
-            {
-                donGiaPhong = sr.ReadToEnd();
-            }
-            string donGiaDien;
-            using (StreamReader sr1 = new StreamReader(FileName1))
-            {
-                donGiaDien = sr1.ReadToEnd();
-            }
-            txtDGD_QLDonGia.Text = donGiaDien;
-            txtDGP_QLDonGia.Text = donGiaPhong;
-        }
 
         private void btnSuaDGD_QLDonGia_Click(object sender, EventArgs e)
         {
@@ -544,11 +527,11 @@ namespace DoAnMNM
             khoiTao_HDD();
         }
 
-        private void btnDSHDP_Click(object sender, EventArgs e)
-        {
-            tabControlKTX.SelectedTab = tpDSHDD;
-            khoiTao_DSHDD();
-        }
+        //private void btnDSHDP_Click(object sender, EventArgs e)
+        //{
+        //    tabControlKTX.SelectedTab = tpDSHDD;
+        //    khoiTao_DSHDD();
+        //}
 
         private void khoiTao_HDD()
         {
