@@ -550,6 +550,7 @@ namespace DoAnMNM
             this.btnThemHDP.Text = "Thêm hóa đơn";
             this.btnThemHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemHDP.UseVisualStyleBackColor = false;
+            this.btnThemHDP.Click += new System.EventHandler(this.btnThemHDP_Click);
             // 
             // btnHDP
             // 
@@ -571,6 +572,7 @@ namespace DoAnMNM
             this.btnHDP.Text = "Hóa đơn phòng";
             this.btnHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHDP.UseVisualStyleBackColor = false;
+            this.btnHDP.Click += new System.EventHandler(this.btnHDP_Click);
             // 
             // panelSubHDD
             // 
@@ -3748,6 +3750,7 @@ namespace DoAnMNM
             this.btnXoa_DSHDP.TabIndex = 56;
             this.btnXoa_DSHDP.Text = "Xóa";
             this.btnXoa_DSHDP.UseVisualStyleBackColor = false;
+            this.btnXoa_DSHDP.Click += new System.EventHandler(this.btnXoa_DSHDP_Click);
             // 
             // btnSua_DSHDP
             // 
@@ -3765,6 +3768,7 @@ namespace DoAnMNM
             this.btnSua_DSHDP.TabIndex = 55;
             this.btnSua_DSHDP.Text = "Sửa";
             this.btnSua_DSHDP.UseVisualStyleBackColor = false;
+            this.btnSua_DSHDP.Click += new System.EventHandler(this.btnSua_DSHDP_Click);
             // 
             // btnTatCa_DSHDP
             // 
@@ -3782,6 +3786,7 @@ namespace DoAnMNM
             this.btnTatCa_DSHDP.TabIndex = 12;
             this.btnTatCa_DSHDP.Text = "Tất cả";
             this.btnTatCa_DSHDP.UseVisualStyleBackColor = false;
+            this.btnTatCa_DSHDP.Click += new System.EventHandler(this.btnTatCa_DSHDP_Click);
             // 
             // label53
             // 
@@ -3810,6 +3815,7 @@ namespace DoAnMNM
             this.btnTim_DSHDP.TabIndex = 9;
             this.btnTim_DSHDP.Text = "Tìm kiếm";
             this.btnTim_DSHDP.UseVisualStyleBackColor = false;
+            this.btnTim_DSHDP.Click += new System.EventHandler(this.btnTim_DSHDP_Click);
             // 
             // label54
             // 
@@ -3885,6 +3891,7 @@ namespace DoAnMNM
             this.btnQuayLai_SuaHDP.TabIndex = 97;
             this.btnQuayLai_SuaHDP.Text = "Quay lại";
             this.btnQuayLai_SuaHDP.UseVisualStyleBackColor = false;
+            this.btnQuayLai_SuaHDP.Click += new System.EventHandler(this.btnQuayLai_SuaHDP_Click);
             // 
             // groupBox2
             // 
@@ -4002,6 +4009,7 @@ namespace DoAnMNM
             this.btnSua_SuaHDP.TabIndex = 88;
             this.btnSua_SuaHDP.Text = "Sửa";
             this.btnSua_SuaHDP.UseVisualStyleBackColor = false;
+            this.btnSua_SuaHDP.Click += new System.EventHandler(this.btnSua_SuaHDP_Click);
             // 
             // label57
             // 
@@ -4146,6 +4154,7 @@ namespace DoAnMNM
             this.btnThem_ThemHDP.TabIndex = 75;
             this.btnThem_ThemHDP.Text = "Thêm";
             this.btnThem_ThemHDP.UseVisualStyleBackColor = false;
+            this.btnThem_ThemHDP.Click += new System.EventHandler(this.btnThem_ThemHDP_Click);
             // 
             // label62
             // 
