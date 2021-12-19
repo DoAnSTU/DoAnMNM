@@ -307,5 +307,41 @@ namespace DoAnMNM
             tabControlKTX.SelectedTab = tpDSHDD;
             khoiTao_DSHDD();
         }
+
+        private void btnThem_HDD_Click(object sender, EventArgs e)
+        {
+            if (txtSoDoDien_HDD.Text == "" || txtDonGia_HDD.Text == "" || txtNam_ThemHDD.Text == "")
+            {
+                MessageBox.Show("Không được để trống", "Không thêm được", MessageBoxButtons.OK);
+                return;
+            }
+            Phong p = (Phong)cboPhong_ThemHDD.SelectedItem;
+            HoaDonDien hdd = new HoaDonDien();
+            if (int.Parse(txtSoDoDien_HDD.Text) <= p.SoDien)
+            {
+                MessageBox.Show("Phải nhập số đo điện lớn hơn số điện phòng", "Không thêm được", MessageBoxButtons.OK);
+                return;
+            }
+
+            hdd.MaQL = maQL;
+            hdd.MaPhong = p.MaPhong;
+            hdd.SoDienSuDung = int.Parse(txtSoDoDien_HDD.Text) - (int)p.SoDien;
+            hdd.DonGiaDien = int.Parse(txtDonGia_HDD.Text);
+            hdd.NgayLap = dtpNgayLap_HDD.Value;
+            hdd.Thang = (int)cboThang_ThemHDD.SelectedItem;
+            hdd.Nam = int.Parse(txtNam_ThemHDD.Text.ToString());
+            if (db.HoaDonDiens.Where(x => (x.Nam == hdd.Nam) && (x.Thang == hdd.Thang) && (x.MaPhong == hdd.MaPhong)).Count() > 0)
+            {
+                MessageBox.Show("Đã tồn tại hóa đơn của phòng trong tháng này!");
+                return;
+            }
+            p.SoDien = int.Parse(txtSoDoDien_HDD.Text);
+            db.HoaDonDiens.Add(hdd);
+            db.SaveChanges();
+
+            khoiTao_HDD();           
+            tabControlKTX.SelectedTab = tpDSHDD;
+            khoiTao_DSHDD();
+        }
     }
 }
