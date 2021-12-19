@@ -168,5 +168,97 @@ namespace DoAnMNM
                 });
             }
         }
+
+        private void btnThem_ThemHDP_Click(object sender, EventArgs e)
+        {
+            if (txtNam_ThemHDP.Text == "" || txtThanhTien_ThemHDP.Text == "" || txtMSSV_ThemHDP.Text == "")
+            {
+                MessageBox.Show("Không được để trống", "Không thêm được", MessageBoxButtons.OK);
+            }
+            else
+            {
+                int quy = int.Parse(cboQuy_ThemHDP.SelectedItem.ToString());
+                HoaDonTienPhong hdp = new HoaDonTienPhong();
+                hdp.MaQL = maQL;
+                hdp.Quy = quy;
+                hdp.MSSV = txtMSSV_ThemHDP.Text;
+                hdp.Nam = int.Parse(txtNam_ThemHDP.Text);
+                hdp.ThanhTien = decimal.Parse(txtThanhTien_ThemHDP.Text);
+                hdp.NgayLap = dtpNgayLap_ThemHDP.Value;
+                db.HoaDonTienPhongs.Add(hdp);
+                db.SaveChanges();
+
+                KhoiTao_HDP();               
+                tabControlKTX.SelectedTab = tpDSHDP;
+                KhoiTao_DSHDP();
+
+            }
+        }
+
+        private void btnTim_DSHDP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_DSHDP_Click(object sender, EventArgs e)
+        {
+            int Index = dataDSHDP.CurrentCell.RowIndex;          
+            int maHD = (int)dataDSHDP.Rows[Index].Cells[0].Value;
+            HoaDonTienPhong hdp = db.HoaDonTienPhongs.Find(maHD);
+            txtMaHD_SuaHDP.Text = hdp.MaHoaDonTP.ToString();
+            txtMSSV_SuaHDP.Text = hdp.MSSV.ToString();
+            txtNam_SuaHDP.Text = hdp.Nam.ToString();
+            txtThanhTien_SuaHDP.Text = hdp.ThanhTien.ToString();
+            dtpNgayLap_SuaHDP.Value = hdp.NgayLap;
+            if (hdp.TinhTrang.ToString().Equals("True"))
+            {
+                rdbDaThanhToan_SuaHDP.Checked = true;
+            }
+            else
+                rdbNo_SuaHDP.Checked = true;
+
+            for (int j = 1; j < 5; j++)
+            {
+                cboQuy_SuaHDP.Items.Add(j);
+            }
+
+            cboQuy_SuaHDP.SelectedIndex = cboQuy_SuaHDP.Items.IndexOf(hdp.Quy);
+            tabControlKTX.SelectedTab = tpSuaHDP;
+        }
+
+        private void btnXoa_DSHDP_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Không thể xóa Hóa tền phòng", "Không xóa được", MessageBoxButtons.OK);
+        }
+
+        private void btnTatCa_DSHDP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuayLai_SuaHDP_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSHDP;
+            KhoiTao_DSHDP();
+        }
+
+        private void btnSua_SuaHDP_Click(object sender, EventArgs e)
+        {
+            HoaDonTienPhong hdp = db.HoaDonTienPhongs.Find(int.Parse(txtMaHD_SuaHDP.Text));
+            hdp.NgayLap = dtpNgayLap_SuaHDP.Value;
+            hdp.MSSV = txtMSSV_SuaHDP.Text.ToString();
+            hdp.Nam = int.Parse(txtNam_SuaHDP.Text.ToString());
+            hdp.ThanhTien = decimal.Parse(txtThanhTien_SuaHDP.Text.ToString());
+            hdp.Quy = int.Parse(cboQuy_SuaHDP.SelectedItem.ToString());
+            if (rdbNo_SuaHDP.Checked == true)
+            {
+                hdp.TinhTrang = false;
+            }
+            else
+                hdp.TinhTrang = true;
+            db.SaveChanges();
+            tabControlKTX.SelectedTab = tpDSHDP;
+            KhoiTao_DSHDP();
+        }
     }
 }
