@@ -428,7 +428,7 @@ namespace DoAnMNM
                 db.SaveChanges();
                 KhoiTao_DDK();
             }
-
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             tabControlKTX.SelectedTab = tpQLDonGia;
