@@ -1429,6 +1429,7 @@ namespace DoAnMNM
             this.btnDangKy_DKM.TabIndex = 23;
             this.btnDangKy_DKM.Text = "Đăng ký";
             this.btnDangKy_DKM.UseVisualStyleBackColor = false;
+            this.btnDangKy_DKM.Click += new System.EventHandler(this.btnDangKy_DKM_Click);
             // 
             // dtpNgaySinh_DKM
             // 

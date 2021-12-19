@@ -212,5 +212,47 @@ namespace DoAnMNM
         {
 
         }
+
+        private void btnDangKy_DKM_Click(object sender, EventArgs e)
+        {
+            if (txtHoTen_DKM.Text == "" || txtMSSV_DKM.Text == "" || txtCMND_DKM.Text == "" || txtEmail_DKM.Text == "" || txtSDT_DKM.Text == "")
+            {
+                DialogResult result = MessageBox.Show("Không được để trống", "Không thêm được", MessageBoxButtons.OK);
+            }
+            else
+            {
+                //Thêm sinh viên
+                List<SinhVien> dsSV = db.SinhViens.ToList();
+                SinhVien sv = dsSV.Find(a => a.MSSV == txtMSSV_DKM.Text);
+                if (!(dsSV.Contains(sv)))
+                {
+                    sv = new SinhVien();
+                    sv.MSSV = txtMSSV_DKM.Text;
+                    sv.HoTenSV = txtHoTen_DKM.Text;
+                    if (rbNam_DKM.Checked)
+                        sv.GioiTinh = true;
+                    else
+                        sv.GioiTinh = false;
+                    sv.NgaySinh = dtpNgaySinh_DKM.Value;
+                    sv.SDT = txtSDT_DKM.Text;
+                    sv.CMND = txtCMND_DKM.Text;
+                    sv.DiaChi = txtEmail_DKM.Text;
+                    sv.MaPhong = ((Phong)cboPhong_DKM.SelectedItem).MaPhong;
+                    db.SinhViens.Add(sv);
+                }
+                //Thêm đơn đăng ký mới
+                DonDangKy donDK = new DonDangKy();
+                donDK.MSSV = txtMSSV_DKM.Text;
+                donDK.MaDonDangKy = "DDK" + db.DonDangKies.Count();
+                donDK.MaQL = maQL;
+                donDK.MSSV = sv.MSSV;
+                donDK.NgayVao = dtpNgayVao_DKM.Value;
+                donDK.ThoiGian = (int)cboThoiGian_DKM.SelectedItem;
+                donDK.NgayLamDon = DateTime.Now;
+                db.DonDangKies.Add(donDK);
+                db.SaveChanges();
+                KhoiTao_DDK();
+            }
+        }
     }
 }
