@@ -164,7 +164,7 @@ namespace DoAnMNM
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnXoa_DSD = new System.Windows.Forms.Button();
             this.btnSua_DSD = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnTatCa_DSDDK = new System.Windows.Forms.Button();
             this.btnTimKiem_DSDDK = new System.Windows.Forms.Button();
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
@@ -1975,7 +1975,7 @@ namespace DoAnMNM
             // 
             this.panel4.Controls.Add(this.btnXoa_DSD);
             this.panel4.Controls.Add(this.btnSua_DSD);
-            this.panel4.Controls.Add(this.button12);
+            this.panel4.Controls.Add(this.btnTatCa_DSDDK);
             this.panel4.Controls.Add(this.btnTimKiem_DSDDK);
             this.panel4.Controls.Add(this.dtpNgayLap);
             this.panel4.Controls.Add(this.label14);
@@ -2003,6 +2003,7 @@ namespace DoAnMNM
             this.btnXoa_DSD.TabIndex = 27;
             this.btnXoa_DSD.Text = "Xóa";
             this.btnXoa_DSD.UseVisualStyleBackColor = false;
+            this.btnXoa_DSD.Click += new System.EventHandler(this.btnXoa_DSD_Click);
             // 
             // btnSua_DSD
             // 
@@ -2020,23 +2021,25 @@ namespace DoAnMNM
             this.btnSua_DSD.TabIndex = 26;
             this.btnSua_DSD.Text = "Sửa";
             this.btnSua_DSD.UseVisualStyleBackColor = false;
+            this.btnSua_DSD.Click += new System.EventHandler(this.btnSua_DSD_Click);
             // 
-            // button12
+            // btnTatCa_DSDDK
             // 
-            this.button12.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(834, 91);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(120, 29);
-            this.button12.TabIndex = 10;
-            this.button12.Text = "Tất cả";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnTatCa_DSDDK.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa_DSDDK.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnTatCa_DSDDK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTatCa_DSDDK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnTatCa_DSDDK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTatCa_DSDDK.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTatCa_DSDDK.ForeColor = System.Drawing.Color.White;
+            this.btnTatCa_DSDDK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTatCa_DSDDK.Location = new System.Drawing.Point(834, 91);
+            this.btnTatCa_DSDDK.Name = "btnTatCa_DSDDK";
+            this.btnTatCa_DSDDK.Size = new System.Drawing.Size(120, 29);
+            this.btnTatCa_DSDDK.TabIndex = 10;
+            this.btnTatCa_DSDDK.Text = "Tất cả";
+            this.btnTatCa_DSDDK.UseVisualStyleBackColor = false;
+            this.btnTatCa_DSDDK.Click += new System.EventHandler(this.btnTatCa_DSDDK_Click);
             // 
             // btnTimKiem_DSDDK
             // 
@@ -2686,6 +2689,7 @@ namespace DoAnMNM
             this.btnQuayLai_SuaDDK.TabIndex = 68;
             this.btnQuayLai_SuaDDK.Text = "Quay lại";
             this.btnQuayLai_SuaDDK.UseVisualStyleBackColor = false;
+            this.btnQuayLai_SuaDDK.Click += new System.EventHandler(this.btnQuayLai_SuaDDK_Click);
             // 
             // btnSua_SuaDDK
             // 
@@ -2703,6 +2707,7 @@ namespace DoAnMNM
             this.btnSua_SuaDDK.TabIndex = 67;
             this.btnSua_SuaDDK.Text = "Sửa";
             this.btnSua_SuaDDK.UseVisualStyleBackColor = false;
+            this.btnSua_SuaDDK.Click += new System.EventHandler(this.btnSua_SuaDDK_Click);
             // 
             // label38
             // 
@@ -4836,7 +4841,7 @@ namespace DoAnMNM
         private System.Windows.Forms.TabPage tpDSDDK;
         private System.Windows.Forms.DataGridView dataDSDDK;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnTatCa_DSDDK;
         private System.Windows.Forms.Button btnTimKiem_DSDDK;
         private System.Windows.Forms.DateTimePicker dtpNgayLap;
         private System.Windows.Forms.Label label14;

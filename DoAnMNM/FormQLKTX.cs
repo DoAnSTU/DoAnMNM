@@ -163,5 +163,54 @@ namespace DoAnMNM
         {
 
         }
+
+        private void btnSua_DSD_Click(object sender, EventArgs e)
+        {
+            int Index = dataDSDDK.CurrentCell.RowIndex;
+
+            string maddk = dataDSDDK.Rows[Index].Cells[0].Value.ToString();          
+            DonDangKy ddk = db.DonDangKies.Find(maddk);
+            txtMSSV_SuaDDK.Text = ddk.MSSV;
+            txtMaDDK_SuaDDK.Text = ddk.MaDonDangKy;
+            txtMaQL_SuaDDK.Text = ddk.MaQL;
+            dtpNgayVao_SuaDDK.Value = DateTime.Parse(ddk.NgayVao.ToString());
+            dtpNgapLap_SuaDDK.Value = DateTime.Parse(ddk.NgayLamDon.ToString());
+
+            for (int i = 1; i <= 4; i++)
+            {
+                cboThoiGian_SuaDDK.Items.Add(i);
+            }
+
+            cboThoiGian_SuaDDK.SelectedIndex = ddk.ThoiGian - 1;
+            tabControlKTX.SelectedTab = tpSuaDDK;
+        }
+
+        private void btnXoa_DSD_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Không thể xóa Đơn Đăng Ký", "Không xóa được", MessageBoxButtons.OK);
+        }
+
+        private void btnQuayLai_SuaDDK_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSDDK;
+            KhoiTao_DSDDK();
+        }
+
+        private void btnSua_SuaDDK_Click(object sender, EventArgs e)
+        {
+            DonDangKy ddk = db.DonDangKies.Find(txtMaDDK_SuaDDK.Text);
+            ddk.NgayVao = dtpNgayVao_SuaDDK.Value;
+            ddk.ThoiGian = (int)cboThoiGian_SuaDDK.SelectedItem;
+            ddk.NgayLamDon = DateTime.Now;
+            db.SaveChanges();
+
+            tabControlKTX.SelectedTab = tpDSDDK;
+            KhoiTao_DSDDK();
+        }
+
+        private void btnTatCa_DSDDK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
