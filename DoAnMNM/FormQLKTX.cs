@@ -45,6 +45,53 @@ namespace DoAnMNM
             }
         }
 
+        private void KhoiTao_DDK()
+        {
+            cboThoiGian_DKM.Items.Clear();
+            cboPhong_DKM.Items.Clear();
+            txtMSSV_DKM.Text = "";
+            txtHoTen_DKM.Text = "";
+            txtCMND_DKM.Text = "";
+            txtSDT_DKM.Text = "";
+            txtEmail_DKM.Text = "";
+            rbNam_DKM.Checked = true;
+            dtpNgaySinh_DKM.Value = DateTime.Now;
+            dtpNgayVao_DKM.Value = DateTime.Now;
+            for (int i = 1; i <= 4; i++)
+            {
+                cboThoiGian_DKM.Items.Add(i);
+            }
+            cboThoiGian_DKM.SelectedIndex = 0;
+            List<Phong> dsPhong = db.Phongs.ToList();
+            foreach (var x in dsPhong)
+            {
+                cboPhong_DKM.Items.Add(x);
+            }
+            cboPhong_DKM.SelectedIndex = 0;
+        }
+
+        private void KhoiTao_DSDDK()
+        {
+            List<DonDangKy> dsDDK = db.DonDangKies.ToList();
+            txtMaQL_DSDDK.Text = "";           
+            HienThi_DSDDK(dsDDK);
+        }
+
+        private void HienThi_DSDDK(List<DonDangKy> dsDDK)
+        {
+            dataDSDDK.Rows.Clear();
+            foreach (var x in dsDDK)
+            {
+                dataDSDDK.Rows.Add(new object[] {
+                    x.MaDonDangKy,
+                    x.MaQL,
+                    x.MSSV,
+                    x.NgayVao.ToShortDateString(),
+                    x.ThoiGian,
+                    x.NgayLamDon.ToShortDateString()});
+            }
+        }
+
         private void btnDangXuat_QL_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -260,5 +307,126 @@ namespace DoAnMNM
         }
 
         private void xoaPhong() { }
+        private void btnDonDangKy_Click(object sender, EventArgs e)
+        {
+            if (panelSubDonDangKy.Visible == false)
+            {
+                panelSubDonDangKy.Visible = true;
+                btnDonDangKy.Image = DoAnMNM.Properties.Resources.icons8_collapse_arrow_16;
+            }
+            else
+            {
+                panelSubDonDangKy.Visible = false;
+                btnDonDangKy.Image = DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            }
+        }
+
+        private void btnDDK_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDangKyMoi;
+            KhoiTao_DDK();
+        }
+
+        private void btnDSDDK_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSDDK;
+            KhoiTao_DSDDK();
+        }
+
+        private void btnTimKiem_DSDDK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_DSD_Click(object sender, EventArgs e)
+        {
+            int Index = dataDSDDK.CurrentCell.RowIndex;
+
+            string maddk = dataDSDDK.Rows[Index].Cells[0].Value.ToString();          
+            DonDangKy ddk = db.DonDangKies.Find(maddk);
+            txtMSSV_SuaDDK.Text = ddk.MSSV;
+            txtMaDDK_SuaDDK.Text = ddk.MaDonDangKy;
+            txtMaQL_SuaDDK.Text = ddk.MaQL;
+            dtpNgayVao_SuaDDK.Value = DateTime.Parse(ddk.NgayVao.ToString());
+            dtpNgapLap_SuaDDK.Value = DateTime.Parse(ddk.NgayLamDon.ToString());
+
+            for (int i = 1; i <= 4; i++)
+            {
+                cboThoiGian_SuaDDK.Items.Add(i);
+            }
+
+            cboThoiGian_SuaDDK.SelectedIndex = ddk.ThoiGian - 1;
+            tabControlKTX.SelectedTab = tpSuaDDK;
+        }
+
+        private void btnXoa_DSD_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Không thể xóa Đơn Đăng Ký", "Không xóa được", MessageBoxButtons.OK);
+        }
+
+        private void btnQuayLai_SuaDDK_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSDDK;
+            KhoiTao_DSDDK();
+        }
+
+        private void btnSua_SuaDDK_Click(object sender, EventArgs e)
+        {
+            DonDangKy ddk = db.DonDangKies.Find(txtMaDDK_SuaDDK.Text);
+            ddk.NgayVao = dtpNgayVao_SuaDDK.Value;
+            ddk.ThoiGian = (int)cboThoiGian_SuaDDK.SelectedItem;
+            ddk.NgayLamDon = DateTime.Now;
+            db.SaveChanges();
+
+            tabControlKTX.SelectedTab = tpDSDDK;
+            KhoiTao_DSDDK();
+        }
+
+        private void btnTatCa_DSDDK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDangKy_DKM_Click(object sender, EventArgs e)
+        {
+            if (txtHoTen_DKM.Text == "" || txtMSSV_DKM.Text == "" || txtCMND_DKM.Text == "" || txtEmail_DKM.Text == "" || txtSDT_DKM.Text == "")
+            {
+                DialogResult result = MessageBox.Show("Không được để trống", "Không thêm được", MessageBoxButtons.OK);
+            }
+            else
+            {
+                //Thêm sinh viên
+                List<SinhVien> dsSV = db.SinhViens.ToList();
+                SinhVien sv = dsSV.Find(a => a.MSSV == txtMSSV_DKM.Text);
+                if (!(dsSV.Contains(sv)))
+                {
+                    sv = new SinhVien();
+                    sv.MSSV = txtMSSV_DKM.Text;
+                    sv.HoTenSV = txtHoTen_DKM.Text;
+                    if (rbNam_DKM.Checked)
+                        sv.GioiTinh = true;
+                    else
+                        sv.GioiTinh = false;
+                    sv.NgaySinh = dtpNgaySinh_DKM.Value;
+                    sv.SDT = txtSDT_DKM.Text;
+                    sv.CMND = txtCMND_DKM.Text;
+                    sv.DiaChi = txtEmail_DKM.Text;
+                    sv.MaPhong = ((Phong)cboPhong_DKM.SelectedItem).MaPhong;
+                    db.SinhViens.Add(sv);
+                }
+                //Thêm đơn đăng ký mới
+                DonDangKy donDK = new DonDangKy();
+                donDK.MSSV = txtMSSV_DKM.Text;
+                donDK.MaDonDangKy = "DDK" + db.DonDangKies.Count();
+                donDK.MaQL = maQL;
+                donDK.MSSV = sv.MSSV;
+                donDK.NgayVao = dtpNgayVao_DKM.Value;
+                donDK.ThoiGian = (int)cboThoiGian_DKM.SelectedItem;
+                donDK.NgayLamDon = DateTime.Now;
+                db.DonDangKies.Add(donDK);
+                db.SaveChanges();
+                KhoiTao_DDK();
+            }
+        }
     }
 }
