@@ -142,5 +142,11 @@
   <ItemGroup>
     <None Include="Resources\DonGiaPhong.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DonGiaDien.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DonGiaPhong.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
