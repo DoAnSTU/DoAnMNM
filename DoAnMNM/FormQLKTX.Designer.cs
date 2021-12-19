@@ -478,11 +478,12 @@ namespace DoAnMNM
             this.button2.Text = "Quản lý đơn giá";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // indicator
             // 
             this.indicator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(121)))), ((int)(((byte)(254)))));
-            this.indicator.Location = new System.Drawing.Point(0, 172);
+            this.indicator.Location = new System.Drawing.Point(0, 456);
             this.indicator.Name = "indicator";
             this.indicator.Size = new System.Drawing.Size(8, 52);
             this.indicator.TabIndex = 0;
@@ -4240,6 +4241,7 @@ namespace DoAnMNM
             this.btnSuaDGP_QLDonGia.TabIndex = 90;
             this.btnSuaDGP_QLDonGia.Text = "Sửa";
             this.btnSuaDGP_QLDonGia.UseVisualStyleBackColor = false;
+            this.btnSuaDGP_QLDonGia.Click += new System.EventHandler(this.btnSuaDGP_QLDonGia_Click);
             // 
             // btnSuaDGD_QLDonGia
             // 
@@ -4257,6 +4259,7 @@ namespace DoAnMNM
             this.btnSuaDGD_QLDonGia.TabIndex = 89;
             this.btnSuaDGD_QLDonGia.Text = "Sửa";
             this.btnSuaDGD_QLDonGia.UseVisualStyleBackColor = false;
+            this.btnSuaDGD_QLDonGia.Click += new System.EventHandler(this.btnSuaDGD_QLDonGia_Click);
             // 
             // txtDGP_QLDonGia
             // 

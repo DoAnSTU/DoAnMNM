@@ -428,6 +428,57 @@ namespace DoAnMNM
                 db.SaveChanges();
                 KhoiTao_DDK();
             }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpQLDonGia;
+            KhoiTao_QLDonGia();
+        }
+
+        private void KhoiTao_QLDonGia()
+        {
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+            string FileName1 = string.Format("{0}Resources\\DonGiaDien.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+            string donGiaPhong;
+            using (StreamReader sr = new StreamReader(FileName))
+            {
+                donGiaPhong = sr.ReadToEnd();
+            }
+            string donGiaDien;
+            using (StreamReader sr1 = new StreamReader(FileName1))
+            {
+                donGiaDien = sr1.ReadToEnd();
+            }
+            txtDGD_QLDonGia.Text = donGiaDien;
+            txtDGP_QLDonGia.Text = donGiaPhong;
+        }
+
+        private void btnSuaDGD_QLDonGia_Click(object sender, EventArgs e)
+        {
+            string donGiaDien = txtDGD_QLDonGia.Text;
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName1 = string.Format("{0}Resources\\DonGiaDien.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+
+            using (StreamWriter sw = new StreamWriter(FileName1))
+            {
+                sw.Write(donGiaDien);
+            }
+            MessageBox.Show("Bạn đã cập nhật đơn giá điện thành công!");
+        }
+
+        private void btnSuaDGP_QLDonGia_Click(object sender, EventArgs e)
+        {
+            string donGiaPhong = txtDGP_QLDonGia.Text;
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+
+            using (StreamWriter sw = new StreamWriter(FileName))
+            {
+                sw.Write(donGiaPhong);
+            }
+            MessageBox.Show("Bạn đã cập nhật đơn giá phòng thành công!");
+
         }
     }
 }
