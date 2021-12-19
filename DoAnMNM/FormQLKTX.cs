@@ -45,6 +45,53 @@ namespace DoAnMNM
             }
         }
 
+        private void KhoiTao_DDK()
+        {
+            cboThoiGian_DKM.Items.Clear();
+            cboPhong_DKM.Items.Clear();
+            txtMSSV_DKM.Text = "";
+            txtHoTen_DKM.Text = "";
+            txtCMND_DKM.Text = "";
+            txtSDT_DKM.Text = "";
+            txtEmail_DKM.Text = "";
+            rbNam_DKM.Checked = true;
+            dtpNgaySinh_DKM.Value = DateTime.Now;
+            dtpNgayVao_DKM.Value = DateTime.Now;
+            for (int i = 1; i <= 4; i++)
+            {
+                cboThoiGian_DKM.Items.Add(i);
+            }
+            cboThoiGian_DKM.SelectedIndex = 0;
+            List<Phong> dsPhong = db.Phongs.ToList();
+            foreach (var x in dsPhong)
+            {
+                cboPhong_DKM.Items.Add(x);
+            }
+            cboPhong_DKM.SelectedIndex = 0;
+        }
+
+        private void KhoiTao_DSDDK()
+        {
+            List<DonDangKy> dsDDK = db.DonDangKies.ToList();
+            txtMaQL_DSDDK.Text = "";           
+            HienThi_DSDDK(dsDDK);
+        }
+
+        private void HienThi_DSDDK(List<DonDangKy> dsDDK)
+        {
+            dataDSDDK.Rows.Clear();
+            foreach (var x in dsDDK)
+            {
+                dataDSDDK.Rows.Add(new object[] {
+                    x.MaDonDangKy,
+                    x.MaQL,
+                    x.MSSV,
+                    x.NgayVao.ToShortDateString(),
+                    x.ThoiGian,
+                    x.NgayLamDon.ToShortDateString()});
+            }
+        }
+
         private void btnDangXuat_QL_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -84,6 +131,37 @@ namespace DoAnMNM
             db.SaveChanges();
 
             MessageBox.Show("Đã cập nhật thông tin quản lý");
+        }
+
+        private void btnDonDangKy_Click(object sender, EventArgs e)
+        {
+            if (panelSubDonDangKy.Visible == false)
+            {
+                panelSubDonDangKy.Visible = true;
+                btnDonDangKy.Image = DoAnMNM.Properties.Resources.icons8_collapse_arrow_16;
+            }
+            else
+            {
+                panelSubDonDangKy.Visible = false;
+                btnDonDangKy.Image = DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            }
+        }
+
+        private void btnDDK_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDangKyMoi;
+            KhoiTao_DDK();
+        }
+
+        private void btnDSDDK_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSDDK;
+            KhoiTao_DSDDK();
+        }
+
+        private void btnTimKiem_DSDDK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
