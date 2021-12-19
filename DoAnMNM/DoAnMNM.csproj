@@ -136,5 +136,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-expand-arrow-16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DonGiaDien.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DonGiaPhong.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

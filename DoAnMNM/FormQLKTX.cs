@@ -85,5 +85,152 @@ namespace DoAnMNM
 
             MessageBox.Show("Đã cập nhật thông tin quản lý");
         }
+
+        private void btnHDD_Click(object sender, EventArgs e)
+        {
+            if (panelSubHDD.Visible == false)
+            {
+                panelSubHDD.Visible = true;
+                btnHDD.Image = DoAnMNM.Properties.Resources.icons8_collapse_arrow_16;
+            }
+            else
+            {
+                panelSubHDD.Visible = false;
+                btnHDD.Image = DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            }
+        }
+
+        private void btnThemHDD_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpThemHDD;
+            khoiTao_HDD();
+        }
+
+        private void btnDSHDP_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSHDD;
+            khoiTao_DSHDD();
+        }
+
+        private void khoiTao_HDD()
+        {
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName = string.Format("{0}Resources\\DonGiaDien.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+            string donGiaDien;
+            using (StreamReader sr = new StreamReader(FileName))
+            {
+                donGiaDien = sr.ReadToEnd();
+            }
+            cboThang_ThemHDD.Items.Clear();
+            cboPhong_ThemHDD.Items.Clear();
+            txtDonGia_HDD.Text = donGiaDien;
+            txtSoDoDien_HDD.Text = "";
+            dtpNgayLap_HDD.Value = DateTime.Now;
+            List<Phong> dsPhong = db.Phongs.ToList();
+            for (int i = 1; i <= 12; i++)
+            {
+                cboThang_ThemHDD.Items.Add(i);
+            }
+            cboThang_ThemHDD.SelectedIndex = cboThang_ThemHDD.Items.IndexOf(DateTime.Now.Month);
+            txtNam_ThemHDD.Text = DateTime.Now.Year.ToString();
+            foreach (var x in dsPhong)
+            {
+                cboPhong_ThemHDD.Items.Add(x);
+            }
+            cboPhong_ThemHDD.SelectedIndex = 0;
+            Phong p = (Phong)cboPhong_ThemHDD.SelectedItem;
+            lbSoDo_ThemHDD.Text = p.SoDien.ToString();
+        }
+
+        private void khoiTao_DSHDD()
+        {
+            txtMaHD_DSHDD.Text = "";
+            txtMaQL_DSHDD.Text = "";
+            cboMaPhong_DSHDD.Items.Clear();
+            List<Phong> dsPhong = db.Phongs.ToList();
+            foreach (var x in dsPhong)
+            {
+                cboMaPhong_DSHDD.Items.Add(x);
+            }
+            HienThi_DSHDD(db.HoaDonDiens.ToList());
+        }
+
+        private void HienThi_DSHDD(List<HoaDonDien> dsHDD)
+        {
+            dataDSHDD.Rows.Clear();
+            List<Phong> dsphong = db.Phongs.ToList();
+            foreach (var i in dsHDD)
+            {
+                dataDSHDD.Rows.Add(new object[]
+                {
+                    i.MaHoaDonDien,
+                    i.MaQL,
+                    dsphong.Find(a=>a.MaPhong==i.MaPhong).TenPhong,
+                    i.Thang,
+                    i.Nam,
+                    i.SoDienSuDung,
+                    i.DonGiaDien,
+                    i.SoDienSuDung*i.DonGiaDien,
+                    i.NgayLap.ToShortDateString(),
+                    i.TinhTrang?"Đã thanh toán":"Nợ"
+                });
+            }
+        }
+
+        public List<HoaDonDien> timHDDTheoPhong(String maphong)
+        {
+            List<HoaDonDien> dshdd = new List<HoaDonDien>();
+            foreach (HoaDonDien hdd in db.HoaDonDiens)
+            {
+                if (hdd.MaPhong == maphong)
+                    dshdd.Add(hdd);
+            }
+            return dshdd;
+        }
+
+        public List<HoaDonDien> timHDDTheoMaQL(String maql)
+        {
+            List<HoaDonDien> dshdd = new List<HoaDonDien>();
+            foreach (HoaDonDien hdd in db.HoaDonDiens)
+            {
+                if (hdd.MaQL == maql)
+                    dshdd.Add(hdd);
+            }
+            return dshdd;
+        }
+
+        public List<HoaDonDien> timHDDTheoMaQLvaPhong(String maql, String maphong)
+        {
+            List<HoaDonDien> dshdd = new List<HoaDonDien>();
+            foreach (HoaDonDien hdd in db.HoaDonDiens)
+            {
+                if (hdd.MaQL == maql && hdd.MaPhong == maphong)
+                    dshdd.Add(hdd);
+            }
+            return dshdd;
+        }
+
+        private void btnTimKiem_DSHDD_Click(object sender, EventArgs e)
+        {
+            List<Phong> phongs = db.Phongs.ToList();
+            Phong p = (Phong)cboMaPhong_DSHDD.SelectedItem;
+            String maphong = null;
+            if (p != null)
+            {
+                maphong = phongs.Find(a => a.TenPhong == p.TenPhong).MaPhong;
+            }
+            String maql = txtMaQL_DSHDD.Text;
+
+            if (txtMaQL_DSHDD.Text == "")
+            {
+                HienThi_DSHDD(timHDDTheoPhong(maphong));
+            }
+            else if (maphong == null)
+            {
+                HienThi_DSHDD(timHDDTheoMaQL(maql));
+            }
+            else
+                HienThi_DSHDD(timHDDTheoMaQLvaPhong(maql, maphong));
+        }
     }
 }

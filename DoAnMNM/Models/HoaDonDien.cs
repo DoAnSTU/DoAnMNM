@@ -25,6 +25,10 @@ namespace DoAnMNM.Models
         [Column(TypeName = "money")]
         public decimal DonGiaDien { get; set; }
 
+        public int? Thang { get; set; }
+
+        public int? Nam { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime NgayLap { get; set; }
 
