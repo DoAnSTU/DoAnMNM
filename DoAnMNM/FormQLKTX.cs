@@ -85,5 +85,88 @@ namespace DoAnMNM
 
             MessageBox.Show("Đã cập nhật thông tin quản lý");
         }
+
+        private void btnHDP_Click(object sender, EventArgs e)
+        {
+            if (panelSubHDP.Visible == false)
+            {
+                panelSubHDP.Visible = true;
+                btnHDP.Image = DoAnMNM.Properties.Resources.icons8_collapse_arrow_16;
+            }
+            else
+            {
+                panelSubHDP.Visible = false;
+                btnHDP.Image = DoAnMNM.Properties.Resources.icons8_expand_arrow_16;
+            }
+        }
+
+        private void btnThemHDP_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpThemHDP;
+            KhoiTao_HDP();
+        }
+
+        private void btnDSHDP_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSHDP;
+            KhoiTao_DSHDP();
+        }
+
+        private void KhoiTao_HDP()
+        {
+            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+            string FileName = string.Format("{0}Resources\\DonGiaPhong.txt", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
+            string donGiaPhong;
+            using (StreamReader sr = new StreamReader(FileName))
+            {
+                donGiaPhong = sr.ReadToEnd();
+            }
+            cboQuy_ThemHDP.Items.Clear();
+            txtMSSV_ThemHDP.Text = "";
+            txtNam_ThemHDP.Text = DateTime.Now.Year.ToString();
+            txtThanhTien_ThemHDP.Text = donGiaPhong;
+            dtpNgayLap_ThemHDP.Value = DateTime.Now;
+            for (int i = 1; i < 5; i++)
+            {
+                cboQuy_ThemHDP.Items.Add(i);
+            }
+            cboQuy_ThemHDP.SelectedIndex = 0;
+
+            if (DateTime.Now.Month >= 1 || DateTime.Now.Month <= 3)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(1);
+            if (DateTime.Now.Month >= 4 || DateTime.Now.Month <= 6)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(2);
+            if (DateTime.Now.Month >= 7 || DateTime.Now.Month <= 9)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(3);
+            if (DateTime.Now.Month >= 10 || DateTime.Now.Month <= 12)
+                cboQuy_ThemHDP.SelectedIndex = cboQuy_ThemHDP.Items.IndexOf(4);
+        }
+
+        private void KhoiTao_DSHDP()
+        {
+            txtMaHD_DSHDP.Text = "";
+            txtMaQL_DSHDP.Text = "";
+            txtMSSV_DSHDP.Text = "";
+            HienThi_DSHDP(db.HoaDonTienPhongs.ToList());
+        }
+
+        private void HienThi_DSHDP(List<HoaDonTienPhong> dsHDP)
+        {
+            dataDSHDP.Rows.Clear();
+            foreach (var i in dsHDP)
+            {
+                dataDSHDP.Rows.Add(new object[]
+                {
+                    i.MaHoaDonTP,
+                    i.MaQL,
+                    i.MSSV,
+                    i.Quy,
+                    i.Nam,
+                    i.ThanhTien,
+                    i.NgayLap.ToShortDateString(),
+                    i.TinhTrang?"Đã thanh toán":"Nợ"
+                });
+            }
+        }
     }
 }

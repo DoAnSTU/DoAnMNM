@@ -358,9 +358,16 @@ namespace DoAnMNM
             this.txtTenPhong_SuaPhong = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
             this.txtMaPhong_SuaPhong = new System.Windows.Forms.TextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tpSuaQL = new System.Windows.Forms.TabPage();
+            this.btnSua_SuaQL = new System.Windows.Forms.Button();
+            this.txtMatKhau_SuaQL = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.txtEMAIL_SuaQL = new System.Windows.Forms.TextBox();
+            this.label92 = new System.Windows.Forms.Label();
+            this.txtSDT_SuaQL = new System.Windows.Forms.TextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.txtCMND_SuaQL = new System.Windows.Forms.TextBox();
             this.label87 = new System.Windows.Forms.Label();
             this.dtpNgaySinh_SuaQL = new System.Windows.Forms.DateTimePicker();
             this.rdbNu_SuaQL = new System.Windows.Forms.RadioButton();
@@ -371,15 +378,8 @@ namespace DoAnMNM
             this.txtHoTen_SuaQL = new System.Windows.Forms.TextBox();
             this.label91 = new System.Windows.Forms.Label();
             this.txtMaQL_SuaQL = new System.Windows.Forms.TextBox();
-            this.txtEMAIL_SuaQL = new System.Windows.Forms.TextBox();
-            this.label92 = new System.Windows.Forms.Label();
-            this.txtSDT_SuaQL = new System.Windows.Forms.TextBox();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.txtCMND_SuaQL = new System.Windows.Forms.TextBox();
-            this.txtMatKhau_SuaQL = new System.Windows.Forms.TextBox();
-            this.label95 = new System.Windows.Forms.Label();
-            this.btnSua_SuaQL = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
             this.panelSubHDP.SuspendLayout();
@@ -528,6 +528,7 @@ namespace DoAnMNM
             this.btnDSHDP.Text = "Danh sách hóa đơn";
             this.btnDSHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDSHDP.UseVisualStyleBackColor = false;
+            this.btnDSHDP.Click += new System.EventHandler(this.btnDSHDP_Click);
             // 
             // btnThemHDP
             // 
@@ -548,6 +549,7 @@ namespace DoAnMNM
             this.btnThemHDP.Text = "Thêm hóa đơn";
             this.btnThemHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemHDP.UseVisualStyleBackColor = false;
+            this.btnThemHDP.Click += new System.EventHandler(this.btnThemHDP_Click);
             // 
             // btnHDP
             // 
@@ -569,6 +571,7 @@ namespace DoAnMNM
             this.btnHDP.Text = "Hóa đơn phòng";
             this.btnHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHDP.UseVisualStyleBackColor = false;
+            this.btnHDP.Click += new System.EventHandler(this.btnHDP_Click);
             // 
             // panelSubHDD
             // 
@@ -4442,12 +4445,6 @@ namespace DoAnMNM
             this.txtMaPhong_SuaPhong.Size = new System.Drawing.Size(305, 29);
             this.txtMaPhong_SuaPhong.TabIndex = 54;
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // tpSuaQL
             // 
             this.tpSuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(82)))));
@@ -4476,6 +4473,108 @@ namespace DoAnMNM
             this.tpSuaQL.Size = new System.Drawing.Size(992, 654);
             this.tpSuaQL.TabIndex = 16;
             this.tpSuaQL.Text = "Sửa QL ";
+            // 
+            // btnSua_SuaQL
+            // 
+            this.btnSua_SuaQL.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSua_SuaQL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSua_SuaQL.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSua_SuaQL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSua_SuaQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua_SuaQL.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.btnSua_SuaQL.ForeColor = System.Drawing.Color.White;
+            this.btnSua_SuaQL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua_SuaQL.Location = new System.Drawing.Point(402, 574);
+            this.btnSua_SuaQL.Name = "btnSua_SuaQL";
+            this.btnSua_SuaQL.Size = new System.Drawing.Size(125, 37);
+            this.btnSua_SuaQL.TabIndex = 76;
+            this.btnSua_SuaQL.Text = "Sửa";
+            this.btnSua_SuaQL.UseVisualStyleBackColor = false;
+            this.btnSua_SuaQL.Click += new System.EventHandler(this.btnSua_SuaQL_Click);
+            // 
+            // txtMatKhau_SuaQL
+            // 
+            this.txtMatKhau_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtMatKhau_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtMatKhau_SuaQL.Location = new System.Drawing.Point(379, 495);
+            this.txtMatKhau_SuaQL.Name = "txtMatKhau_SuaQL";
+            this.txtMatKhau_SuaQL.Size = new System.Drawing.Size(305, 29);
+            this.txtMatKhau_SuaQL.TabIndex = 75;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label95.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label95.Location = new System.Drawing.Point(247, 495);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(91, 25);
+            this.label95.TabIndex = 74;
+            this.label95.Text = "Mật khẩu";
+            // 
+            // txtEMAIL_SuaQL
+            // 
+            this.txtEMAIL_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtEMAIL_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEMAIL_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtEMAIL_SuaQL.Location = new System.Drawing.Point(379, 440);
+            this.txtEMAIL_SuaQL.Name = "txtEMAIL_SuaQL";
+            this.txtEMAIL_SuaQL.Size = new System.Drawing.Size(305, 29);
+            this.txtEMAIL_SuaQL.TabIndex = 73;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label92.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label92.Location = new System.Drawing.Point(247, 440);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(58, 25);
+            this.label92.TabIndex = 72;
+            this.label92.Text = "Email";
+            // 
+            // txtSDT_SuaQL
+            // 
+            this.txtSDT_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtSDT_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtSDT_SuaQL.Location = new System.Drawing.Point(378, 388);
+            this.txtSDT_SuaQL.Name = "txtSDT_SuaQL";
+            this.txtSDT_SuaQL.Size = new System.Drawing.Size(305, 29);
+            this.txtSDT_SuaQL.TabIndex = 71;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label93.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label93.Location = new System.Drawing.Point(247, 388);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(123, 25);
+            this.label93.TabIndex = 70;
+            this.label93.Text = "Số điện thoại";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.label94.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label94.Location = new System.Drawing.Point(247, 333);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(68, 25);
+            this.label94.TabIndex = 69;
+            this.label94.Text = "CMND";
+            // 
+            // txtCMND_SuaQL
+            // 
+            this.txtCMND_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
+            this.txtCMND_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCMND_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCMND_SuaQL.Location = new System.Drawing.Point(378, 333);
+            this.txtCMND_SuaQL.Name = "txtCMND_SuaQL";
+            this.txtCMND_SuaQL.Size = new System.Drawing.Size(305, 29);
+            this.txtCMND_SuaQL.TabIndex = 68;
             // 
             // label87
             // 
@@ -4591,107 +4690,11 @@ namespace DoAnMNM
             this.txtMaQL_SuaQL.Size = new System.Drawing.Size(305, 29);
             this.txtMaQL_SuaQL.TabIndex = 58;
             // 
-            // txtEMAIL_SuaQL
+            // imageList1
             // 
-            this.txtEMAIL_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtEMAIL_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEMAIL_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtEMAIL_SuaQL.Location = new System.Drawing.Point(379, 440);
-            this.txtEMAIL_SuaQL.Name = "txtEMAIL_SuaQL";
-            this.txtEMAIL_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtEMAIL_SuaQL.TabIndex = 73;
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label92.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label92.Location = new System.Drawing.Point(247, 440);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(58, 25);
-            this.label92.TabIndex = 72;
-            this.label92.Text = "Email";
-            // 
-            // txtSDT_SuaQL
-            // 
-            this.txtSDT_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtSDT_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtSDT_SuaQL.Location = new System.Drawing.Point(378, 388);
-            this.txtSDT_SuaQL.Name = "txtSDT_SuaQL";
-            this.txtSDT_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtSDT_SuaQL.TabIndex = 71;
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label93.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label93.Location = new System.Drawing.Point(247, 388);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(123, 25);
-            this.label93.TabIndex = 70;
-            this.label93.Text = "Số điện thoại";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label94.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label94.Location = new System.Drawing.Point(247, 333);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(68, 25);
-            this.label94.TabIndex = 69;
-            this.label94.Text = "CMND";
-            // 
-            // txtCMND_SuaQL
-            // 
-            this.txtCMND_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtCMND_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMND_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCMND_SuaQL.Location = new System.Drawing.Point(378, 333);
-            this.txtCMND_SuaQL.Name = "txtCMND_SuaQL";
-            this.txtCMND_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtCMND_SuaQL.TabIndex = 68;
-            // 
-            // txtMatKhau_SuaQL
-            // 
-            this.txtMatKhau_SuaQL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(80)))));
-            this.txtMatKhau_SuaQL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau_SuaQL.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtMatKhau_SuaQL.Location = new System.Drawing.Point(379, 495);
-            this.txtMatKhau_SuaQL.Name = "txtMatKhau_SuaQL";
-            this.txtMatKhau_SuaQL.Size = new System.Drawing.Size(305, 29);
-            this.txtMatKhau_SuaQL.TabIndex = 75;
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label95.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label95.Location = new System.Drawing.Point(247, 495);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(91, 25);
-            this.label95.TabIndex = 74;
-            this.label95.Text = "Mật khẩu";
-            // 
-            // btnSua_SuaQL
-            // 
-            this.btnSua_SuaQL.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSua_SuaQL.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSua_SuaQL.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSua_SuaQL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSua_SuaQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua_SuaQL.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.btnSua_SuaQL.ForeColor = System.Drawing.Color.White;
-            this.btnSua_SuaQL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua_SuaQL.Location = new System.Drawing.Point(402, 574);
-            this.btnSua_SuaQL.Name = "btnSua_SuaQL";
-            this.btnSua_SuaQL.Size = new System.Drawing.Size(125, 37);
-            this.btnSua_SuaQL.TabIndex = 76;
-            this.btnSua_SuaQL.Text = "Sửa";
-            this.btnSua_SuaQL.UseVisualStyleBackColor = false;
-            this.btnSua_SuaQL.Click += new System.EventHandler(this.btnSua_SuaQL_Click);
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // FormQLKTX
             // 
