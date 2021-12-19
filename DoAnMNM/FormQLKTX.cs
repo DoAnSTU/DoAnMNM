@@ -975,7 +975,10 @@ namespace DoAnMNM
 		
         private void HienThi_ChartTienDien(int thang, int nam)
         {
-
+            foreach(var i in chartTienDien_ThongKe.Series)
+            {
+                i.Points.Clear();
+            }
             //danh sách hóa đơn có tháng và năm như biến
             List<HoaDonDien> ds = db.HoaDonDiens.Where(a => (a.Thang == thang) && (a.Nam == nam)).ToList();
             int soHDNo = 0;
@@ -992,6 +995,10 @@ namespace DoAnMNM
 
         private void HienThi_ChartTienPhong(int quy, int nam)
         {
+            foreach (var i in chartTienPhong_ThongKe.Series)
+            {
+                i.Points.Clear();
+            }
             List<HoaDonTienPhong> ds = db.HoaDonTienPhongs.Where(a => (a.Quy == quy) && (a.Nam == nam)).ToList();
             int soHDNo = 0;
             foreach (var x in ds)
@@ -1003,6 +1010,43 @@ namespace DoAnMNM
             }
             chartTienPhong_ThongKe.Series["s1"].Points.AddXY("Nợ", soHDNo);
             chartTienPhong_ThongKe.Series["s1"].Points.AddXY("Thanh toán", ds.Count() - soHDNo);
+        }
+
+        private void btnDSSV_Click(object sender, EventArgs e)
+        {
+            tabControlKTX.SelectedTab = tpDSSV;
+            KhoiTao_DSSV();
+        }
+
+        private void KhoiTao_DSSV()
+        {
+            txtMSSV_DSSV.Text = "";
+            cboPhong_DSSV.Items.Clear();
+            List<Phong> dsPhong = db.Phongs.ToList();
+            List<SinhVien> dsSV = db.SinhViens.ToList();
+            foreach (var x in dsPhong)
+            {
+                cboPhong_DSSV.Items.Add(x);
+            }
+            HienThi_DSSV(dsSV);
+        }
+
+        private void HienThi_DSSV(List<SinhVien> dsSV)
+        {
+            dataDSSV.Rows.Clear();
+            List<Phong> dsPhong = db.Phongs.ToList();
+            foreach (var x in dsSV)
+            {
+                dataDSSV.Rows.Add(new object[] {
+                    x.MSSV,
+                    x.HoTenSV,
+                    x.GioiTinh?"Nam":"Nữ",
+                    x.NgaySinh.ToShortDateString(),
+                    x.CMND,
+                    x.SDT,
+                    x.DiaChi,
+                    dsPhong.Find(a=>a.MaPhong==x.MaPhong).TenPhong});
+            }
         }
     }
 }
