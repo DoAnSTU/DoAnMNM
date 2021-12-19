@@ -54,5 +54,10 @@ namespace DoAnMNM.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SinhVien> SinhViens { get; set; }
+
+        public override string ToString()
+        {
+            return TenPhong;
+        }
     }
 }

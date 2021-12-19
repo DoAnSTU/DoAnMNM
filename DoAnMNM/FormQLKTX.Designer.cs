@@ -529,6 +529,7 @@ namespace DoAnMNM
             this.btnDSHDP.Text = "Danh sách hóa đơn";
             this.btnDSHDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDSHDP.UseVisualStyleBackColor = false;
+            this.btnDSHDP.Click += new System.EventHandler(this.btnDSHDP_Click);
             // 
             // btnThemHDP
             // 
@@ -611,6 +612,7 @@ namespace DoAnMNM
             this.btnDSHDD.Text = "Danh sách hóa đơn";
             this.btnDSHDD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDSHDD.UseVisualStyleBackColor = false;
+            this.btnDSHDD.Click += new System.EventHandler(this.btnDSHDD_Click);
             // 
             // btnThemHDD
             // 
@@ -631,6 +633,7 @@ namespace DoAnMNM
             this.btnThemHDD.Text = "Thêm hóa đơn";
             this.btnThemHDD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemHDD.UseVisualStyleBackColor = false;
+            this.btnThemHDD.Click += new System.EventHandler(this.btnThemHDD_Click);
             // 
             // btnHDD
             // 
@@ -651,6 +654,7 @@ namespace DoAnMNM
             this.btnHDD.Text = "Hóa đơn điện";
             this.btnHDD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHDD.UseVisualStyleBackColor = false;
+            this.btnHDD.Click += new System.EventHandler(this.btnHDD_Click);
             // 
             // panelSubPhong
             // 
@@ -2971,6 +2975,7 @@ namespace DoAnMNM
             this.btnThem_HDD.TabIndex = 66;
             this.btnThem_HDD.Text = "Thêm";
             this.btnThem_HDD.UseVisualStyleBackColor = false;
+            this.btnThem_HDD.Click += new System.EventHandler(this.btnThem_HDD_Click);
             // 
             // label44
             // 
@@ -3236,6 +3241,7 @@ namespace DoAnMNM
             this.btnXoa_DSHDD.TabIndex = 56;
             this.btnXoa_DSHDD.Text = "Xóa";
             this.btnXoa_DSHDD.UseVisualStyleBackColor = false;
+            this.btnXoa_DSHDD.Click += new System.EventHandler(this.btnXoa_DSHDD_Click);
             // 
             // btnSua_DSHDD
             // 
@@ -3253,6 +3259,7 @@ namespace DoAnMNM
             this.btnSua_DSHDD.TabIndex = 55;
             this.btnSua_DSHDD.Text = "Sửa";
             this.btnSua_DSHDD.UseVisualStyleBackColor = false;
+            this.btnSua_DSHDD.Click += new System.EventHandler(this.btnSua_DSHDD_Click);
             // 
             // cboMaPhong_DSHDD
             // 
@@ -3282,6 +3289,7 @@ namespace DoAnMNM
             this.btnTatCa_DSHDD.TabIndex = 12;
             this.btnTatCa_DSHDD.Text = "Tất cả";
             this.btnTatCa_DSHDD.UseVisualStyleBackColor = false;
+            this.btnTatCa_DSHDD.Click += new System.EventHandler(this.btnTatCa_DSHDD_Click);
             // 
             // label40
             // 
@@ -3310,6 +3318,7 @@ namespace DoAnMNM
             this.btnTimKiem_DSHDD.TabIndex = 9;
             this.btnTimKiem_DSHDD.Text = "Tìm kiếm";
             this.btnTimKiem_DSHDD.UseVisualStyleBackColor = false;
+            this.btnTimKiem_DSHDD.Click += new System.EventHandler(this.btnTimKiem_DSHDD_Click);
             // 
             // label45
             // 
@@ -3383,6 +3392,7 @@ namespace DoAnMNM
             this.btnQuayLai_SuaHDD.TabIndex = 82;
             this.btnQuayLai_SuaHDD.Text = "Quay lại";
             this.btnQuayLai_SuaHDD.UseVisualStyleBackColor = false;
+            this.btnQuayLai_SuaHDD.Click += new System.EventHandler(this.btnQuayLai_SuaHDD_Click);
             // 
             // groupBox1
             // 
@@ -3479,6 +3489,7 @@ namespace DoAnMNM
             this.btnSua_SuaHDD.TabIndex = 75;
             this.btnSua_SuaHDD.Text = "Sửa";
             this.btnSua_SuaHDD.UseVisualStyleBackColor = false;
+            this.btnSua_SuaHDD.Click += new System.EventHandler(this.btnSua_SuaHDD_Click);
             // 
             // label39
             // 

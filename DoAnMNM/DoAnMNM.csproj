@@ -137,6 +137,7 @@
     <None Include="Resources\icons8-expand-arrow-16.png" />
   </ItemGroup>
   <ItemGroup />
+  
   <ItemGroup>
     <None Include="Resources\DonGiaDien.txt" />
   </ItemGroup>
