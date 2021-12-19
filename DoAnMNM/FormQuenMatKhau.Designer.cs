@@ -67,7 +67,7 @@ namespace DoAnMNM
             this.btnGui.TabIndex = 14;
             this.btnGui.Text = "Gửi mật khẩu";
             this.btnGui.UseVisualStyleBackColor = false;
-
+            this.btnGui.Click += new System.EventHandler(this.btnGui_Click);
             // 
             // btnThoat
             // 
@@ -80,6 +80,7 @@ namespace DoAnMNM
             this.btnThoat.TabIndex = 15;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // FormQuenMatKhau
             // 
