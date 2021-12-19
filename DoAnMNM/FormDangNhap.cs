@@ -25,11 +25,6 @@ namespace DoAnMNM
         }
 
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             List<QuanLy> dsQL = db.QuanLies.ToList();
@@ -45,6 +40,7 @@ namespace DoAnMNM
                     this.Visible = true;
                     txtTaiKhoan.Text = "";
                     txtMauKhau.Text = "";
+                    db = new ModelQLKTX();
                 }
                 else
                 {
@@ -73,6 +69,11 @@ namespace DoAnMNM
             this.Visible = true;
             txtTaiKhoan.Text = "";
             txtMauKhau.Text = "";
+        }
+
+        private void btnThoat_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
